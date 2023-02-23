@@ -1594,6 +1594,58 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1007105781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1007105783}
+  - component: {fileID: 1007105782}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1007105782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007105781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76664abfb29f64f4d9cde4088b47e80e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeaponSprites: []
+  PotionSprites: []
+  CardSprites: []
+  WeaponPrices: 
+  XpTable: 
+  player: {fileID: 0}
+  Money: 0
+  Experience: 0
+  Damage: 0
+--- !u!4 &1007105783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007105781}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.33965343, y: 0.3931445, z: -7.3590817}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1077173123
 GameObject:
   m_ObjectHideFlags: 0
@@ -6498,9 +6550,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.012599409, y: -0.06929445}
+  m_Offset: {x: -0.006358713, y: -0.06929445}
   serializedVersion: 2
-  m_Radius: 0.3763476
+  m_Radius: 0.2515343
 --- !u!95 &1561383190
 Animator:
   serializedVersion: 3
