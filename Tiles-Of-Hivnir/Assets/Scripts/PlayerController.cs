@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private float speed;
+    
+    //Item
+    public Item[] Inventory;
    
     
     // Start is called before the first frame update
