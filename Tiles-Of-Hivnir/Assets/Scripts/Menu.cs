@@ -17,5 +17,10 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Test");
         //il faudra changer "Test" si on change le nom de la scene
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
     
