@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
     
+    //Gestion Pause
+    public bool IsPaused;
+    
+    
     // Ressource sous forme de liste
     public List<Sprite> WeaponSprites;
     public List<Sprite> PotionSprites;
