@@ -3,47 +3,62 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour
+namespace TalesofHivnir
 {
-    public float moveSpeed = 5f;
-    public Transform movePoint;
-    public LayerMask whatStopMovement;
-    public Animator anim;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        movePoint.parent = null;
-    }
 
-    // Update is called once per frame
-    void Update()
+    public class PlayerController : MonoBehaviour
     {
-        transform.position = Vector3.MoveTowards(transform.position,movePoint.position,moveSpeed*Time.deltaTime);
-        if (Vector3.Distance(transform.position, movePoint.position) <= .05f)
+        //Stats du joueur
+        public int Health;
+        public int Strength;
+        public int Speed;
+
+
+
+        public float moveSpeed = 5f;
+        public Transform movePoint;
+        public LayerMask whatStopMovement;
+        public Animator anim;
+
+        // Start is called before the first frame update
+        void Start()
         {
-            if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
+            movePoint.parent = null;
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            transform.position =
+                Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
+            if (Vector3.Distance(transform.position, movePoint.position) <= .05f)
             {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f),
-                        .2f, whatStopMovement))
+                if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
                 {
-                    movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+                    if (!Physics2D.OverlapCircle(
+                            movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f),
+                            .2f, whatStopMovement))
+                    {
+                        movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+                    }
                 }
-            } 
-            else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
+                else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
                 {
-                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical") ,0f ),.2f,
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f),
+                            .2f,
                             whatStopMovement))
                     {
                         movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                     }
                 }
-            anim.SetBool("moving",false);
-            
-        }
-        else
-        {
-            anim.SetBool("moving", true);
+                /*anim.SetBool("moving",false);       ===> à fix Parameter 'moving' does not exist. UnityEngine.Animator:SetBool (string,bool) PlayerController:Update () (at Assets/Scripts/PlayerController.cs:41)*/
+
+            }
+            else
+            {
+                /*anim.SetBool("moving", true);       ===> à fix */
+            }
         }
     }
 }

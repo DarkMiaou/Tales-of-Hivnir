@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ChestController : MonoBehaviour
+
+namespace TalesofHivnir
+{
+    public class ChestController : MonoBehaviour
 {
     public bool isOpen;
     
@@ -25,5 +28,9 @@ public class ChestController : MonoBehaviour
     }
 
 }
+}
+
+
+
 
 
