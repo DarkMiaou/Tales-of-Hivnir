@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraController
+    - EchapMenu
     - Menu
     - PlayerController
     Unity.2D.Animation.Editor.dll:
@@ -121,10 +122,24 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 608}
     - Class: 114
+      Script: {instanceID: 11366}
+    - Class: 114
+      Script: {instanceID: 11704}
+    - Class: 114
+      Script: {instanceID: 11762}
+    - Class: 114
       Script: {instanceID: 12094}
     - Class: 114
       Script: {instanceID: 12638}
+    - Class: 114
+      Script: {instanceID: 13406}
+    - Class: 114
+      Script: {instanceID: 14340}
+    - Class: 114
+      Script: {instanceID: 25668}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -133,6 +148,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 19719996
       Script: {instanceID: 0}
@@ -149,15 +170,47 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11366}
+    - Class: 114
+      Script: {instanceID: 11704}
+    - Class: 114
+      Script: {instanceID: 11762}
+    - Class: 114
+      Script: {instanceID: 12536}
+    - Class: 114
+      Script: {instanceID: 13406}
+    - Class: 114
+      Script: {instanceID: 14340}
+    - Class: 114
+      Script: {instanceID: 15070}
+    - Class: 114
+      Script: {instanceID: 25668}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -402,7 +455,7 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: ec35c4b259b9f1cc2868d020fe622bc2
+      Hash: 40658f3e0d7f2de04d682ab95eac3c8c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -648,7 +701,7 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: b5ac4863b6321304711be5583bff4b7d
+      Hash: 19d16034900028fa660d6a70c1a19f63
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -670,6 +723,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
+  - hash:
+      serializedVersion: 2
+      Hash: 9f09bf6497d9c9b43f331e53a98541d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EchapMenu
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
