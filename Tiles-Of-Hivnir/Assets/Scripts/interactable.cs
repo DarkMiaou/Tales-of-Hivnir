@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace TalesofHivnir
+namespace TalesofHivnir.interactable
 {
     public class interactable : MonoBehaviour
     {
 
         public bool isInRange;
         public KeyCode interactKey;
+        public KeyCode interactKey1;
         public UnityEvent interactAction;
+        public UnityEvent interactAction1;
 
         // Start is called before the first frame update
         void Start()
@@ -28,6 +30,13 @@ namespace TalesofHivnir
                     interactAction.Invoke(); // lancer l action
                 }
             
+            }
+            if (isInRange)
+            {
+                if (Input.GetKeyDown(interactKey1))
+                {
+                    interactAction1.Invoke();
+                }
             }
         
         }

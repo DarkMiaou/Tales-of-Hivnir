@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using TalesofHivnir;
+using TalesofHivnir.interactable;
 
 
 namespace TalesofHivnir
