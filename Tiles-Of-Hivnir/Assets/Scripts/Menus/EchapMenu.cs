@@ -20,7 +20,7 @@ namespace TalesofHivnir.Menus
 
         void Start()
         {
-            Time.timeScale = 5f;
+            Time.timeScale = 1f;
         }
 
         void Update()

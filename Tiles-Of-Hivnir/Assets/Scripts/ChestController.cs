@@ -7,27 +7,28 @@ using UnityEngine.Events;
 namespace TalesofHivnir
 {
     public class ChestController : MonoBehaviour
-{
-    public bool isOpen;
+    {
+        public bool isOpen;
     
-    public void OpenChest()
-    {
-        if (!isOpen)
+        public void OpenChest()
         {
-            isOpen = true;
-            Debug.Log("Chest is open");
+            if (!isOpen)
+            {
+                isOpen = true;
+                Debug.Log("Chest is open");
+            }
         }
-    }
-    public void CloseChest()
-    {
-        if (isOpen)
+        
+        public void CloseChest()
         {
-            isOpen = false;
-            Debug.Log("Chest is closed");
+            if (isOpen)
+            {
+                isOpen = false;
+                Debug.Log("chest closed");
+            }
         }
-    }
 
-}
+    }
 }
 
 
