@@ -20,6 +20,7 @@ namespace TalesofHivnir
         public Transform movePoint;
         public LayerMask whatStopMovement;
         public Animator anim;
+        public Inventory Inv;
 
         // Start is called before the first frame update
         void Start()

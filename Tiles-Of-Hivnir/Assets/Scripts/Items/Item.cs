@@ -4,7 +4,8 @@ using UnityEngine;
 
 namespace TalesofHivnir.Items
 {
-    public abstract class Item : MonoBehaviour
+    
+    public abstract class Item : ScriptableObject
     {
         public string Name;
         public Sprite Icone; //Icone dans la barre d'inventaire

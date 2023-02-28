@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace TalesofHivnir.Items
 {
-
+    [CreateAssetMenu(fileName = "Weapon",menuName = "Inventory/Item/Weapon")]
     public class Weapon : Item
     {
         public string Favorite_race;
