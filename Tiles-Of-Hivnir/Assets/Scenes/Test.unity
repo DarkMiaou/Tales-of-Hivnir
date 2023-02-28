@@ -237,6 +237,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76664abfb29f64f4d9cde4088b47e80e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 0
+  Strength: 0
+  Speed: 0
+  moveSpeed: 5
+  movePoint: {fileID: 0}
+  whatStopMovement:
+    serializedVersion: 2
+    m_Bits: 0
+  anim: {fileID: 0}
+  Inv: {fileID: 0}
   WeaponSprites: []
   PotionSprites: []
   CardSprites: []
@@ -7544,6 +7554,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 17
   anim: {fileID: 1561383190}
+  Inv: {fileID: 0}
 --- !u!212 &1561383187
 SpriteRenderer:
   m_ObjectHideFlags: 0
