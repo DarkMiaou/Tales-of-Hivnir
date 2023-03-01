@@ -12,7 +12,7 @@ namespace TalesofHivnir
         //Stats du joueur
         //public int Health;
         //public int Strength;
-        //public int Speed;
+        public int Speed;
         Vector2 movement;
 
 
