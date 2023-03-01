@@ -4,10 +4,12 @@ ScriptsOnlyBuild:
     - TalesofHivnir.CameraController
     - TalesofHivnir.ChestController
     - TalesofHivnir.GameManager
+    - TalesofHivnir.Inventory
+    - TalesofHivnir.Items.Weapon
     - TalesofHivnir.Menus.EchapMenu
     - TalesofHivnir.Menus.Menu
     - TalesofHivnir.PlayerController
-    - TalesofHivnir.interactable
+    - TalesofHivnir.interactable.interactable
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -60,21 +62,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11384}
+      Script: {instanceID: 11360}
     - Class: 114
-      Script: {instanceID: 11722}
+      Script: {instanceID: 11698}
     - Class: 114
-      Script: {instanceID: 11780}
+      Script: {instanceID: 11756}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 12536}
     - Class: 114
-      Script: {instanceID: 13428}
+      Script: {instanceID: 13408}
     - Class: 114
-      Script: {instanceID: 14350}
+      Script: {instanceID: 14330}
     - Class: 114
-      Script: {instanceID: 14364}
+      Script: {instanceID: 14344}
     - Class: 114
-      Script: {instanceID: 15098}
+      Script: {instanceID: 15080}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -123,31 +125,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 608}
     - Class: 114
-      Script: {instanceID: 11384}
+      Script: {instanceID: 11360}
     - Class: 114
-      Script: {instanceID: 11722}
+      Script: {instanceID: 11698}
     - Class: 114
-      Script: {instanceID: 11780}
+      Script: {instanceID: 11756}
     - Class: 114
-      Script: {instanceID: 12040}
+      Script: {instanceID: 11982}
     - Class: 114
-      Script: {instanceID: 12114}
+      Script: {instanceID: 12016}
     - Class: 114
-      Script: {instanceID: 12400}
+      Script: {instanceID: 12090}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 12378}
     - Class: 114
-      Script: {instanceID: 12660}
+      Script: {instanceID: 12536}
     - Class: 114
-      Script: {instanceID: 13428}
+      Script: {instanceID: 12638}
     - Class: 114
-      Script: {instanceID: 14364}
+      Script: {instanceID: 13408}
     - Class: 114
-      Script: {instanceID: 14884}
+      Script: {instanceID: 14344}
     - Class: 114
-      Script: {instanceID: 15098}
+      Script: {instanceID: 14866}
     - Class: 114
-      Script: {instanceID: 15180}
+      Script: {instanceID: 14966}
+    - Class: 114
+      Script: {instanceID: 15080}
+    - Class: 114
+      Script: {instanceID: 15162}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -192,21 +198,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11384}
+      Script: {instanceID: 11360}
     - Class: 114
-      Script: {instanceID: 11722}
+      Script: {instanceID: 11698}
     - Class: 114
-      Script: {instanceID: 11780}
+      Script: {instanceID: 11756}
     - Class: 114
-      Script: {instanceID: 12400}
+      Script: {instanceID: 12378}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 12536}
     - Class: 114
-      Script: {instanceID: 13428}
+      Script: {instanceID: 13408}
     - Class: 114
-      Script: {instanceID: 14364}
+      Script: {instanceID: 14344}
     - Class: 114
-      Script: {instanceID: 15098}
+      Script: {instanceID: 15080}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -370,7 +376,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 2807d316df99bb4f59b62feb5a25de8b
+      Hash: fc435268787c768d424756002deecc48
     assemblyName: Assembly-CSharp.dll
     namespaceName: TalesofHivnir
     className: ChestController
@@ -422,6 +428,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.PixelPerfect.dll
     namespaceName: UnityEngine.U2D
     className: PixelPerfectCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 39aee98b90b518e6e9064b57c12c590a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TalesofHivnir.Entities
+    className: Entity
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -484,7 +496,7 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: 7afa7289696a6f07a925dd8353ac5887
+      Hash: 970ff351bc6874001192faab5eb78efb
     assemblyName: Assembly-CSharp.dll
     namespaceName: TalesofHivnir
     className: PlayerController
@@ -518,6 +530,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 7f2abd43fdcd3a90704c97de3d774bc8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TalesofHivnir.Entities
+    className: Player
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -640,6 +658,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TalesofHivnir
+    className: Card
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -652,9 +676,9 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: a8e831d4214a18b236fe3bb69e126e0b
+      Hash: 379687648af004a4b71080a76979008c
     assemblyName: Assembly-CSharp.dll
-    namespaceName: TalesofHivnir
+    namespaceName: TalesofHivnir.interactable
     className: interactable
   - hash:
       serializedVersion: 2
@@ -748,7 +772,7 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: b5ac4863b6321304711be5583bff4b7d
+      Hash: 372a425d1e553584f6422e768d477d37
     assemblyName: Assembly-CSharp.dll
     namespaceName: TalesofHivnir
     className: GameManager

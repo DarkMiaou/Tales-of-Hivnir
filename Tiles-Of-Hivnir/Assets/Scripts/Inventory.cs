@@ -8,7 +8,7 @@ namespace TalesofHivnir
 {
     public class Inventory : MonoBehaviour
     {
-        public Item[] InvList;
+        public List<Item> InvList;
     
     
         // Start is called before the first frame update
@@ -18,24 +18,30 @@ namespace TalesofHivnir
 
         public void AddItem(Item item)
         {
-            if (InvList.Length == 10)
+            if (item != null)
             {
-                AddInvPlein(item);
+                if (InvList.Count == 10)
+                {
+                    AddInvPlein(item);
+                
+                }
+                else
+                {
+                    Debug.Log("Avant le Add");
+                    InvList.Add(item);
+                }
             }
-            else
-            {
-                InvList.Append(item);
-            }
+            
         }
 
         public void AddInvPlein(Item item)
         {
-            throw new NotImplementedException();
+            Debug.Log("Failed to Add : Inv is Full");
         }
 
-        public void Display()
+        public void Display() //à faire
         {
-            int cpt = 0;
+            //int cpt = 0;
             foreach (var VARIABLE in InvList)
             {
                 throw new NotImplementedException();

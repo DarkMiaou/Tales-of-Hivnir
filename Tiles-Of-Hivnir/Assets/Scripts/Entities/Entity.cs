@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TalesofHivnir
+namespace TalesofHivnir.Entities
 {
     public class Entity : ScriptableObject
     {

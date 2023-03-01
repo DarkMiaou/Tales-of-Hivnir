@@ -55,7 +55,7 @@ namespace TalesofHivnir.interactable
             if(collision.gameObject.CompareTag("Player"))
             {
                 isInRange = false;
-                Debug.Log("Player is not in range");
+                Debug.Log("Player is not yet in range");
             }
         }
     }
