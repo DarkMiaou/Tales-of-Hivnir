@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using TalesofHivnir.Items;
 
+
 namespace TalesofHivnir
 {
     public class Inventory : MonoBehaviour
@@ -28,7 +29,7 @@ namespace TalesofHivnir
                 else
                 {
                     Debug.Log("Avant le Add");
-                    InvList.Add(item);
+                    InvList.Add(item); //GameObject.FindGameObjectWithTag("inv"+InvList.Count.ToString())))
                 }
             }
             
@@ -41,11 +42,7 @@ namespace TalesofHivnir
 
         public void Display() //à faire
         {
-            //int cpt = 0;
-            foreach (var VARIABLE in InvList)
-            {
-                throw new NotImplementedException();
-            }
+            
         }
 
         // Update is called once per frame
