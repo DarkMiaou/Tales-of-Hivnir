@@ -13,7 +13,7 @@ namespace TalesofHivnir
         public int Health;
         public int Strength;
         public int Speed;
-
+        Vector2 movement;
 
 
         public float moveSpeed = 5f;
@@ -26,11 +26,17 @@ namespace TalesofHivnir
         void Start()
         {
             movePoint.parent = null;
+    
         }
 
         // Update is called once per frame
         void Update()
         {
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+            anim.SetFloat("Horizontal", movement.x);
+            anim.SetFloat("Vertical", movement.y);
+            anim.SetFloat("Speed", movement.sqrMagnitude);
             transform.position =
                 Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
             if (Vector3.Distance(transform.position, movePoint.position) <= .05f)
@@ -53,12 +59,6 @@ namespace TalesofHivnir
                         movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                     }
                 }
-                /*anim.SetBool("moving",false);       ===> à fix Parameter 'moving' does not exist. UnityEngine.Animator:SetBool (string,bool) PlayerController:Update () (at Assets/Scripts/PlayerController.cs:41)*/
-
-            }
-            else
-            {
-                /*anim.SetBool("moving", true);       ===> à fix */
             }
         }
     }

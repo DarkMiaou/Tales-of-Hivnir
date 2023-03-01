@@ -236,7 +236,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214038015}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76664abfb29f64f4d9cde4088b47e80e, type: 3}
   m_Name: 
@@ -245,7 +245,7 @@ MonoBehaviour:
   Strength: 0
   Speed: 0
   moveSpeed: 5
-  movePoint: {fileID: 0}
+  movePoint: {fileID: 1036800542}
   whatStopMovement:
     serializedVersion: 2
     m_Bits: 0
@@ -7656,9 +7656,9 @@ GameObject:
   - component: {fileID: 1561383188}
   - component: {fileID: 1561383187}
   - component: {fileID: 1561383185}
-  - component: {fileID: 1561383190}
   - component: {fileID: 1561383189}
   - component: {fileID: 1561383186}
+  - component: {fileID: 1561383190}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -7708,7 +7708,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 17
   anim: {fileID: 1561383190}
-  Inv: {fileID: 0}
+  Inv: {fileID: 1907133287}
 --- !u!212 &1561383187
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7802,7 +7802,7 @@ Animator:
   m_GameObject: {fileID: 1561383184}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 524760b989f29eb4cb505c4b14d79857, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4c74ad6a23df559448b5dfe73a1cf7f2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
