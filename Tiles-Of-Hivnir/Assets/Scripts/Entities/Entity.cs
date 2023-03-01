@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace TalesofHivnir.Entities
 {
-    public class Entity : ScriptableObject
+    public class Entity : MonoBehaviour
     {
         public string Name;
         public int Age;
