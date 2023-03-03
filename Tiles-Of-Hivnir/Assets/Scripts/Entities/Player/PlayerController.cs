@@ -32,31 +32,52 @@ namespace TalesofHivnir
         // Update is called once per frame
         void Update()
         {
-            movement.x = Input.GetAxisRaw("Horizontal");
-            movement.y = Input.GetAxisRaw("Vertical");
-            anim.SetFloat("Horizontal", movement.x);
-            anim.SetFloat("Vertical", movement.y);
-            anim.SetFloat("Speed", movement.sqrMagnitude);
+            float horizontalInput = Input.GetAxisRaw("Horizontal");
+            float verticalInput = Input.GetAxisRaw("Vertical");
+
+            movement.x = 0f;
+            movement.y = 0f;
+
+            if (Mathf.Abs(horizontalInput) > 0.5f)
+            {
+                movement.x = horizontalInput;
+                anim.SetFloat("Horizontal", movement.x);
+                anim.SetFloat("Vertical", 0f);
+            }
+            else if (Mathf.Abs(verticalInput) > 0.5f)
+            {
+                movement.y = verticalInput;
+                anim.SetFloat("Horizontal", 0f);
+                anim.SetFloat("Vertical", movement.y);
+            }
+            else
+            {
+                anim.SetFloat("Horizontal", 0f);
+                anim.SetFloat("Vertical", 0f);
+            }
+
+            anim.SetFloat("Speed", movement.magnitude);
+
             transform.position =
                 Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
             if (Vector3.Distance(transform.position, movePoint.position) <= .05f)
             {
-                if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
+                if (Mathf.Abs(horizontalInput) == 1f)
                 {
                     if (!Physics2D.OverlapCircle(
-                            movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f),
+                            movePoint.position + new Vector3(horizontalInput, 0f, 0f),
                             .2f, whatStopMovement))
                     {
-                        movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+                        movePoint.position += new Vector3(horizontalInput, 0f, 0f);
                     }
                 }
-                else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
+                else if (Mathf.Abs(verticalInput) == 1f)
                 {
-                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f),
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, verticalInput, 0f),
                             .2f,
                             whatStopMovement))
                     {
-                        movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+                        movePoint.position += new Vector3(0f, verticalInput, 0f);
                     }
                 }
             }
