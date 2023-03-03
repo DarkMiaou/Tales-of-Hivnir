@@ -4,11 +4,35 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    [SerializeField] private Transform destination;
+    private Transform destination;
 
-    public Transform GetDestination()
+    public bool isOut;
+    public float distance = 0.2f;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        return destination;
+        if (isOut == false)
+        {
+            destination = GameObject.FindGameObjectWithTag("doordunout").GetComponent<Transform>();
+        }
+        else 
+        {
+            destination = GameObject.FindGameObjectWithTag("doordun").GetComponent<Transform>();
+        }
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (Vector2.Distance(transform.position, other.transform.position) > distance)
+        {
+            other.transform.position = new Vector2 (destination.position.x, destination.position.y);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
