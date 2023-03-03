@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 public class usedoor : MonoBehaviour
-{
+{/*
     private GameObject currentTeleporter;
 
     // Update is called once per frame
@@ -38,5 +38,5 @@ public class usedoor : MonoBehaviour
         }
      }
 
-    
+    */
 }

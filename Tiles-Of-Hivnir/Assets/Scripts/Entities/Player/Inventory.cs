@@ -3,19 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using TalesofHivnir.Items;
-
+using UnityEngine.UI;
 
 namespace TalesofHivnir
 {
     public class Inventory : MonoBehaviour
     {
         public List<Item> InvList;
-    
-    
-        // Start is called before the first frame update
-        void Start()
-        {
-        }
+        public List<Image> InvDisplayList;
+        
 
         public void AddItem(Item item)
         {
@@ -24,12 +20,13 @@ namespace TalesofHivnir
                 if (InvList.Count == 10)
                 {
                     AddInvPlein(item);
-                
                 }
                 else
                 {
                     Debug.Log("Avant le Add");
-                    InvList.Add(item); //GameObject.FindGameObjectWithTag("inv"+InvList.Count.ToString())))
+                    InvList.Add(item);
+                    ActualiseDisplay();
+                    
                 }
             }
             
@@ -40,8 +37,23 @@ namespace TalesofHivnir
             Debug.Log("Failed to Add : Inv is Full");
         }
 
-        public void Display() //à faire
+        public void ActualiseDisplay() //à faire
         {
+            int cpt = 0;
+            int l = InvList.Count;   
+            foreach (var elt in InvList)
+            {
+                InvDisplayList[cpt].color= Color.white;
+                InvDisplayList[cpt].sprite = elt.Icone;
+                cpt++;
+            }
+
+            while (cpt < 10)
+            {
+                InvDisplayList[cpt].sprite=null;
+                InvDisplayList[cpt].color = Color.clear;
+                cpt++;
+            }
             
         }
 
