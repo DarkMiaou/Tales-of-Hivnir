@@ -15,7 +15,7 @@ namespace TalesofHivnir.interactable
         public UnityEvent interactAction1;
 
         // Start is called before the first frame update
-        void Start()
+        void Start()    
         {
         
         }

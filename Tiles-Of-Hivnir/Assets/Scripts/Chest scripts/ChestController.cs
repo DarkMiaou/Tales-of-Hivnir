@@ -14,17 +14,13 @@ namespace TalesofHivnir
         public bool isOpen;
         public Item Content;
         public Inventory InvToFill;
-        public bool IsInfiny; //si il ets sur true on va pouvoir prendre le même item à l'infini
+        public bool IsInfiny; //si il est sur true on va pouvoir prendre le même item à l'infini
     
         public void OpenChest()
         {
             if (!isOpen)
             {
-                InvToFill.AddItem(Content);
-                if (!IsInfiny)
-                {
-                    Content = null;
-                }
+                InvToFill.AddItem(Content,this);
                 isOpen = true;
                 Debug.Log("Chest is open");
             }

@@ -5,8 +5,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-
-
 namespace TalesofHivnir.Menus
 {
     public class EchapMenu : MonoBehaviour

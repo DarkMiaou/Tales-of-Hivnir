@@ -3,28 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using TalesofHivnir.Items;
+using TalesofHivnir.Menus;
 using UnityEngine.UI;
-
 namespace TalesofHivnir
 {
     public class Inventory : MonoBehaviour
     {
         public List<Item> InvList;
         public List<Image> InvDisplayList;
+        public InvMenu InvMenuObj;
+        
         
 
-        public void AddItem(Item item)
+        public void AddItem(Item item,ChestController chest)
         {
-            if (item != null)
+            if (item == null)
             {
-                if (InvList.Count == 10)
+                Debug.Log("Failed to Add : Chest is Empty");
+                InvMenuObj.ItemNullDiplay();
+            }
+            else
+            {
+                if (InvList.Count >= 10)
                 {
-                    AddInvPlein(item);
+                    if (!InvMenuObj.InvFullDisplay(this,item))
+                    {
+                        if (!chest.IsInfiny)
+                        {
+                            chest.Content = null;
+                        }
+                    }
                 }
                 else
                 {
                     Debug.Log("Avant le Add");
                     InvList.Add(item);
+                    if (!chest.IsInfiny)
+                    {
+                        chest.Content = null;
+                    }
                     ActualiseDisplay();
                     
                 }
