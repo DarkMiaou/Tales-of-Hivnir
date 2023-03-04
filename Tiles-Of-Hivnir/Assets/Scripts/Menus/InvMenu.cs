@@ -24,8 +24,13 @@ namespace TalesofHivnir.Menus
         public Text ChoiceA;
         public Text ChoiseB;
         public bool ItemNotTaken;
-        
+        public Inventory InvToAdd;
+        public Item ItemToAdd;
+        public GameObject ErrorChoiceBInvFull;
+
         public GameObject Invnotfull;
+        public Text ChoiceAbis;
+        public Text ChoiceBbis;
 
 
         private void Start()
@@ -53,6 +58,7 @@ namespace TalesofHivnir.Menus
             ItemCanvas.SetActive(false);
             Invfull.SetActive(false);
             Invnotfull.SetActive(false);
+            ErrorChoiceBInvFull.SetActive(false);
             Time.timeScale = 1f;
         }
 
@@ -75,8 +81,10 @@ namespace TalesofHivnir.Menus
         {
             ItemDiplay(item);
             Invfull.SetActive(true);
+            InvToAdd = inv;
+            ItemToAdd = item;
             ChoiceA.text = "- Don't take the " + item.Name;
-            ChoiseB.text = "Throw an object and take the " + item.Name + " instead";
+            ChoiseB.text = "- Throw an object and take the " + item.Name + " instead";
             return ItemNotTaken;
         }
 
@@ -86,13 +94,39 @@ namespace TalesofHivnir.Menus
             Resume();
         }
 
-        public void ChangeItem(int i)
+        public void Echange(int i) //Inutile en Théorie mais évite de faire des dingz
         {
-            ItemNotTaken = false;
-            
+            if (InvToAdd.InvList.Count-1 < i)
+            {
+                ErrorChoiceBInvFull.SetActive(true);
+            }
+            else
+            {
+                InvToAdd.InvList[i] = ItemToAdd;
+                InvToAdd.ActualiseDisplay();
+                Resume();
+                
+            }
         }
         
-        
+        public bool InvNotFullDisplay(Inventory inv, Item item){
+            
+            ItemDiplay(item);
+            Invnotfull.SetActive(true);
+            InvToAdd = inv;
+            ItemToAdd = item;
+            ChoiceAbis.text = "- Don't take the " + item.Name;
+            ChoiceBbis.text = "- Take the " + item.Name;
+            return ItemNotTaken;
+        }
+
+        public void Add()
+        {
+            ItemNotTaken = false;
+            InvToAdd.InvList.Add(ItemToAdd);
+            InvToAdd.ActualiseDisplay();
+            Resume();
+        }
         
         //public void Test()
     }

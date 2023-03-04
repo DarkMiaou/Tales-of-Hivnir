@@ -24,7 +24,7 @@ namespace TalesofHivnir.Menus
         void Update()
         {
             //Debug.Log("test");
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale!=0f)
             {
                 Debug.Log("EchapMenu/Echapdetect");
                 if (IsPaused)

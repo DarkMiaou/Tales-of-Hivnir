@@ -12,10 +12,10 @@ namespace TalesofHivnir
         public List<Item> InvList;
         public List<Image> InvDisplayList;
         public InvMenu InvMenuObj;
-        
-        
 
-        public void AddItem(Item item,ChestController chest)
+
+
+        public void AddItem(Item item, ChestController chest)
         {
             if (item == null)
             {
@@ -26,7 +26,7 @@ namespace TalesofHivnir
             {
                 if (InvList.Count >= 10)
                 {
-                    if (!InvMenuObj.InvFullDisplay(this,item))
+                    if (!InvMenuObj.InvFullDisplay(this, item))
                     {
                         if (!chest.IsInfiny)
                         {
@@ -36,17 +36,16 @@ namespace TalesofHivnir
                 }
                 else
                 {
-                    Debug.Log("Avant le Add");
-                    InvList.Add(item);
-                    if (!chest.IsInfiny)
+                    if (!InvMenuObj.InvNotFullDisplay(this, item))
                     {
-                        chest.Content = null;
+                        if (!chest.IsInfiny)
+                        {
+                            chest.Content = null;
+                        }
                     }
-                    ActualiseDisplay();
-                    
                 }
+                
             }
-            
         }
 
         public void AddInvPlein(Item item)
