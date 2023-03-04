@@ -81,6 +81,12 @@ namespace TalesofHivnir
                     }
                 }
             }
+
+            if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+            {
+                anim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
+                anim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+            }
         }
     }
 }
