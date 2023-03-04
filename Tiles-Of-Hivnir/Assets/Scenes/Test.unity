@@ -548,8 +548,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 0
   moveSpeed: 5
-  movePoint: {fileID: 1036800542}
-  whatStopMovement:
+  movePoint: {fileID: 0}
+  whatStopsMovement:
     serializedVersion: 2
     m_Bits: 0
   anim: {fileID: 0}
@@ -4679,7 +4679,7 @@ GameObject:
   - component: {fileID: 1187638083}
   - component: {fileID: 1187638085}
   - component: {fileID: 1187638084}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pathways
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10874,11 +10874,11 @@ MonoBehaviour:
   Speed: 0
   moveSpeed: 5
   movePoint: {fileID: 1036800542}
-  whatStopMovement:
+  whatStopsMovement:
     serializedVersion: 2
-    m_Bits: 17
+    m_Bits: 0
   anim: {fileID: 1561383190}
-  Inv: {fileID: 1907133287}
+  Inv: {fileID: 0}
 --- !u!212 &1561383187
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10916,7 +10916,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1036356291
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 3785784146384260830, guid: 0a35eb2129651e84cae5e1980a365d63,
     type: 3}
@@ -10938,7 +10938,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561383184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.513069, y: 17.3673, z: 4.6818953}
+  m_LocalPosition: {x: -5.5, y: 17.5, z: 4.6818953}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1036800542}
@@ -10998,7 +10998,7 @@ MonoBehaviour:
   Class: 
   Occupation: 
   Level: 0
-  Health: 0
+  Health: 100
   Strength: 0
   Magic: 0
   Defense: 0
@@ -25004,6 +25004,75 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1985600073
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2552830977287411472, guid: 1f881de87587a01408996d4f742e97b4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552830977287411472, guid: 1f881de87587a01408996d4f742e97b4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552830977287411472, guid: 1f881de87587a01408996d4f742e97b4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552830977287411472, guid: 1f881de87587a01408996d4f742e97b4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552830977287411472, guid: 1f881de87587a01408996d4f742e97b4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552830977287411472, guid: 1f881de87587a01408996d4f742e97b4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552830977287411472, guid: 1f881de87587a01408996d4f742e97b4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552830977287411472, guid: 1f881de87587a01408996d4f742e97b4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552830977287411472, guid: 1f881de87587a01408996d4f742e97b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552830977287411472, guid: 1f881de87587a01408996d4f742e97b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552830977287411472, guid: 1f881de87587a01408996d4f742e97b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6650120513585038142, guid: 1f881de87587a01408996d4f742e97b4,
+        type: 3}
+      propertyPath: m_Name
+      value: Map tuto
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1f881de87587a01408996d4f742e97b4, type: 3}
 --- !u!1 &2054804662
 GameObject:
   m_ObjectHideFlags: 0

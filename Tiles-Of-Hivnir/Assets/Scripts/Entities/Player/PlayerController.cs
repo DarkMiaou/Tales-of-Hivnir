@@ -6,27 +6,25 @@ using UnityEngine.UI;
 namespace TalesofHivnir
 {
 
-
     public class PlayerController : MonoBehaviour
     {
-        //Stats du joueur
-        //public int Health;
-        //public int Strength;
         public int Speed;
         Vector2 movement;
 
-
         public float moveSpeed = 5f;
         public Transform movePoint;
-        public LayerMask whatStopMovement;
+        public LayerMask whatStopsMovement;
         public Animator anim;
         public Inventory Inv;
+
+        // La variable qui va stocker si le joueur peut se déplacer ou non
+        bool canMove = true;
 
         // Start is called before the first frame update
         void Start()
         {
             movePoint.parent = null;
-    
+
         }
 
         // Update is called once per frame
@@ -58,26 +56,40 @@ namespace TalesofHivnir
 
             anim.SetFloat("Speed", movement.magnitude);
 
-            transform.position =
-                Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
+            if (canMove) // On ne déplace le joueur que s'il peut se déplacer
+            {
+                transform.position =
+                    Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
+            }
+
             if (Vector3.Distance(transform.position, movePoint.position) <= .05f)
             {
                 if (Mathf.Abs(horizontalInput) == 1f)
                 {
                     if (!Physics2D.OverlapCircle(
                             movePoint.position + new Vector3(horizontalInput, 0f, 0f),
-                            .2f, whatStopMovement))
+                            .2f, whatStopsMovement))
                     {
                         movePoint.position += new Vector3(horizontalInput, 0f, 0f);
+                        canMove = true; // On réinitialise canMove à true si le joueur peut se déplacer
+                    }
+                    else
+                    {
+                        canMove = false; // Sinon, le joueur ne peut pas se déplacer dans cette direction
                     }
                 }
                 else if (Mathf.Abs(verticalInput) == 1f)
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, verticalInput, 0f),
                             .2f,
-                            whatStopMovement))
+                            whatStopsMovement))
                     {
                         movePoint.position += new Vector3(0f, verticalInput, 0f);
+                        canMove = true;
+                    }
+                    else
+                    {
+                        canMove = false;
                     }
                 }
             }
