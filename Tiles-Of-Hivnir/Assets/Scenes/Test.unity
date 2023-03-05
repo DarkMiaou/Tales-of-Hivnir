@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 4594578}
   - component: {fileID: 4594577}
   - component: {fileID: 4594579}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: InteractableCircle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.3
 --- !u!1 &25290617
 GameObject:
   m_ObjectHideFlags: 0
@@ -3139,7 +3139,7 @@ GameObject:
   - component: {fileID: 628653392}
   - component: {fileID: 628653391}
   - component: {fileID: 628653390}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3307,7 +3307,7 @@ Transform:
   m_GameObject: {fileID: 628653389}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9976224, y: 0.9941256, z: 1}
   m_Children:
   - {fileID: 4594578}
   m_Father: {fileID: 1077173125}
@@ -6488,7 +6488,7 @@ GameObject:
   - component: {fileID: 1187638083}
   - component: {fileID: 1187638085}
   - component: {fileID: 1187638084}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: Pathways
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9589,7 +9589,7 @@ CompositeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_GeometryType: 0
   m_GenerationType: 0
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.243
   m_ColliderPaths:
   - m_Collider: {fileID: 1187638083}
     m_ColliderPaths:
@@ -11338,7 +11338,7 @@ GameObject:
   - component: {fileID: 1253540172}
   - component: {fileID: 1253540171}
   - component: {fileID: 1253540170}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Chest (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13038,7 +13038,7 @@ GameObject:
   - component: {fileID: 1476131286}
   - component: {fileID: 1476131288}
   - component: {fileID: 1476131287}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: InteractableCircle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13074,7 +13074,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.3
 --- !u!114 &1476131288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13421,7 +13421,7 @@ MonoBehaviour:
   movePoint: {fileID: 1036800542}
   whatStopsMovement:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 16
   anim: {fileID: 1561383190}
   Inv: {fileID: 0}
 --- !u!212 &1561383187
@@ -13483,7 +13483,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561383184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.5, y: 17.5, z: 4.6818953}
+  m_LocalPosition: {x: -4.5, y: 17.5, z: 4.6818953}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1036800542}
@@ -22759,7 +22759,7 @@ GameObject:
   - component: {fileID: 1791843767}
   - component: {fileID: 1791843769}
   - component: {fileID: 1791843768}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25384,7 +25384,7 @@ CompositeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_GeometryType: 0
   m_GenerationType: 0
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.3
   m_ColliderPaths:
   - m_Collider: {fileID: 1791843767}
     m_ColliderPaths:
