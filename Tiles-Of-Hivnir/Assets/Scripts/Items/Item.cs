@@ -9,7 +9,7 @@ namespace TalesofHivnir.Items
     {
         public string Name;
         public Sprite Icone; //Icone dans la barre d'inventaire
-        public int Level;
+        public int Level; //Correspond à la rareté de l'objet
 
         public Item(string name, Sprite ico,int lvl)
         {
