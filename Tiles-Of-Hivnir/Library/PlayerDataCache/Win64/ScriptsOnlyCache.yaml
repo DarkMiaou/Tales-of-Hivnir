@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - DoorController
+    - EnemyController
     - TalesofHivnir.CameraController
     - TalesofHivnir.ChestController
     - TalesofHivnir.Entities.Player
@@ -13,6 +14,9 @@ ScriptsOnlyBuild:
     - TalesofHivnir.Menus.InvMenu
     - TalesofHivnir.Menus.Menu
     - TalesofHivnir.PlayerController
+    - TalesofHivnir.ProgrammingBlock
+    - TalesofHivnir.ProgrammingBlockInterpreter
+    - TalesofHivnir.ProgrammingBlockUI
     - TalesofHivnir.UIManager
     - TalesofHivnir.interactable.interactable
     Unity.2D.Animation.Editor.dll:
@@ -29,13 +33,14 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
-    - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -69,21 +74,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11364}
+      Script: {instanceID: 11360}
     - Class: 114
       Script: {instanceID: 11702}
     - Class: 114
       Script: {instanceID: 11760}
     - Class: 114
-      Script: {instanceID: 12542}
+      Script: {instanceID: 12546}
     - Class: 114
-      Script: {instanceID: 13416}
+      Script: {instanceID: 13422}
     - Class: 114
-      Script: {instanceID: 14338}
+      Script: {instanceID: 14346}
     - Class: 114
-      Script: {instanceID: 14352}
+      Script: {instanceID: 14360}
     - Class: 114
-      Script: {instanceID: 15090}
+      Script: {instanceID: 15100}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -134,7 +139,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 608}
     - Class: 114
-      Script: {instanceID: 11364}
+      Script: {instanceID: 11360}
+    - Class: 114
+      Script: {instanceID: 11406}
     - Class: 114
       Script: {instanceID: 11702}
     - Class: 114
@@ -144,37 +151,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12020}
     - Class: 114
-      Script: {instanceID: 12094}
+      Script: {instanceID: 12088}
     - Class: 114
-      Script: {instanceID: 12168}
+      Script: {instanceID: 12096}
     - Class: 114
-      Script: {instanceID: 12384}
+      Script: {instanceID: 12170}
     - Class: 114
-      Script: {instanceID: 12542}
+      Script: {instanceID: 12304}
     - Class: 114
-      Script: {instanceID: 12644}
+      Script: {instanceID: 12388}
     - Class: 114
-      Script: {instanceID: 13152}
+      Script: {instanceID: 12546}
     - Class: 114
-      Script: {instanceID: 13230}
+      Script: {instanceID: 12648}
     - Class: 114
-      Script: {instanceID: 13416}
+      Script: {instanceID: 13158}
     - Class: 114
-      Script: {instanceID: 14352}
+      Script: {instanceID: 13236}
     - Class: 114
-      Script: {instanceID: 14666}
+      Script: {instanceID: 13422}
     - Class: 114
-      Script: {instanceID: 14876}
+      Script: {instanceID: 13888}
     - Class: 114
-      Script: {instanceID: 14976}
+      Script: {instanceID: 14360}
     - Class: 114
-      Script: {instanceID: 15090}
+      Script: {instanceID: 14674}
     - Class: 114
-      Script: {instanceID: 15146}
+      Script: {instanceID: 14886}
     - Class: 114
-      Script: {instanceID: 15172}
+      Script: {instanceID: 14986}
     - Class: 114
-      Script: {instanceID: 15232}
+      Script: {instanceID: 15100}
+    - Class: 114
+      Script: {instanceID: 15156}
+    - Class: 114
+      Script: {instanceID: 15182}
+    - Class: 114
+      Script: {instanceID: 15242}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -219,21 +232,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11364}
+      Script: {instanceID: 11360}
     - Class: 114
       Script: {instanceID: 11702}
     - Class: 114
       Script: {instanceID: 11760}
     - Class: 114
-      Script: {instanceID: 12384}
+      Script: {instanceID: 12388}
     - Class: 114
-      Script: {instanceID: 12542}
+      Script: {instanceID: 12546}
     - Class: 114
-      Script: {instanceID: 13416}
+      Script: {instanceID: 13422}
     - Class: 114
-      Script: {instanceID: 14352}
+      Script: {instanceID: 14360}
     - Class: 114
-      Script: {instanceID: 15090}
+      Script: {instanceID: 15100}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -265,6 +278,12 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
+      Hash: af57688a3de34405f540da32ab2a831d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TalesofHivnir
+    className: ProgrammingBlockUI
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -287,6 +306,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TalesofHivnir
+    className: UIDrop
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -409,6 +434,12 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
+      Hash: 2d9baef4fbddcd1489f89cadac4a7b41
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TalesofHivnir
+    className: ProgrammingBlockInterpreter
+  - hash:
+      serializedVersion: 2
       Hash: 0d85f4fda1e0e70cd92c084d12f05cdc
     assemblyName: Assembly-CSharp.dll
     namespaceName: TalesofHivnir
@@ -467,6 +498,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: ade6deb0cbbcfb9ad3339cb1b42b0282
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TalesofHivnir
+    className: ProgrammingBlock
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -533,6 +570,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TalesofHivnir
+    className: UIDrag
   - hash:
       serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
@@ -655,6 +698,12 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 50567e6d40648039b6c9fd5fafd7a04e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyController
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -713,6 +762,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: c2a305b410623863bfeb6305df4446c2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TalesofHivnir
+    className: Controller
   - hash:
       serializedVersion: 2
       Hash: 379687648af004a4b71080a76979008c
@@ -838,4 +893,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/level-01.unity
   - Assets/Scenes/Test.unity
-  playerPath: C:/Users/mathi/Desktop/Tiles-Of-Hivnir.exe
+  playerPath: C:/Users/Utilisateur/Desktop/Tiles-Of-Hivnir.exe
