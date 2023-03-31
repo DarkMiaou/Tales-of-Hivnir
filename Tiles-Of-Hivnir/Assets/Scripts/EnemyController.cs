@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public AudioSource detectsound;
     public float speed;
     public float checkRadius;
     public float attackRadius;
@@ -19,6 +20,7 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+     
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
@@ -27,6 +29,10 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!IsInchaserange)
+        {
+            detectsound.Play();
+        }
         anim.SetBool("Isrunning", IsInchaserange);
 
         IsInchaserange = Physics2D.OverlapCircle(transform.position, checkRadius, WhatisPlayer);

@@ -10,6 +10,7 @@ namespace TalesofHivnir
     {
         public int Speed;
         Vector2 movement;
+        public AudioSource step;
 
         public float moveSpeed = 5f;
         public Transform movePoint;
@@ -24,6 +25,7 @@ namespace TalesofHivnir
         void Start()
         {
             movePoint.parent = null;
+            
 
         }
 
@@ -35,6 +37,16 @@ namespace TalesofHivnir
 
             movement.x = 0f;
             movement.y = 0f;
+            if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+            {
+                step.loop = true;
+                step.enabled = true;
+            }
+            else
+            {
+                step.loop = false;
+                step.enabled = false;
+            }
 
             if (Mathf.Abs(horizontalInput) > 0.5f)
             {
