@@ -2210,7 +2210,7 @@ MonoBehaviour:
   chest: {fileID: 623434367}
   isOpen: 0
   Content: {fileID: 11400000, guid: 07ed5fab9b51ced468d0c0d5187e8a86, type: 2}
-  InvToFill: {fileID: 0}
+  InvToFill: {fileID: 777622881}
   IsInfiny: 1
 --- !u!19719996 &581324178
 TilemapCollider2D:
@@ -2389,7 +2389,7 @@ MonoBehaviour:
   chest: {fileID: 623434367}
   isOpen: 0
   Content: {fileID: 11400000, guid: 456d21f9e2fab5a49addabc8ef9ce534, type: 2}
-  InvToFill: {fileID: 0}
+  InvToFill: {fileID: 777622881}
   IsInfiny: 0
 --- !u!19719996 &628653391
 TilemapCollider2D:
@@ -3604,6 +3604,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &777622881 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2204020606067973468, guid: 882e251e203883246a9144ada12875d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1205462499}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb4a1ede57b50034e865f0fb86033695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &839246674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11916,7 +11928,7 @@ PrefabInstance:
     - target: {fileID: 2204020606682187567, guid: 882e251e203883246a9144ada12875d4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 2204020606682187567, guid: 882e251e203883246a9144ada12875d4,
         type: 3}
@@ -12010,7 +12022,7 @@ MonoBehaviour:
   chest: {fileID: 623434367}
   isOpen: 0
   Content: {fileID: 11400000, guid: ae74635f061475e4faa4e3a1a94a69c2, type: 2}
-  InvToFill: {fileID: 0}
+  InvToFill: {fileID: 777622881}
   IsInfiny: 0
 --- !u!19719996 &1253540171
 TilemapCollider2D:
