@@ -10,7 +10,7 @@ namespace TalesofHivnir.interactable
 
         public bool isInRange;
         public KeyCode interactKey;
-        public KeyCode interactKey1;
+        
         public UnityEvent interactAction;
         public UnityEvent interactAction1;
 
@@ -33,7 +33,7 @@ namespace TalesofHivnir.interactable
             }
             if (isInRange)
             {
-                if (Input.GetKeyDown(interactKey1))
+                if (Input.GetKeyDown(interactKey))
                 {
                     interactAction1.Invoke();
                 }

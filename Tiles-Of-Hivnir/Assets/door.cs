@@ -24,7 +24,9 @@ public class door : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             StartCoroutine(teleport());
-        }
+        }  
+        
+       
     }
 
     IEnumerator  teleport()

@@ -29,6 +29,7 @@ namespace TalesofHivnir
         private void Update()
         {
         }
+        
 
         public void OpenChest()
         {
