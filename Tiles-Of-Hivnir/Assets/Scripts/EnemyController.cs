@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyController : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class EnemyController : MonoBehaviour
     private Vector2 lastMove;
     private bool IsInchaserange;
     private bool IsInAttackRange;
+    private string m_SceneName = "Combat";
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +53,11 @@ public class EnemyController : MonoBehaviour
                 anim.SetFloat("Y", lastMove.y);
             }
         }
+
+        if (IsInAttackRange)
+        {
+            StartCoroutine(LoadYourAsyncScene());
+        }
         else
         {
             movement = Vector2.zero;
@@ -68,5 +76,24 @@ public class EnemyController : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
         }
+    }
+    IEnumerator LoadYourAsyncScene()
+    {
+        // Set the current Scene to be able to unload it later
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        // The Application loads the Scene in the background at the same time as the current Scene.
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(m_SceneName, LoadSceneMode.Additive);
+
+        // Wait until the last operation fully loads to return anything
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+
+        // Move the GameObject (you attach this in the Inspector) to the newly loaded Scene
+        SceneManager.MoveGameObjectToScene(player, SceneManager.GetSceneByName(m_SceneName));
+        // Unload the previous Scene
+        SceneManager.UnloadSceneAsync(currentScene);
     }
 }
