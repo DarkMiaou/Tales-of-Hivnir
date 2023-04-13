@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
@@ -11,6 +12,10 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+
+    public delegate void BlockDroppedHandler(GameObject block);
+
+    public event BlockDroppedHandler OnBlockDropped;
 
     private void Awake()
     {
@@ -27,6 +32,8 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         Debug.Log("OnEndDrag");
         //canvasGroup.alpha = .1f;
         canvasGroup.blocksRaycasts = true;
+        
+        OnBlockDropped?.Invoke(gameObject);
 
     }
 
@@ -41,6 +48,24 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     {
         Debug.Log("OnDrag");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+    }
+
+    private void OnEnable()
+    {
+        BlockAligmentManager blockAligmentManager = FindObjectOfType<BlockAligmentManager>();
+        if (blockAligmentManager != null)
+        {
+            OnBlockDropped += blockAligmentManager.AddBlock;
+        }
+    }
+
+    private void OnDisable()
+    {
+        BlockAligmentManager blockAligmentManager = FindObjectOfType<BlockAligmentManager>();
+        if (blockAligmentManager != null)
+        {
+            OnBlockDropped -= blockAligmentManager.AddBlock;
+        }
     }
 
     public void OnDrop(PointerEventData eventData)
