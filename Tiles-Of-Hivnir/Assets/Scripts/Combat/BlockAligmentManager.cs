@@ -17,36 +17,6 @@ public class BlockAligmentManager : MonoBehaviour//, IDropHandler
         lastBlock = startBlock;
     }
 
-    /*public void AddBlock(GameObject newBlockGameObject)
-    {
-        RectTransform newBlock = newBlockGameObject.GetComponent<RectTransform>();
-        // Calculate the new block's position based on the last block's position and height
-
-        RectTransform closetBlockAbove = FindClosetBlockAbove(newBlock);
-
-        //if (closetBlockAbove != null)
-        //{
-            float distance = CalculateDistance(lastBlock, newBlock);
-
-            if (distance <= distanceThresHold)
-            {
-                Vector2 newPosition = new Vector2(
-                    lastBlock.anchoredPosition.x,
-                    lastBlock.anchoredPosition.y - lastBlock.sizeDelta.y - yOffset
-                );
-
-                // Align the new block to the calculated position
-                newBlock.anchoredPosition = newPosition;
-
-                // Update last block's position and height
-                lastBlock = newBlock;
-
-                // Add the new block to the list of blocks
-                blocks.Add(newBlock);
-            }
-        //}
-    }*/
-    
     public void AddBlock(GameObject newBlockGameObject) 
     {
     RectTransform newBlock = newBlockGameObject.GetComponent<RectTransform>();
@@ -131,24 +101,6 @@ public class BlockAligmentManager : MonoBehaviour//, IDropHandler
         return closestBlock;
     }
 
-    /*private RectTransform FindClosetBlockAbove(RectTransform newBlock)
-    {
-        RectTransform closestBlock = null;
-        float minDistance = Mathf.Infinity;
-
-        foreach (RectTransform block in blocks)
-        {
-            float distance = newBlock.anchoredPosition.y - block.anchoredPosition.y;
-            if (distance > 0 && distance < minDistance)
-            {
-                minDistance = distance;
-                closestBlock = block;
-            }
-        }
-
-        return closestBlock;
-    }*/
-
     /*public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag != null)
@@ -164,4 +116,5 @@ public class BlockAligmentManager : MonoBehaviour//, IDropHandler
             }
         }
     }*/
+    
 }
