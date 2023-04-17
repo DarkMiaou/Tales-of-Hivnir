@@ -12,7 +12,7 @@ namespace TalesofHivnir.Menus
         public void Start_Game()
         {
             Debug.Log("Menu/Start_Game");
-            SceneManager.LoadScene(level_to_load);
+            SceneManager.LoadScene("Map");
         }
 
         public void Start_Tuto() 
