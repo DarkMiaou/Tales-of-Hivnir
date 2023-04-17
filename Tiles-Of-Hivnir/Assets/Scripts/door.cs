@@ -7,8 +7,8 @@ using UnityEngine;
 public class door : MonoBehaviour
 
 {
-  
-    
+
+
     public GameObject player;
 
     // Définir une position de destination pour le joueur
@@ -23,18 +23,21 @@ public class door : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            StartCoroutine(teleport());
-        }  
-        
-       
+            StartCoroutine(TeleportPlayer());
+        }
+
+
     }
 
-    IEnumerator  teleport()
+    IEnumerator TeleportPlayer()
     {
         yield return new WaitForSeconds(1);
-        player.transform.position = new Vector3(destination.x, destination.y ,0);
-        player.GetComponent<PlayerController>().transform.position = player.transform.position;
-        
-    } 
+
+        if (player != null && player.activeSelf)
+        {
+            player.transform.position = new Vector3(destination.x, destination.y, 0);
+            player.GetComponent<PlayerController>().transform.position = player.transform.position;
+        }
+    }
 }
 

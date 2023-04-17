@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 public class EnemyController : MonoBehaviour
 {
+    public GameObject transformm; 
+    private NavMeshAgent monster;
     public AudioSource detectsound;
     public float speed;
     public float checkRadius;
@@ -18,20 +21,29 @@ public class EnemyController : MonoBehaviour
     private Vector2 lastMove;
     private bool IsInchaserange;
     private bool IsInAttackRange;
-    private string m_SceneName = "Combat";
-    public GameObject player;
+    private string m_SceneName = "COMBATMODE";
+    public Transform player;
+
+    public GameObject pla;
     // Start is called before the first frame update
     void Start()
     {
-     
+        
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        target = GameObject.FindWithTag("Player").transform;
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+        monster=GetComponent<NavMeshAgent>();
+        monster.updateRotation = false;
+        monster.updateUpAxis = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (target != null) {
+            Vector2 moveDirection = (target.position - transform.position).normalized;
+            rb.velocity = moveDirection * speed;
+        }
         if (!IsInchaserange)
         {
             detectsound.Play();
@@ -44,9 +56,9 @@ public class EnemyController : MonoBehaviour
         if (IsInchaserange && !IsInAttackRange)
         {
             Vector2 dir = (target.position - transform.position).normalized;
-            movement = new Vector2(Mathf.Round(dir.x), Mathf.Round(dir.y));
+             
             lastMove = movement;
-
+            monster.SetDestination(target.position);
             if (HaveToRotate)
             {
                 anim.SetFloat("X", lastMove.x);
@@ -60,26 +72,16 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            movement = Vector2.zero;
+            // Enlevez les deux lignes ci-dessous
+            //monster.SetDestination(player.position);
+            //movement = Vector2.zero;
             rb.velocity = Vector2.zero;
         }
     }
 
-    private void FixedUpdate()
-    {
-        if (movement.magnitude > 0)
-        {
-            Vector2 newPos = Vector2.MoveTowards(rb.position, rb.position + movement, speed * Time.fixedDeltaTime);
-            rb.MovePosition(newPos);
-        }
-        else
-        {
-            rb.velocity = Vector2.zero;
-        }
-    }
+   
     IEnumerator LoadYourAsyncScene()
     {
-        // Set the current Scene to be able to unload it later
         Scene currentScene = SceneManager.GetActiveScene();
 
         // The Application loads the Scene in the background at the same time as the current Scene.
@@ -92,8 +94,14 @@ public class EnemyController : MonoBehaviour
         }
 
         // Move the GameObject (you attach this in the Inspector) to the newly loaded Scene
-        SceneManager.MoveGameObjectToScene(player, SceneManager.GetSceneByName(m_SceneName));
+        SceneManager.MoveGameObjectToScene(target.gameObject, SceneManager.GetSceneByName(m_SceneName));
+    
         // Unload the previous Scene
         SceneManager.UnloadSceneAsync(currentScene);
+    }
+    void Awake()
+    {
+        // Définir cet objet en tant qu'objet persistant
+        DontDestroyOnLoad(gameObject);
     }
 }
