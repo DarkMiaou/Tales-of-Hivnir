@@ -33,7 +33,7 @@ public class EnemyController : MonoBehaviour
         View = GetComponent<PhotonView>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        target = pla.transform;
+        target = GameObject.FindWithTag("Player").transform;
         monster=GetComponent<NavMeshAgent>();
         monster.updateRotation = false;
         monster.updateUpAxis = false;
@@ -104,10 +104,5 @@ public class EnemyController : MonoBehaviour
     
         // Unload the previous Scene
         SceneManager.UnloadSceneAsync(currentScene);
-    }
-    void Awake()
-    {
-        // Définir cet objet en tant qu'objet persistant
-        DontDestroyOnLoad(gameObject);
     }
 }
