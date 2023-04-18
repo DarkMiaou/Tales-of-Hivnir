@@ -24,14 +24,11 @@ ScriptsOnlyBuild:
     - TalesofHivnir.UIManager
     - TalesofHivnir.interactable.interactable
     - connect
-    - destroy
     - door
     NavMeshPlus.dll:
     - NavMeshPlus.Components.NavMeshModifier
     - NavMeshPlus.Components.NavMeshSurface
     - NavMeshPlus.Extensions.CollectSources2d
-    NavMeshPlusEditor.dll:
-    - NavMeshPlus.Editors.Components.NavMeshAssetManager
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
@@ -42,10 +39,13 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
     - Photon.Pun.PhotonTransformView
+    - Photon.Pun.PhotonTransformViewClassic
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
     Unity.2D.Animation.Editor.dll:
@@ -86,6 +86,9 @@ ScriptsOnlyBuild:
     PhotonUnityNetworking:
     - Photon.Pun.PhotonAnimatorView/SynchronizedLayer
     - Photon.Pun.PhotonAnimatorView/SynchronizedParameter
+    - Photon.Pun.PhotonTransformViewPositionModel
+    - Photon.Pun.PhotonTransformViewRotationModel
+    - Photon.Pun.PhotonTransformViewScaleModel
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
@@ -147,6 +150,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1558}
     - Class: 114
+      Script: {instanceID: 2094}
+    - Class: 114
       Script: {instanceID: 2532}
     - Class: 114
       Script: {instanceID: 3092}
@@ -164,6 +169,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3898}
     - Class: 114
       Script: {instanceID: 3908}
+    - Class: 114
+      Script: {instanceID: 3916}
     - Class: 114
       Script: {instanceID: 4060}
     - Class: 114
@@ -254,6 +261,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 58
       Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 74
@@ -275,11 +284,15 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 668}
+    - Class: 114
       Script: {instanceID: 1556}
     - Class: 114
       Script: {instanceID: 1558}
     - Class: 114
       Script: {instanceID: 1708}
+    - Class: 114
+      Script: {instanceID: 1774}
     - Class: 114
       Script: {instanceID: 1900}
     - Class: 114
@@ -287,9 +300,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1944}
     - Class: 114
+      Script: {instanceID: 2094}
+    - Class: 114
+      Script: {instanceID: 2258}
+    - Class: 114
       Script: {instanceID: 2532}
     - Class: 114
       Script: {instanceID: 2698}
+    - Class: 114
+      Script: {instanceID: 2702}
     - Class: 114
       Script: {instanceID: 2784}
     - Class: 114
@@ -302,6 +321,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3402}
     - Class: 114
       Script: {instanceID: 3580}
+    - Class: 114
+      Script: {instanceID: 3770}
     - Class: 114
       Script: {instanceID: 3824}
     - Class: 114
@@ -317,6 +338,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4776}
     - Class: 114
+      Script: {instanceID: 4798}
+    - Class: 114
       Script: {instanceID: 5182}
     - Class: 114
       Script: {instanceID: 5272}
@@ -326,6 +349,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5536}
     - Class: 114
       Script: {instanceID: 5602}
+    - Class: 114
+      Script: {instanceID: 6070}
     - Class: 114
       Script: {instanceID: 6236}
     - Class: 114
@@ -346,6 +371,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 195
+      Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
     - Class: 198
@@ -364,7 +391,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 225
       Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
     - Class: 850595691
+      Script: {instanceID: 0}
+    - Class: 1839735485
       Script: {instanceID: 0}
     Assets/Scenes/Map.unity:
     - Class: 1
@@ -381,13 +412,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
-    - Class: 58
-      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 66
-      Script: {instanceID: 0}
-    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -395,57 +422,21 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 668}
     - Class: 114
-      Script: {instanceID: 1556}
-    - Class: 114
-      Script: {instanceID: 1558}
-    - Class: 114
-      Script: {instanceID: 2532}
-    - Class: 114
-      Script: {instanceID: 3092}
-    - Class: 114
-      Script: {instanceID: 3182}
-    - Class: 114
-      Script: {instanceID: 3402}
-    - Class: 114
-      Script: {instanceID: 3580}
-    - Class: 114
       Script: {instanceID: 3770}
-    - Class: 114
-      Script: {instanceID: 3898}
-    - Class: 114
-      Script: {instanceID: 4060}
-    - Class: 114
-      Script: {instanceID: 5182}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 198
-      Script: {instanceID: 0}
-    - Class: 199
-      Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
       Script: {instanceID: 0}
     - Class: 156049354
       Script: {instanceID: 0}
@@ -558,6 +549,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2084}
     - Class: 114
+      Script: {instanceID: 2094}
+    - Class: 114
       Script: {instanceID: 2224}
     - Class: 114
       Script: {instanceID: 2258}
@@ -582,8 +575,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3580}
     - Class: 114
-      Script: {instanceID: 3650}
-    - Class: 114
       Script: {instanceID: 3708}
     - Class: 114
       Script: {instanceID: 3770}
@@ -591,6 +582,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3898}
     - Class: 114
       Script: {instanceID: 3908}
+    - Class: 114
+      Script: {instanceID: 3916}
     - Class: 114
       Script: {instanceID: 4060}
     - Class: 114
@@ -897,7 +890,7 @@ ScriptsOnlyBuild:
     className: AgentOverride2d
   - hash:
       serializedVersion: 2
-      Hash: 97eafa12e6ce24b9b11a847b000512d6
+      Hash: 389cfd9f098af910afbfc62bacd44537
     assemblyName: Assembly-CSharp.dll
     namespaceName: TalesofHivnir
     className: ProgrammingBlock
@@ -1275,7 +1268,7 @@ ScriptsOnlyBuild:
     className: RoomListView
   - hash:
       serializedVersion: 2
-      Hash: dd0c819510cb98582e90242380eebd2b
+      Hash: 58f73bce1dd6818f03fbb27a56702247
     assemblyName: Assembly-CSharp.dll
     namespaceName: TalesofHivnir
     className: PlayerController
@@ -1635,7 +1628,7 @@ ScriptsOnlyBuild:
     className: BoolInputField
   - hash:
       serializedVersion: 2
-      Hash: 677fc026d82283cb943fa5ac1c676ebc
+      Hash: a5db4b9540656fcd6d8e738fd1d2abcd
     assemblyName: Assembly-CSharp.dll
     namespaceName: TalesofHivnir
     className: GameManager
