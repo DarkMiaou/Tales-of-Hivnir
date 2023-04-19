@@ -26,7 +26,7 @@ public class EnemyController : MonoBehaviour
     public Transform player;
     private PhotonView View;
 
-    public GameObject pla;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +37,7 @@ public class EnemyController : MonoBehaviour
         monster=GetComponent<NavMeshAgent>();
         monster.updateRotation = false;
         monster.updateUpAxis = false;
+        
     }
 
     // Update is called once per frame
@@ -76,9 +77,7 @@ public class EnemyController : MonoBehaviour
             }
             else
             {
-                // Enlevez les deux lignes ci-dessous
-                //monster.SetDestination(player.position);
-                //movement = Vector2.zero;
+                
                 rb.velocity = Vector2.zero;
             }   
         }
