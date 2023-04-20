@@ -47,6 +47,9 @@ namespace TalesofHivnir
                     MoveRigth();
                     // Le bloc qu'il devra call 
                     break;
+                case 4:
+                    Attack();
+                    break;
             }
         }
 
@@ -87,6 +90,11 @@ namespace TalesofHivnir
             StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(1f, 0, 0), 0.5f));
 
 
+        }
+
+        void Attack()
+        {
+            LogMonster.Attack();
         }
         
         IEnumerator MoveObjectToPosition(GameObject objectToMove, Vector3 moveVector, float duration)
