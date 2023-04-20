@@ -27,6 +27,12 @@ namespace TalesofHivnir.Menus
             Debug.Log("Menu/Quit");
             Application.Quit();
         }
+
+        public void multiplayer()
+        {
+            Debug.Log("Menu/multiplayer");
+            SceneManager.LoadScene("Multiplayer");
+        }
     }
 }
 
