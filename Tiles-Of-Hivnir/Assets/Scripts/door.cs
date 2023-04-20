@@ -31,7 +31,7 @@ public class door : MonoBehaviour
 
     IEnumerator TeleportPlayer()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0);
 
         if (player != null && player.activeSelf)
         {
