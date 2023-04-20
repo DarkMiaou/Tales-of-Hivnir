@@ -35,6 +35,7 @@ namespace TalesofHivnir
         {
             if (!isOpen)
             {
+                chest.volume = 1;
                 chest.Play();
                 chest.loop = false;
                 if (InvToFill != null && Content != null)
@@ -44,7 +45,7 @@ namespace TalesofHivnir
               
                 isOpen = true;
                 Debug.Log("Chest is open");
-                chest.volume = 1;
+                
                 
 
             }

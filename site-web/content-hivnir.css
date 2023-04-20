@@ -63,7 +63,7 @@ li a .active {
 
 
   p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 42px;
     font-weight: bold;
     color:#aa7804;
@@ -79,6 +79,159 @@ li a .active {
 
 
 
+
+
+
+
+/*------------------------container tronc*/
+
+  .container_trunk{
+    z-index: 0;
+    position:absolute;
+    width: 100%;
+    max-width: 300px;
+    left:175px;
+    top: 260px;
+  }
+  .container_trunk img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+  .container_trunk .btn {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .container_trunk .btn:hover{
+    background-color:#04AA6D;
+    color: #000;
+    transition: 0.3s;
+  }
+
+  /*------------------------container slime*/
+
+  .container_slime{
+    z-index: 0;
+    position:absolute;
+    width: 100%;
+    max-width: 300px;
+    left:550px;
+    top: 285px;
+  }
+  .container_slime img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+  .container_slime .btn {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .container_slime .btn:hover{
+    background-color:#04AA6D;
+    color: #000;
+    transition: 0.3s;
+  }
+
+  /*------------------------container badlands*/
+
+  .container_badlands{
+    z-index: 0;
+    position:absolute;
+    width: 100%;
+    max-width: 600px;
+    left:50px;
+    top: 650px;
+  }
+  .container_badlands img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+  .container_badlands .btn {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .container_badlands .btn:hover{
+    background-color:#04AA6D;
+    color: #000;
+    transition: 0.3s;
+  }
+
+
+
+/*------------------------container badlands*/
+
+.container_skycastle{
+  z-index: 0;
+  position:absolute;
+  width: 100%;
+  max-width: 600px;
+  left: 850px;
+  top: 700px;
+}
+.container_skycastle img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+.container_skycastle .btn {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.container_skycastle .btn:hover{
+  background-color:#04AA6D;
+  color: #000;
+  transition: 0.3s;
+}
 
 
 

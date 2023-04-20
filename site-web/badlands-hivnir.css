@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    background-color: rgb(66, 64, 64);
+}
+
+
+
+/*---------------------------------top nav bar*/
+ul {
+    z-index: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 11%;
+    opacity: 0.97;
+  }
+
+ul img{
+    width:70px;
+    height: auto;
+}
+
+ul p{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 7px;
+    right: 50px;
+    color:rgb(205, 109, 8);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+li {
+    float: left;
+  }
+  
+li a {
+    text-decoration: none;
+    display: block;
+    color: green;
+    padding: 30px 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+li a:hover {
+    background-color: #111;
+    color:aliceblue;
+    transition: 0.5s;
+  }
+  
+li a .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+
+
+
+
+  p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 42px;
+    font-weight: bold;
+    color:#aa7804;
+  }
+  
+  p a{
+    color:#aa7804;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------- scroll indic*/
+  .header {
+    position: fixed;
+    top: 11%;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  .header h2 {
+    text-align: center;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #04AA6D;
+    width: 0%;
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track{
+    background: #333;
+    opacity: 0.97;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background:rgb(205, 109, 8);
+  }
+
