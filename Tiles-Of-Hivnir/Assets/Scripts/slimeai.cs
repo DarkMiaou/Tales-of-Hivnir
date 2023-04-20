@@ -7,6 +7,7 @@ public class slimeai : MonoBehaviour
     public float moveSpeed = 2f;
     public float moveRadius = 5f;
     public float pauseDuration = 2f;
+    public float collisionCheckRadius = 0.2f;
 
     private Vector3 moveTarget;
     private bool isMoving = false;
@@ -58,10 +59,25 @@ public class slimeai : MonoBehaviour
     // Fonction pour obtenir une position aléatoire dans le rayon donné
     Vector3 GetRandomPosition()
     {
-        float angle = Random.Range(0, 2 * Mathf.PI);
-        float distance = Random.Range(0, moveRadius);
-        Vector3 position = transform.position + new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0f) * distance;
-        position.z = 0f;
+        Vector3 position = transform.position;
+        bool foundPosition = false;
+
+        while (!foundPosition)
+        {
+            float angle = Random.Range(0, 2 * Mathf.PI);
+            float distance = Random.Range(0, moveRadius);
+
+            position = transform.position + new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0f) * distance;
+            position.z = 0f;
+
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(position, collisionCheckRadius);
+
+            if (colliders.Length == 0)
+            {
+                foundPosition = true;
+            }
+        }
+
         return position;
     }
 
@@ -71,11 +87,14 @@ public class slimeai : MonoBehaviour
         yield return new WaitForSeconds(pauseDuration);
         isMoving = true;
     }
-    
-    // Fonction pour gérer les collisions
-    void OnCollisionEnter2D(Collision2D col)
+
+    // Dessine le cercle de collision dans l'éditeur
+    private void OnDrawGizmosSelected()
     {
-        // Si on entre en collision avec un objet, on choisit une nouvelle direction
-        moveTarget = GetRandomPosition();
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, collisionCheckRadius);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, moveRadius);
     }
 }
