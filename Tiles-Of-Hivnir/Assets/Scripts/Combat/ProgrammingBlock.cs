@@ -50,6 +50,9 @@ namespace TalesofHivnir
                 case 4:
                     Attack();
                     break;
+                case 5:
+                    MoveLeftCheat();
+                    break;
             }
         }
 
@@ -80,6 +83,11 @@ namespace TalesofHivnir
             StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(-1f, 0, 0), 0.5f));
 
 
+        }
+
+        void MoveLeftCheat()
+        {
+            StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(-16f, 0, 0), 0.5f));
         }
         
         void MoveRigth()

@@ -41,7 +41,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        /*Debug.Log("OnEndDrag");
+        Debug.Log("OnEndDrag");
         //canvasGroup.alpha = .1f;
         canvasGroup.blocksRaycasts = true;
         
@@ -55,7 +55,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         {
             newBlockDragAndDrop.blockPrefab = blockPrefab;
             newBlockDragAndDrop.canvas = canvas;
-        }*/
+        }
         
         /*if (blockPrefab != null)
         {
@@ -64,10 +64,10 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         
         GameObject newBlock = Instantiate(blockPrefab, initialPosition, Quaternion.identity, parentTransform);
         newBlock.GetComponent<DragAndDrop>().blockPrefab = blockPrefab;
-        newBlock.GetComponent<DragAndDrop>().parentTransform = parentTransform;*/
+        newBlock.GetComponent<DragAndDrop>().parentTransform = parentTransform;
         
         
-        Debug.Log("OnEndDrag");
+        /*Debug.Log("OnEndDrag");
         //canvasGroup.alpha = .1f;
         canvasGroup.blocksRaycasts = true;
     
@@ -96,7 +96,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         if (interpreterInstance != null)
         {
             interpreterInstance.AddBlock(newBlockProgrammingBlock);
-        }
+        }*/
 
     }
 
