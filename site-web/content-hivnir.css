@@ -1,6 +1,9 @@
 body {
     margin: 0;
-    background-color: rgb(66, 64, 64);
+    background-image: url('cave.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 
@@ -156,6 +159,44 @@ li a .active {
     color: #000;
     transition: 0.3s;
   }
+
+/*------------------------container skeleton*/
+
+.container_skeleton{
+  z-index: 0;
+  position:absolute;
+  width: 100%;
+  max-width: 300px;
+  left:950px;
+  top: 260px;
+}
+.container_skeleton img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+.container_skeleton .btn {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.container_skeleton .btn:hover{
+  background-color:#04AA6D;
+  color: #000;
+  transition: 0.3s;
+}
+
 
   /*------------------------container badlands*/
 
