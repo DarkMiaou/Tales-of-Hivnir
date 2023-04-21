@@ -7,6 +7,11 @@ namespace TalesofHivnir
     
     public class ProgrammingBlockInterpreter : MonoBehaviour
     {
+       
+        private float timer = 60f;
+        private int randomAction;
+        public GameObject objectToMove;
+        private bool isInterpreting = false;
         public List<ProgrammingBlock> blockList; // list des block de prog
 
         /*public void InterpretBlock()
@@ -26,7 +31,7 @@ namespace TalesofHivnir
         }
 
         private IEnumerator ExecuteBlockSequence()
-        {
+        {isInterpreting = true;
             foreach (ProgrammingBlock block in blockList)
             {
                 block.Execute();
@@ -40,6 +45,58 @@ namespace TalesofHivnir
             {
                 blockList.Add(block);
             }
+        }
+        
+
+        private void Update()
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0f || isInterpreting)
+            {
+                isInterpreting = false;
+                timer = 60f;
+                randomAction = Random.Range(1, 6);
+                switch (randomAction)
+                {
+                    case 1:
+                        StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.up, 1));
+                        break;
+                    case 2:
+                        StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.down, 1));
+                        break;
+                    case 3:
+                        StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.left, 1));
+                        break;
+                    case 4:
+                        StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.right, 1));
+                        break;
+                    case 5:
+                        Attack();
+                        break;
+                }
+            }
+
+           
+        }
+
+        private void Attack()
+        {
+            // Code pour l'attaque
+        }
+
+        private IEnumerator MoveObjectToPosition(GameObject objectToMove, Vector3 moveVector, float duration)
+        {
+            Vector3 startPosition = objectToMove.transform.position;
+            Vector3 targetPosition = startPosition + moveVector;
+            float startTime = Time.time;
+            while (Time.time < startTime + duration)
+            {
+                float t = (Time.time - startTime) / duration;
+                objectToMove.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+                yield return null;
+            }
+
+            objectToMove.transform.position = targetPosition;
         }
 
 

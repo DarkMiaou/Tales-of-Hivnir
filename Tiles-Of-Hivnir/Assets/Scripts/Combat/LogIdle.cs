@@ -1,24 +1,23 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class LogIdle : MonoBehaviour
+namespace TalesofHivnir
 {
-    
-    
-    // Start is called before the first frame update
-    private Animator anim;
 
-    void Start()
+
+    public class LogIdle : ProgrammingBlockInterpreter
     {
-        anim = GetComponent<Animator>();
+        private Animator anim;
 
 
+        private void Start()
+        {
+            anim = GetComponent<Animator>();
+        }
+
+        private void Update()
+        {
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        anim.SetBool("isMoving", true);
-    }
 }
