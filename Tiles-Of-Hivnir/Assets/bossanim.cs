@@ -23,7 +23,7 @@ public class bossanim : MonoBehaviour
         randomy = Random.Range(-1, 1);
         if (time <= 0f)
         {
-            time = 30f;
+            time = 10f;
             idlerandom = true;
             anim.SetBool("randomidle", idlerandom);
 

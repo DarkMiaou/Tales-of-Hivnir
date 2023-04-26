@@ -5,7 +5,6 @@ ScriptsOnlyBuild:
     - CreateAndJoin
     - DragAndDrop
     - EnemyController
-    - LogIdle
     - PhotonPlayerManager
     - StartButton
     - TalesofHivnir.CameraController
@@ -25,9 +24,11 @@ ScriptsOnlyBuild:
     - TalesofHivnir.ProgrammingBlockUI
     - TalesofHivnir.UIManager
     - TalesofHivnir.interactable.interactable
+    - TalesofHivnir.slimeai
+    - bossanim
     - connect
     - door
-    - slimeai
+    - doorboss
     - sound
     NavMeshPlus.dll:
     - NavMeshPlus.Components.NavMeshModifier
@@ -58,7 +59,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.IK.IKEditorManager
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -220,6 +220,95 @@ ScriptsOnlyBuild:
     fullTypeName: TalesofHivnir.ProgrammingBlockInterpreter
     methodName: InterpretBlock
   sceneClasses:
+    Assets/Scenes/BossMap.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 696}
+    - Class: 114
+      Script: {instanceID: 1584}
+    - Class: 114
+      Script: {instanceID: 1586}
+    - Class: 114
+      Script: {instanceID: 1862}
+    - Class: 114
+      Script: {instanceID: 2084}
+    - Class: 114
+      Script: {instanceID: 2422}
+    - Class: 114
+      Script: {instanceID: 2546}
+    - Class: 114
+      Script: {instanceID: 2630}
+    - Class: 114
+      Script: {instanceID: 2730}
+    - Class: 114
+      Script: {instanceID: 2802}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 5134}
+    - Class: 114
+      Script: {instanceID: 5544}
+    - Class: 114
+      Script: {instanceID: 6270}
+    - Class: 114
+      Script: {instanceID: 6538}
+    - Class: 114
+      Script: {instanceID: 7026}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
     Assets/Scenes/COMBATMODE.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -276,8 +365,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 3022}
-    - Class: 114
       Script: {instanceID: 3860}
     - Class: 114
       Script: {instanceID: 4180}
@@ -300,7 +387,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6270}
     - Class: 114
-      Script: {instanceID: 6624}
+      Script: {instanceID: 6628}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -480,17 +567,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6270}
     - Class: 114
-      Script: {instanceID: 6472}
+      Script: {instanceID: 6474}
     - Class: 114
-      Script: {instanceID: 6720}
+      Script: {instanceID: 6538}
     - Class: 114
-      Script: {instanceID: 6816}
+      Script: {instanceID: 6724}
     - Class: 114
-      Script: {instanceID: 6920}
+      Script: {instanceID: 6820}
     - Class: 114
-      Script: {instanceID: 7022}
+      Script: {instanceID: 6924}
     - Class: 114
-      Script: {instanceID: 7202}
+      Script: {instanceID: 7026}
+    - Class: 114
+      Script: {instanceID: 7206}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -617,11 +706,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6270}
     - Class: 114
-      Script: {instanceID: 6498}
+      Script: {instanceID: 6420}
     - Class: 114
-      Script: {instanceID: 6720}
+      Script: {instanceID: 6500}
     - Class: 114
-      Script: {instanceID: 7022}
+      Script: {instanceID: 6724}
+    - Class: 114
+      Script: {instanceID: 7026}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -799,11 +890,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6270}
     - Class: 114
-      Script: {instanceID: 6658}
+      Script: {instanceID: 6662}
     - Class: 114
-      Script: {instanceID: 6720}
+      Script: {instanceID: 6724}
     - Class: 114
-      Script: {instanceID: 7022}
+      Script: {instanceID: 7026}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -985,11 +1076,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6270}
     - Class: 114
-      Script: {instanceID: 6658}
+      Script: {instanceID: 6662}
     - Class: 114
-      Script: {instanceID: 6720}
+      Script: {instanceID: 6724}
     - Class: 114
-      Script: {instanceID: 7022}
+      Script: {instanceID: 7026}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1602,9 +1693,9 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
-      Hash: 18158cac72f0ab869550b5a1410e01dc
+      Hash: 9d932b1a4b3e796405d3839aaa6a376f
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: TalesofHivnir
     className: LogIdle
   - hash:
       serializedVersion: 2
@@ -1622,7 +1713,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 2fc8f4e996681b697fd7d1a959f8f95a
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: TalesofHivnir
     className: slimeai
   - hash:
       serializedVersion: 2
@@ -2322,7 +2413,7 @@ ScriptsOnlyBuild:
     className: NamePickGui
   - hash:
       serializedVersion: 2
-      Hash: 94a6ddbdd134572f1afc644013468433
+      Hash: 441149c6da6db2d0c90ed18c2bb8ec7f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TalesofHivnir
     className: ProgrammingBlockUI
@@ -2394,7 +2485,7 @@ ScriptsOnlyBuild:
     className: SupportLogger
   - hash:
       serializedVersion: 2
-      Hash: 299830a344a5335c709b80a861781390
+      Hash: 9d932b1a4b3e796405d3839aaa6a376f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TalesofHivnir
     className: ProgrammingBlockInterpreter
@@ -2778,6 +2869,12 @@ ScriptsOnlyBuild:
     className: CurrentRoomExpectedUsersProperty
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: doorboss
+  - hash:
+      serializedVersion: 2
       Hash: 7829e932aec962afd9bcfad28ffff27d
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -2818,6 +2915,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TalesofHivnir.Menus
     className: ClasseEspeceMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: bossanim
   - hash:
       serializedVersion: 2
       Hash: 8ae3331b163cc121825eeed3975d6c4d
@@ -3076,6 +3179,7 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Multiplayer.unity
   - Assets/Scenes/Map.unity
+  - Assets/Scenes/BossMap.unity
   - Assets/Scenes/level-01.unity
   - Assets/Scenes/Test.unity
   - Assets/Scenes/Combat.unity
