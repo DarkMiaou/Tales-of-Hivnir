@@ -2139,6 +2139,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1131604058062486493, guid: 8e20141b30a2ced4d9f3e370f44524fa,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 71866102a4fd98e4f802466b155ce14d, type: 2}
     - target: {fileID: 1942628979156312195, guid: 8e20141b30a2ced4d9f3e370f44524fa,
         type: 3}
       propertyPath: sceneViewId
@@ -2214,6 +2219,17 @@ PrefabInstance:
       propertyPath: detectsound
       value: 
       objectReference: {fileID: 162702525}
+    - target: {fileID: 9163556712894000553, guid: 8e20141b30a2ced4d9f3e370f44524fa,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -22439546833456996, guid: 72eb4fe0cee3f1141a7558ed6c5a589d,
+        type: 3}
+    - target: {fileID: 9163556712894000553, guid: 8e20141b30a2ced4d9f3e370f44524fa,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e20141b30a2ced4d9f3e370f44524fa, type: 3}
 --- !u!4 &581324176 stripped
@@ -7430,6 +7446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45313033b6dbdb64e8fcdbf317f3e914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToMove: {fileID: 0}
   blockList: []
   blockExecutionDelay: 0.5
 --- !u!1001 &1147743491
@@ -12545,6 +12562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0484ce408ace0cd4eb8d3499768f295c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToMove: {fileID: 0}
   blockList: []
   blockExecutionDelay: 0.5
   blockButtonPrefab: {fileID: 0}
