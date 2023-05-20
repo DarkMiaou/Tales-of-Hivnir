@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1102 &-8736533269324540716
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: squirrelmove
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: a886d1eef36d522498404b2e0a0d2b11, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &-7892004806873745496
 AnimatorState:
   serializedVersion: 6
@@ -35,7 +61,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 3edc7f4c8fe3b514888c424be7a53528, type: 2}
+    m_Motion: {fileID: 7400000, guid: a886d1eef36d522498404b2e0a0d2b11, type: 2}
     m_Threshold: 0
     m_Position: {x: 0.1, y: 1}
     m_TimeScale: 1
@@ -43,7 +69,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d1342522ed06a9b4887a68079ab5077e, type: 2}
+    m_Motion: {fileID: 7400000, guid: cb0521b943d02904e9025f75b431d85e, type: 2}
     m_Threshold: 0.2
     m_Position: {x: -0.1, y: 1}
     m_TimeScale: 1
@@ -51,7 +77,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d1342522ed06a9b4887a68079ab5077e, type: 2}
+    m_Motion: {fileID: 7400000, guid: cb0521b943d02904e9025f75b431d85e, type: 2}
     m_Threshold: 0.4
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
@@ -59,7 +85,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 3edc7f4c8fe3b514888c424be7a53528, type: 2}
+    m_Motion: {fileID: 7400000, guid: a886d1eef36d522498404b2e0a0d2b11, type: 2}
     m_Threshold: 0.6
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -67,7 +93,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 3edc7f4c8fe3b514888c424be7a53528, type: 2}
+    m_Motion: {fileID: 7400000, guid: a886d1eef36d522498404b2e0a0d2b11, type: 2}
     m_Threshold: 0.8
     m_Position: {x: 0.1, y: -1}
     m_TimeScale: 1
@@ -75,7 +101,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d1342522ed06a9b4887a68079ab5077e, type: 2}
+    m_Motion: {fileID: 7400000, guid: cb0521b943d02904e9025f75b431d85e, type: 2}
     m_Threshold: 1
     m_Position: {x: -0.1, y: -1}
     m_TimeScale: 1
@@ -103,19 +129,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Vertical
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isMoving
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -129,6 +155,58 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!1102 &2938774554943382371
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: dragon left
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: cb0521b943d02904e9025f75b431d85e, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &4907846438672503047
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: idlesquirrel
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 4d5db412096119b4aa07d0825d35681f, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1107 &8084612290249376597
 AnimatorStateMachine:
   serializedVersion: 6
@@ -141,6 +219,15 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: -7892004806873745496}
     m_Position: {x: 367.51337, y: 245.96259, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 4907846438672503047}
+    m_Position: {x: 402.51337, y: 310.9626, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -8736533269324540716}
+    m_Position: {x: 437.51337, y: 375.9626, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 2938774554943382371}
+    m_Position: {x: 472.51337, y: 440.9626, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

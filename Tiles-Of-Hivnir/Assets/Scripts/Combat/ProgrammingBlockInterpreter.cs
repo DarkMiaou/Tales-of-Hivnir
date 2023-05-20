@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace TalesofHivnir
 {
@@ -12,7 +14,12 @@ namespace TalesofHivnir
         private int randomAction;
         public GameObject objectToMove;
         private bool isInterpreting = false;
-        public List<ProgrammingBlock> blockList; // list des block de prog
+        public List<ProgrammingBlock> blockList;
+        public float checkradius;
+        public float attackrange;
+        private bool IsInchaserange;
+        private bool IsInAttackRange;
+        private Transform target;// list des block de prog
 
         /*public void InterpretBlock()
         {
@@ -56,6 +63,14 @@ namespace TalesofHivnir
                 isInterpreting = false;
                 timer = 60f;
                 randomAction = Random.Range(1, 6);
+                if (IsInAttackRange)
+                {
+                    throw new NotImplementedException();
+                }
+                if (IsInchaserange)
+                {
+                    throw new NotImplementedException();
+                }
                 switch (randomAction)
                 {
                     case 1:
