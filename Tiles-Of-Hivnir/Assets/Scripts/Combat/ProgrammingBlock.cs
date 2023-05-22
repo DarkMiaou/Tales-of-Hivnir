@@ -58,30 +58,19 @@ namespace TalesofHivnir
 
         void MoveUp()
         {
-            /*Vector2 newPosition = new Vector2(transform.position.x , transform.position.y + 1);
-            rb.MovePosition(newPosition);*/
-            //objectToMove.transform.position += new Vector3(0, speed * Time.deltaTime, 0);
             StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(0, 1f, 0), 0.5f));
 
         }
 
         void MoveDown()
         {
-            /*Vector2 newPosition = new Vector2(transform.position.x , transform.position.y -1);
-            rb.MovePosition(newPosition);*/
-            //objectToMove.transform.position -= new Vector3(0, speed * Time.deltaTime, 0);
             StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(0, -1f, 0), 0.5f));
-
-
+            
         }
         
         void MoveLeft()
         {
-            /*Vector2 newPosition = new Vector2(transform.position.x - 1, transform.position.y);
-            rb.MovePosition(newPosition);*/
-            //objectToMove.transform.position -= new Vector3(speed * Time.deltaTime, 0, 0);
             StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(-1f, 0, 0), 0.5f));
-
 
         }
 
@@ -92,12 +81,8 @@ namespace TalesofHivnir
         
         void MoveRigth()
         {
-            /*Vector2 newPosition = new Vector2(transform.position.x + 1, transform.position.y);
-            rb.MovePosition(newPosition);*/
-            //objectToMove.transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
             StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(1f, 0, 0), 0.5f));
-
-
+            
         }
 
         void Attack()

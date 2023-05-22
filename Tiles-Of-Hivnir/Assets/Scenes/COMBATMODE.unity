@@ -797,6 +797,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7415171058813948059, guid: e28760ba7297a4c47a332e92b5d700eb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7415171058821300284, guid: e28760ba7297a4c47a332e92b5d700eb,
         type: 3}
       propertyPath: m_Layer
@@ -2993,7 +2998,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156017371}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -109022,12 +109027,6 @@ PrefabInstance:
       propertyPath: startBlock
       value: 
       objectReference: {fileID: 884903257}
-    - target: {fileID: 596705775330175377, guid: 577c5ee905f5f4e418b9b33e565777b0,
-        type: 3}
-      propertyPath: blockPrefab
-      value: 
-      objectReference: {fileID: 596705775330175381, guid: 577c5ee905f5f4e418b9b33e565777b0,
-        type: 3}
     - target: {fileID: 596705775330175378, guid: 577c5ee905f5f4e418b9b33e565777b0,
         type: 3}
       propertyPath: m_Pivot.x
@@ -109148,11 +109147,6 @@ PrefabInstance:
       propertyPath: objectToMove
       value: 
       objectReference: {fileID: 1973488046}
-    - target: {fileID: 596705775856481417, guid: 577c5ee905f5f4e418b9b33e565777b0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 46.6999
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 577c5ee905f5f4e418b9b33e565777b0, type: 3}
 --- !u!1001 &1007790649805377781
@@ -109281,11 +109275,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 664661564}
     m_Modifications:
-    - target: {fileID: 1243846707523049038, guid: 13cdafa1d19b61542abbaa9e7fc8b47e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 46.6999
-      objectReference: {fileID: 0}
     - target: {fileID: 1243846709317586145, guid: 13cdafa1d19b61542abbaa9e7fc8b47e,
         type: 3}
       propertyPath: objectToMove
@@ -109301,12 +109290,6 @@ PrefabInstance:
       propertyPath: startBlock
       value: 
       objectReference: {fileID: 884903257}
-    - target: {fileID: 1243846709317586148, guid: 13cdafa1d19b61542abbaa9e7fc8b47e,
-        type: 3}
-      propertyPath: blockPrefab
-      value: 
-      objectReference: {fileID: 1243846709317586152, guid: 13cdafa1d19b61542abbaa9e7fc8b47e,
-        type: 3}
     - target: {fileID: 1243846709317586152, guid: 13cdafa1d19b61542abbaa9e7fc8b47e,
         type: 3}
       propertyPath: m_Name
@@ -109441,12 +109424,6 @@ PrefabInstance:
       propertyPath: startBlock
       value: 
       objectReference: {fileID: 884903257}
-    - target: {fileID: 3966802274841317001, guid: 20addc06880aa0d46aa2e92206f5ba92,
-        type: 3}
-      propertyPath: blockPrefab
-      value: 
-      objectReference: {fileID: 3966802274841317005, guid: 20addc06880aa0d46aa2e92206f5ba92,
-        type: 3}
     - target: {fileID: 3966802274841317002, guid: 20addc06880aa0d46aa2e92206f5ba92,
         type: 3}
       propertyPath: m_Pivot.x
@@ -109562,17 +109539,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Attack
       objectReference: {fileID: 0}
-    - target: {fileID: 3966802274841317012, guid: 20addc06880aa0d46aa2e92206f5ba92,
-        type: 3}
-      propertyPath: objectToMove
-      value: 
-      objectReference: {fileID: 3966802274841317005, guid: 20addc06880aa0d46aa2e92206f5ba92,
-        type: 3}
-    - target: {fileID: 3966802275034857096, guid: 20addc06880aa0d46aa2e92206f5ba92,
-        type: 3}
-      propertyPath: m_Text
-      value: '   Attack'
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20addc06880aa0d46aa2e92206f5ba92, type: 3}
 --- !u!1001 &8880085321541439526
@@ -109582,11 +109548,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 664661564}
     m_Modifications:
-    - target: {fileID: 8880085321749953238, guid: 52502008f2f8c614e82bff353ead3f50,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 46.6999
-      objectReference: {fileID: 0}
     - target: {fileID: 8880085322685834992, guid: 52502008f2f8c614e82bff353ead3f50,
         type: 3}
       propertyPath: canvas
@@ -109597,12 +109558,6 @@ PrefabInstance:
       propertyPath: startBlock
       value: 
       objectReference: {fileID: 884903257}
-    - target: {fileID: 8880085322685834992, guid: 52502008f2f8c614e82bff353ead3f50,
-        type: 3}
-      propertyPath: blockPrefab
-      value: 
-      objectReference: {fileID: 8880085322685834996, guid: 52502008f2f8c614e82bff353ead3f50,
-        type: 3}
     - target: {fileID: 8880085322685834994, guid: 52502008f2f8c614e82bff353ead3f50,
         type: 3}
       propertyPath: startBlock
@@ -109742,12 +109697,6 @@ PrefabInstance:
       propertyPath: startBlock
       value: 
       objectReference: {fileID: 884903257}
-    - target: {fileID: 9069015171753890961, guid: db594e75d461a6344b5db464b73aea79,
-        type: 3}
-      propertyPath: blockPrefab
-      value: 
-      objectReference: {fileID: 9069015171753890964, guid: db594e75d461a6344b5db464b73aea79,
-        type: 3}
     - target: {fileID: 9069015171753890964, guid: db594e75d461a6344b5db464b73aea79,
         type: 3}
       propertyPath: m_Name
@@ -109868,10 +109817,5 @@ PrefabInstance:
       propertyPath: objectToMove
       value: 
       objectReference: {fileID: 1973488046}
-    - target: {fileID: 9069015172100302326, guid: db594e75d461a6344b5db464b73aea79,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 46.7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db594e75d461a6344b5db464b73aea79, type: 3}

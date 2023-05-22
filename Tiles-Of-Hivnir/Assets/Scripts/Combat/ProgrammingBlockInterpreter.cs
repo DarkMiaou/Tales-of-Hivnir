@@ -20,15 +20,7 @@ namespace TalesofHivnir
         private bool IsInchaserange;
         private bool IsInAttackRange;
         private Transform target;// list des block de prog
-
-        /*public void InterpretBlock()
-        {
-            Debug.Log("zzz");
-            foreach (ProgrammingBlock block in blockList)
-            {
-                block.Execute();
-            }
-        }*/
+        
         
         public float blockExecutionDelay = 0.5f;
 
