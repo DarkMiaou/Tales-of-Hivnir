@@ -36,38 +36,41 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     }
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("OnPointerDown");
+        //Debug.Log("OnPointerDown");
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("OnEndDrag");
+        //Debug.Log("OnEndDrag");
         //canvasGroup.alpha = .1f;
         canvasGroup.blocksRaycasts = true;
         
         OnBlockDropped?.Invoke(gameObject);
         
         GameObject newBlock = Instantiate(blockPrefab, initialPosition, Quaternion.identity, parentTransform);
-
+        
         // Set the new block as draggable and usable
-        DragAndDrop newBlockDragAndDrop = newBlock.GetComponent<DragAndDrop>();
+        /*DragAndDrop newBlockDragAndDrop = newBlock.GetComponent<DragAndDrop>();
         if (newBlockDragAndDrop != null)
         {
             newBlockDragAndDrop.blockPrefab = blockPrefab;
             newBlockDragAndDrop.canvas = canvas;
-        }
+            newBlockDragAndDrop.startBlock = startBlock;
+        }*/
+        
+        // Try to find BlockAligmentManager on the canvas
+
 
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("OnBeginDrag");
+        //Debug.Log("OnBeginDrag");
         canvasGroup.blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("OnDrag");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 
@@ -89,10 +92,12 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         }
     }
 
+
     public void OnDrop(PointerEventData eventData)
     {
         throw new System.NotImplementedException();
     }
+
     // Start is called before the first frame update
     void Start()
     {
