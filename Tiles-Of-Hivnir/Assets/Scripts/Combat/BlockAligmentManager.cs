@@ -9,42 +9,24 @@ public class BlockAligmentManager : MonoBehaviour//, IDropHandler
     [SerializeField] private RectTransform startBlock;
     [SerializeField] private float yOffset = 0.1f;
     [SerializeField] private float distanceThresHold = 50f;
-
-    private List<RectTransform> blocks;
+    
     private RectTransform lastBlock;
     private ProgrammingBlockInterpreter interpreter;
 
     private void Start()
     {
         Debug.Log("BlockAligmentManager Start() called.");
-        // List de position
-        blocks = new List<RectTransform>();
-        
+
         if (startBlock == null)
         {
             Debug.LogError("startBlock is null.");
             return;
         }
-        blocks.Add(startBlock);
+        
         interpreter = FindObjectOfType<ProgrammingBlockInterpreter>();
 
     }
-    
-    /*private void Awake()
-    {
-        blocks = new List<RectTransform>();
-        if (startBlock != null)
-        {
-            blocks.Add(startBlock);
-        }
-        else
-        {
-            Debug.LogError("startBlock is null.");
-        }
 
-        interpreter = FindObjectOfType<ProgrammingBlockInterpreter>();
-    }*/
-    
     public void AddBlock(GameObject newBlockGameObject)
     {
         
@@ -54,7 +36,7 @@ public class BlockAligmentManager : MonoBehaviour//, IDropHandler
             return;
         }
 
-        if (blocks == null || blocks.Count == 0)
+        if (ProgrammingBlockInterpreter.Blocks == null || ProgrammingBlockInterpreter.Blocks.Count == 0)
         {
             Debug.LogError("blocks list is null or empty.");
             return;
@@ -64,7 +46,7 @@ public class BlockAligmentManager : MonoBehaviour//, IDropHandler
             
         RectTransform newBlock = newGameObect.GetComponent<RectTransform>();
 
-        lastBlock = blocks.Last();
+        lastBlock = ProgrammingBlockInterpreter.Blocks.Last();
 
         // Calculate the new block's position based on the last block's position and height
         Vector2 newPosition = new Vector2(
@@ -72,14 +54,14 @@ public class BlockAligmentManager : MonoBehaviour//, IDropHandler
             lastBlock.anchoredPosition.y - lastBlock.sizeDelta.y - yOffset
         );
         
-        Debug.Log(blocks.Count);
+        Debug.Log(ProgrammingBlockInterpreter.Blocks.Count);
 
         
         // Align the new block to the calculated position
         newBlock.anchoredPosition = newPosition;
 
         // Add the new block to the list of blocks
-        blocks.Add(newBlock);
+        ProgrammingBlockInterpreter.Blocks.Add(newBlock);
         
         
         // ajoutes les blocs à l'intrepreteur pour les lancer 

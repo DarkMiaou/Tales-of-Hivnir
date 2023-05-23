@@ -21,8 +21,23 @@ namespace TalesofHivnir
         private Transform target;// list des block de prog
         private float coordx;
         private float coordy;
-        
-        
+
+        public static List<RectTransform> blocks;
+        public RectTransform startBlock;
+
+        public static List<RectTransform> Blocks
+        {
+            get { return blocks; }
+            set { blocks = value; }
+        }
+
+        public void Start()
+        {
+            Blocks = new List<RectTransform>();
+            Blocks.Add(startBlock);
+        }
+
+
         public float blockExecutionDelay = 0.5f;
 
         public void InterpretBlock()
