@@ -9,17 +9,18 @@ namespace TalesofHivnir
     
     public class ProgrammingBlockInterpreter : MonoBehaviour
     {
+        public Transform playcoord;
+        public Transform mobcoord;
+        public GameObject player;
        
         private float timer = 60f;
         private int randomAction;
         public GameObject objectToMove;
         private bool isInterpreting = false;
         public List<ProgrammingBlock> blockList;
-        public float checkradius;
-        public float attackrange;
-        private bool IsInchaserange;
-        private bool IsInAttackRange;
         private Transform target;// list des block de prog
+        private float coordx;
+        private float coordy;
         
         
         public float blockExecutionDelay = 0.5f;
@@ -30,7 +31,11 @@ namespace TalesofHivnir
         }
 
         private IEnumerator ExecuteBlockSequence()
-        {isInterpreting = true;
+        {
+            coordx = playcoord.position.x - mobcoord.position.y;
+            coordy = playcoord.position.y - mobcoord.position.y;
+            isInterpreting = true;
+            
             foreach (ProgrammingBlock block in blockList)
             {
                 block.Execute();
@@ -49,38 +54,46 @@ namespace TalesofHivnir
 
         private void Update()
         {
+            coordx = playcoord.position.x - mobcoord.position.y;
+            coordy = playcoord.position.y - mobcoord.position.y;
             timer -= Time.deltaTime;
             if (timer <= 0f || isInterpreting)
             {
                 isInterpreting = false;
                 timer = 60f;
                 randomAction = Random.Range(1, 6);
-                if (IsInAttackRange)
+
+                if (coordx >= 0 && coordx >= coordy)
                 {
-                    throw new NotImplementedException();
+                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.right, 1));
+                    playcoord = player.transform;
+                    mobcoord = objectToMove.transform;
                 }
-                if (IsInchaserange)
+                else if (coordx < 0 && Math.Abs(coordx) >= Math.Abs(coordy))
                 {
-                    throw new NotImplementedException();
+                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.left, 1));
+                    playcoord = player.transform;
+                    mobcoord = objectToMove.transform;
                 }
-                switch (randomAction)
+                else if (coordy >= 0 && coordy >= coordx)
                 {
-                    case 1:
-                        StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.up, 1));
-                        break;
-                    case 2:
-                        StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.down, 1));
-                        break;
-                    case 3:
-                        StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.left, 1));
-                        break;
-                    case 4:
-                        StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.right, 1));
-                        break;
-                    case 5:
-                        Attack();
-                        break;
+                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.up, 1));
+                    playcoord = player.transform;
+                    mobcoord = objectToMove.transform;
                 }
+                else if (coordy < 0 && Math.Abs(coordy) >= Math.Abs(coordx))
+                {
+                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.down, 1));
+                    playcoord = player.transform;
+                    mobcoord = objectToMove.transform;
+                }
+                else
+                {
+                    Attack();
+                    playcoord = player.transform;
+                    mobcoord = objectToMove.transform;
+                }
+               
             }
 
            
