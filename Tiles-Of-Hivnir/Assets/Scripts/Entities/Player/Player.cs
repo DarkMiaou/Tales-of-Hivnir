@@ -9,6 +9,8 @@ namespace TalesofHivnir.Entities
 {
     public class Player : Entity
     {
+        public PlayerController playercont;
+        
         // Bonus de la Classe
         private Classe _ChosenClasse;
         public Classe ChosenClasse
@@ -36,6 +38,7 @@ namespace TalesofHivnir.Entities
         // si on a 1 c'est qu'il y a un bonus à appliquer
         // si on a -1 c'est qu'on a un malus à appliquer 
         private Espece _ChosenEspece;
+        private int _BonusSpeed;
         public Espece ChosenEspece{
             get { return _ChosenEspece; }
             set {
@@ -70,7 +73,23 @@ namespace TalesofHivnir.Entities
             }
         }
         public int BonusStrenght;
-        public int BonusSpeed;
+
+        public int BonusSpeed
+        {
+            get { return _BonusSpeed;}
+            set
+            {
+                _BonusSpeed = value;
+                if (_BonusSpeed == 1)
+                {
+                    playercont.speed = playercont.basespeed + 1f;
+                }
+                else if (_BonusSpeed == -1)
+                {
+                    playercont.speed = playercont.basespeed - 1f;
+                }
+            }
+        }
         public int BonusLife;
         
         

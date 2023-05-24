@@ -8,7 +8,8 @@ namespace TalesofHivnir
 {
 
     public class PlayerController : MonoBehaviour
-    { 
+    {
+        public float basespeed = 5f;
         public float speed = 5f;
         private Rigidbody2D rb;
         private Animator anim;
@@ -24,6 +25,7 @@ namespace TalesofHivnir
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
             audioSource = GetComponent<AudioSource>();
+            speed = basespeed;
         }
 
         void Update()
