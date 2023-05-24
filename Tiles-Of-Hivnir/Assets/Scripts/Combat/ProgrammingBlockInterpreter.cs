@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 namespace TalesofHivnir
@@ -29,9 +30,12 @@ namespace TalesofHivnir
         private int Horizontal;
         private int Vertical;
         public Animator mobanim;
+        
 
         public static List<RectTransform> blocks;
         public RectTransform startBlock;
+
+        [SerializeField] private Button ClearButton;
 
         public static List<RectTransform> Blocks
         {
@@ -65,6 +69,11 @@ namespace TalesofHivnir
                 block.Execute();
                 yield return new WaitForSeconds(blockExecutionDelay);
               
+            }
+
+            for (int i = 1; i < Blocks.Count; i++) //clear les blocks de commande
+            {
+                Destroy(Blocks[i].gameObject);
             }
             blockList = new List<ProgrammingBlock>();
             Blocks = new List<RectTransform>();
@@ -171,6 +180,17 @@ namespace TalesofHivnir
             }
 
             objectToMove.transform.position = targetPosition;
+        }
+
+        public void ClearB() // clear blocks de commande 
+        {
+            for (int i = 1; i < Blocks.Count; i++)
+            {
+                Destroy(Blocks[i].gameObject);
+            }
+            blockList = new List<ProgrammingBlock>();
+            Blocks = new List<RectTransform>();
+            Blocks.Add(startBlock);
         }
 
 

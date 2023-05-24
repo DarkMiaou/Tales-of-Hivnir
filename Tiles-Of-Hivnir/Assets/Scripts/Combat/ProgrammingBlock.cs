@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -14,12 +15,8 @@ namespace TalesofHivnir
         public float speed = 5f;
         //Rigidbody2D rb;// la valeur du block genre vitesse durée etc 
         public GameObject objectToMove;
+        private Animator myAnim;
 
-        
-        void Start()
-        {
-            //rb = GetComponent<Rigidbody2D>();
-        }
 
         public void Execute()
         {
@@ -60,29 +57,34 @@ namespace TalesofHivnir
         {
             StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(0, 1f, 0), 0.5f));
 
+
         }
 
         void MoveDown()
         {
             StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(0, -1f, 0), 0.5f));
-            
+
+
         }
         
         void MoveLeft()
         {
             StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(-1f, 0, 0), 0.5f));
 
+
         }
 
         void MoveLeftCheat()
         {
             StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(-16f, 0, 0), 0.5f));
+
         }
         
         void MoveRigth()
         {
             StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(1f, 0, 0), 0.5f));
-            
+
+
         }
 
         void Attack()
