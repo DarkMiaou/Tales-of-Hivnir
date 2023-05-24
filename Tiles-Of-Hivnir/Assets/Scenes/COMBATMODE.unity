@@ -156,8 +156,13 @@ MonoBehaviour:
   playcoord: {fileID: 1973488057}
   mobcoord: {fileID: 2092836386}
   player: {fileID: 1973488046}
+  mobhealth: 0
+  playerhealth: 0
+  mobattack: 0
+  playerattack: 0
   objectToMove: {fileID: 2092836383}
   blockList: []
+  mobanim: {fileID: 2092836384}
   startBlock: {fileID: 620999188}
   blockExecutionDelay: 0.5
 --- !u!4 &121093350
@@ -108295,7 +108300,7 @@ Animator:
   m_GameObject: {fileID: 2092836383}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 30c673bcc7de4e945a4ee1fee3865ff2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 291e58e1e44033842978cef1aab08695, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
