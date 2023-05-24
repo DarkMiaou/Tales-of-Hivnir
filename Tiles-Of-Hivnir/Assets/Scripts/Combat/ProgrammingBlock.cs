@@ -2,97 +2,103 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.UI;
 
 namespace TalesofHivnir
 {
     public class ProgrammingBlock : MonoBehaviour
     {
-
-        public string blockName; // le nom du block
-        public int blockType; // le type de block
+        public string blockName;
+        public int blockType;
         public float speed = 5f;
-        //Rigidbody2D rb;// la valeur du block genre vitesse durée etc 
         public GameObject objectToMove;
-        private Animator myAnim;
+        public Animator myanim;
 
+        private Rigidbody2D rb;
+        private bool isMoving = false;
 
-        public void Execute()
+        private void Start()
         {
-            Rigidbody2D rb = objectToMove.GetComponent<Rigidbody2D>();
+            rb = objectToMove.GetComponent<Rigidbody2D>();
             if (rb == null)
             {
                 Debug.LogError("Object to move has no Rigidbody2D component");
-                return;
             }
-            switch (blockType)
+        }
+
+        public void Execute()
+        {
+            if (!isMoving)
             {
-                case 0:
-                    MoveUp();
-                    // Le bloc qu'il devra call 
-                    break; 
-                case 1:
-                    MoveDown();
-                    // Le bloc qu'il devra call 
-                    break;
-                case 2:
-                    MoveLeft();
-                    // Le bloc qu'il devra call 
-                    break;
-                case 3:
-                    MoveRigth();
-                    // Le bloc qu'il devra call 
-                    break;
-                case 4:
-                    Attack();
-                    break;
-                case 5:
-                    MoveLeftCheat();
-                    break;
+                switch (blockType)
+                {
+                    case 0:
+                        MoveUp();
+                        break;
+                    case 1:
+                        MoveDown();
+                        break;
+                    case 2:
+                        MoveLeft();
+                        break;
+                    case 3:
+                        MoveRight();
+                        break;
+                    case 4:
+                        Attack();
+                        break;
+                    case 5:
+                        MoveLeftCheat();
+                        break;
+                }
             }
         }
 
-        void MoveUp()
+        private void MoveUp()
         {
-            StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(0, 1f, 0), 0.5f));
-
-
+            StartCoroutine(MoveObjectToPosition(new Vector3(0, 1f, 0), 0.5f));
+            myanim.SetFloat("Vertical", 1);
+            isMoving = true;
         }
 
-        void MoveDown()
+        private void MoveDown()
         {
-            StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(0, -1f, 0), 0.5f));
-
-
-        }
-        
-        void MoveLeft()
-        {
-            StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(-1f, 0, 0), 0.5f));
-
-
+            StartCoroutine(MoveObjectToPosition(new Vector3(0, -1f, 0), 0.5f));
+            myanim.SetFloat("Vertical", -1);
+            isMoving = true;
         }
 
-        void MoveLeftCheat()
+        private void MoveLeft()
         {
-            StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(-16f, 0, 0), 0.5f));
-
-        }
-        
-        void MoveRigth()
-        {
-            StartCoroutine(MoveObjectToPosition(objectToMove, new Vector3(1f, 0, 0), 0.5f));
-
-
+            StartCoroutine(MoveObjectToPosition(new Vector3(-1f, 0, 0), 0.5f));
+            myanim.SetFloat("Horizontal", -1);
+            myanim.SetFloat("Vertical", 0);
+            isMoving = true;
         }
 
-        void Attack()
+        private void MoveRight()
+        {
+            StartCoroutine(MoveObjectToPosition(new Vector3(1f, 0, 0), 0.5f));
+            myanim.SetFloat("Horizontal", 1);
+            myanim.SetFloat("Vertical", 0);
+            isMoving = true;
+        }
+
+        private void MoveLeftCheat()
+        {
+            StartCoroutine(MoveObjectToPosition(new Vector3(-16f, 0, 0), 0.5f));
+            myanim.SetFloat("Horizontal", -1);
+            isMoving = true;
+        }
+
+       
+
+        private void Attack()
         {
             LogMonster.Attack();
+            isMoving = false;
         }
-        
-        IEnumerator MoveObjectToPosition(GameObject objectToMove, Vector3 moveVector, float duration)
+
+        private IEnumerator MoveObjectToPosition(Vector3 moveVector, float duration)
         {
             Vector3 startPosition = objectToMove.transform.position;
             Vector3 targetPosition = startPosition + moveVector;
@@ -106,8 +112,14 @@ namespace TalesofHivnir
             }
 
             objectToMove.transform.position = targetPosition;
+            isMoving = false;
+        }
+
+        // Animation event to reset the animation parameters
+        private void ResetAnimationParameters()
+        {
+            myanim.SetFloat("Vertical", 0);
+            myanim.SetFloat("Horizontal", 0);
         }
     }
-
 }
-

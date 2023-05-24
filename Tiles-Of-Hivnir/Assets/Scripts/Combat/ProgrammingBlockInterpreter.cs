@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 
 namespace TalesofHivnir
 {
-    
+
     public class ProgrammingBlockInterpreter : MonoBehaviour
     {
         public Transform playcoord;
@@ -18,7 +18,7 @@ namespace TalesofHivnir
         public float playerhealth;
         public float mobattack;
         public float playerattack;
-       
+
         private float timer = 60f;
         private int randomAction;
         public GameObject objectToMove;
@@ -27,10 +27,10 @@ namespace TalesofHivnir
         private Transform target;// list des block de prog
         private float coordx;
         private float coordy;
-        private int Horizontal;
-        private int Vertical;
+
+
         public Animator mobanim;
-        
+
 
         public static List<RectTransform> blocks;
         public RectTransform startBlock;
@@ -59,16 +59,16 @@ namespace TalesofHivnir
 
         private IEnumerator ExecuteBlockSequence()
         {
-           
+
             coordx = playcoord.position.x - mobcoord.position.y;
             coordy = playcoord.position.y - mobcoord.position.y;
             isInterpreting = true;
-            
+
             foreach (ProgrammingBlock block in blockList)
             {
                 block.Execute();
                 yield return new WaitForSeconds(blockExecutionDelay);
-              
+
             }
 
             for (int i = 1; i < Blocks.Count; i++) //clear les blocks de commande
@@ -79,7 +79,7 @@ namespace TalesofHivnir
             Blocks = new List<RectTransform>();
             Blocks.Add(startBlock);
         }
-        
+
         public void AddBlock(ProgrammingBlock block)
         {
             coordx = playcoord.position.x - mobcoord.position.y;
@@ -89,14 +89,14 @@ namespace TalesofHivnir
                 blockList.Add(block);
             }
         }
-        
+
 
         private void Update()
         {
             coordx = playcoord.position.x - mobcoord.position.y;
             coordy = playcoord.position.y - mobcoord.position.y;
 
-          
+
             timer -= Time.deltaTime;
             if (timer <= 0f || isInterpreting)
             {
@@ -105,57 +105,60 @@ namespace TalesofHivnir
 
                 if (coordx >= 0 && Math.Abs(coordx) >= Math.Abs(coordy))
                 {
-                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.right, 1));
+                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.right, 0.5f));
                     coordx = playcoord.position.x - mobcoord.position.y;
                     coordy = playcoord.position.y - mobcoord.position.y;
-                    mobanim.SetInteger(Horizontal,1);
+                    mobanim.SetBool("Right", true);
+
                     Debug.Log("droite");
-                 
+
                 }
                 else if (coordx < 0 && Math.Abs(coordx) >= Math.Abs(coordy))
                 {
-                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.left, 1));
+                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.left, 0.5f));
                     coordx = playcoord.position.x - mobcoord.position.y;
                     coordy = playcoord.position.y - mobcoord.position.y;
-                    mobanim.SetInteger(Horizontal,-1);
+                    mobanim.SetBool("Left", true);
+
                     Debug.Log("gauche");
-               
+
                 }
                 else if (coordy >= 0 && Math.Abs(coordy) >= Math.Abs(coordx))
                 {
-                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.up, 1));
+                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.up, 0.5f));
                     coordx = playcoord.position.x - mobcoord.position.y;
                     coordy = playcoord.position.y - mobcoord.position.y;
-                    mobanim.SetInteger(Vertical,1);
+                    mobanim.SetBool("Up", true);
+
                     Debug.Log("haut");
-             
+
                 }
                 else if (coordy < 0 && Math.Abs(coordy) >= Math.Abs(coordx))
                 {
-                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.down, 1));
+                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.down, 0.5f));
                     coordx = playcoord.position.x - mobcoord.position.y;
                     coordy = playcoord.position.y - mobcoord.position.y;
-                    mobanim.SetInteger(Vertical,-1);
-                    
+                    mobanim.SetBool("Down", true);
+
                     Debug.Log("bas");
-          
+
                 }
                 else
                 {
                     Attack();
                     coordx = playcoord.position.x - mobcoord.position.y;
                     coordy = playcoord.position.y - mobcoord.position.y;
-                    
+
                     Debug.Log("attaque");
                 }
 
-                new WaitForSeconds(2);
-                Horizontal = 0;
-                Vertical = 0;
-
             }
 
-           
+            // Reset animation parameters
+            mobanim.SetBool("Down", false);
+            mobanim.SetBool("Up", false);
+            mobanim.SetBool("Right", false);
+            mobanim.SetBool("Left", false);
         }
 
         private void Attack()
@@ -195,6 +198,6 @@ namespace TalesofHivnir
 
 
     }
-    
-    
+
+
 }
