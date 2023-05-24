@@ -1,10 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TalesofHivnir.Entities;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TalesofHivnir.Items;
+using Entities.Player;
+
 
 
 namespace TalesofHivnir.Menus
@@ -14,6 +17,7 @@ namespace TalesofHivnir.Menus
         public GameObject ClasseEspeceMenuCanva;
         public GameObject ClasseMenu;
         public GameObject EspeceMenu;
+        public Player player;
 
 
         private void Start()
@@ -37,5 +41,59 @@ namespace TalesofHivnir.Menus
             ClasseMenu.SetActive(false);
             EspeceMenu.SetActive(true);
         }
+
+        public void ChooseClasse(string classe)
+        {
+            Debug.Log(classe);
+            Classe cl = Classe.Paladin;
+            switch (classe)
+            {
+                case "Sorcier":
+                    cl = Classe.Sorcier;
+                    break;
+                case "Barbare":
+                    cl = Classe.Barbare;
+                    break;
+                case "Berserker":
+                    cl = Classe.Berserker;
+                    break;
+                case "Paladin":
+                    cl = Classe.Paladin;
+                    break;
+            }
+            player.ChosenClasse = cl;
+            CloseClasseMenu();
+        }
+        
+        public void ChooseEspece(string espece)
+        {
+            Debug.Log(espece);
+            Espece es = Espece.Humain;
+            switch (espece)
+            {
+                case "Géant":
+                    es = Espece.Géant;
+                    break;
+                case "Elfe":
+                    es = Espece.Elfe;
+                    break;
+                case "Humain":
+                    es = Espece.Humain;
+                    break;
+                case "Nain":
+                    es = Espece.Nain;
+                    break;
+                case "Orc":
+                    es = Espece.Orc;
+                    break;
+                case "Fée":
+                    es = Espece.Fée;
+                    break;
+
+            }
+            player.ChosenEspece = es;
+            CloseEspeceMenu();
+        }
+        
     }
 }
