@@ -4,11 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
 namespace TalesofHivnir
 {
-
     public class ProgrammingBlockInterpreter : MonoBehaviour
     {
         public Transform playcoord;
@@ -24,13 +22,10 @@ namespace TalesofHivnir
         public GameObject objectToMove;
         private bool isInterpreting = false;
         public List<ProgrammingBlock> blockList;
-        private Transform target;// list des block de prog
         private float coordx;
         private float coordy;
 
-
         public Animator mobanim;
-
 
         public static List<RectTransform> blocks;
         public RectTransform startBlock;
@@ -43,12 +38,11 @@ namespace TalesofHivnir
             set { blocks = value; }
         }
 
-        public void Start()
+        private void Start()
         {
             Blocks = new List<RectTransform>();
             Blocks.Add(startBlock);
         }
-
 
         public float blockExecutionDelay = 0.5f;
 
@@ -59,8 +53,7 @@ namespace TalesofHivnir
 
         private IEnumerator ExecuteBlockSequence()
         {
-
-            coordx = playcoord.position.x - mobcoord.position.y;
+            coordx = playcoord.position.x - mobcoord.position.x;
             coordy = playcoord.position.y - mobcoord.position.y;
             isInterpreting = true;
 
@@ -68,21 +61,14 @@ namespace TalesofHivnir
             {
                 block.Execute();
                 yield return new WaitForSeconds(blockExecutionDelay);
-
             }
 
-            for (int i = 1; i < Blocks.Count; i++) //clear les blocks de commande
-            {
-                Destroy(Blocks[i].gameObject);
-            }
-            blockList = new List<ProgrammingBlock>();
-            Blocks = new List<RectTransform>();
-            Blocks.Add(startBlock);
+            ClearBlocks();
         }
 
         public void AddBlock(ProgrammingBlock block)
         {
-            coordx = playcoord.position.x - mobcoord.position.y;
+            coordx = playcoord.position.x - mobcoord.position.x;
             coordy = playcoord.position.y - mobcoord.position.y;
             if (!blockList.Contains(block))
             {
@@ -90,12 +76,10 @@ namespace TalesofHivnir
             }
         }
 
-
         private void Update()
         {
-            coordx = playcoord.position.x - mobcoord.position.y;
+            coordx = playcoord.position.x - mobcoord.position.x;
             coordy = playcoord.position.y - mobcoord.position.y;
-
 
             timer -= Time.deltaTime;
             if (timer <= 0f || isInterpreting)
@@ -106,59 +90,44 @@ namespace TalesofHivnir
                 if (coordx >= 0 && Math.Abs(coordx) >= Math.Abs(coordy))
                 {
                     StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.right, 0.5f));
-                    coordx = playcoord.position.x - mobcoord.position.y;
-                    coordy = playcoord.position.y - mobcoord.position.y;
-                    mobanim.SetBool("Right", true);
-
-                    Debug.Log("droite");
-
+                    mobanim.SetTrigger("Right");
+                    ResetAnimationTrigger("Right");
+                    Debug.Log("Right");
                 }
                 else if (coordx < 0 && Math.Abs(coordx) >= Math.Abs(coordy))
                 {
                     StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.left, 0.5f));
-                    coordx = playcoord.position.x - mobcoord.position.y;
-                    coordy = playcoord.position.y - mobcoord.position.y;
-                    mobanim.SetBool("Left", true);
-
-                    Debug.Log("gauche");
-
+                    mobanim.SetTrigger("Left");
+                    ResetAnimationTrigger("Left");
+                    Debug.Log("Left");
                 }
                 else if (coordy >= 0 && Math.Abs(coordy) >= Math.Abs(coordx))
                 {
                     StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.up, 0.5f));
-                    coordx = playcoord.position.x - mobcoord.position.y;
-                    coordy = playcoord.position.y - mobcoord.position.y;
-                    mobanim.SetBool("Up", true);
-
-                    Debug.Log("haut");
-
+                    mobanim.SetTrigger("Up");
+                    ResetAnimationTrigger("Up");
+                    Debug.Log("Up");
                 }
                 else if (coordy < 0 && Math.Abs(coordy) >= Math.Abs(coordx))
                 {
                     StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.down, 0.5f));
-                    coordx = playcoord.position.x - mobcoord.position.y;
-                    coordy = playcoord.position.y - mobcoord.position.y;
-                    mobanim.SetBool("Down", true);
-
-                    Debug.Log("bas");
-
+                    mobanim.SetTrigger("Down");
+                    ResetAnimationTrigger("Down");
+                    Debug.Log("Down");
                 }
                 else
                 {
-                    Attack();
-                    coordx = playcoord.position.x - mobcoord.position.y;
-                    coordy = playcoord.position.y - mobcoord.position.y;
-
-                    Debug.Log("attaque");
+                    // No movement, set the animation to the default state (e.g., idle)
+                    mobanim.SetTrigger("Idle");
+                    ResetAnimationTrigger("Idle");
+                    Debug.Log("Idle");
                 }
-
             }
-
-            // Reset animation parameters
-            mobanim.SetBool("Down", false);
-            mobanim.SetBool("Up", false);
-            mobanim.SetBool("Right", false);
-            mobanim.SetBool("Left", false);
+        }
+        private IEnumerator ResetAnimationTrigger(string triggerName)
+        {
+            yield return new WaitForSeconds(1f); // Adjust the delay as needed
+            mobanim.ResetTrigger(triggerName);
         }
 
         private void Attack()
@@ -181,11 +150,10 @@ namespace TalesofHivnir
                 objectToMove.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
                 yield return null;
             }
-
             objectToMove.transform.position = targetPosition;
         }
 
-        public void ClearB() // clear blocks de commande 
+        public void ClearBlocks()
         {
             for (int i = 1; i < Blocks.Count; i++)
             {
@@ -195,9 +163,5 @@ namespace TalesofHivnir
             Blocks = new List<RectTransform>();
             Blocks.Add(startBlock);
         }
-
-
     }
-
-
 }
