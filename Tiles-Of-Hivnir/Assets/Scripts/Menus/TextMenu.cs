@@ -14,6 +14,7 @@ namespace TalesofHivnir.Menus
         public GameObject TextMenuCanva;
         public TMP_Text TEXTE;
         public Image PNJ_IMAGE;
+        public Image PNJ_icon;
         public TMP_Text PNJ_NAME;
 
         private Transform playerTransform;
@@ -68,9 +69,10 @@ namespace TalesofHivnir.Menus
         public void OpenText(string text)
         {
             Open();
-            TEXTE.text = text;
+            TEXTE.text = PNJ.text;
             PNJ_NAME.text = PNJ.name;
-            PNJ_IMAGE.sprite = PNJ.icone;
+            PNJ_icon.sprite = PNJ.icone;
+    
         }
     }
 }

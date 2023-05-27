@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace TalesofHivnir.Entities
@@ -6,6 +7,8 @@ namespace TalesofHivnir.Entities
     public class PNJ : MonoBehaviour
     {
         public Sprite icone;
-        public string name; 
+        public string name;
+        public string text;
+        
     }
 }
