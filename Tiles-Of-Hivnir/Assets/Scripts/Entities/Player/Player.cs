@@ -28,14 +28,26 @@ namespace TalesofHivnir.Entities
         
         public PlayerController playercont;
 
+        
+        /*
+        voici les variables à utilisé pour les combats:
+        maxhealth
+        bonusdefence
+        strenght * bonusattack pour obtenir la valeur de dégats
+         */
+        
         public int basestrenght = 20;
-        public int strenght;
+        public static int strenght;
         public int basemaxhealth = 100;
-        public int maxhealth;
-        
-        
-        
-        
+        public static int maxhealth;
+        public float basebonusattack = 1.2f;
+        public static float bonusattack;
+        public float basebonusdefence = 1.2f;
+        public float bonusdefence;
+
+
+
+
         public Classe ChosenClasse
         {
             get { return _ChosenClasse; }
@@ -60,12 +72,34 @@ namespace TalesofHivnir.Entities
         public bool BonusAttack
         {
             get { return _BonusAttack;}
-            set { _BonusAttack = value;}
+            set
+            {
+                _BonusAttack = value;
+                if (_BonusAttack)
+                {
+                    bonusattack = basebonusattack + 0.1f;
+                }
+                else
+                {
+                    bonusattack = basebonusattack;
+                }
+            }
         }   
         public bool BonusArmor
         {
             get { return _BonusArmor; }
-            set { _BonusArmor = value; }
+            set
+            {
+                _BonusArmor = value;
+                if (_BonusArmor)
+                {
+                    bonusdefence = basebonusdefence + 0.1f;
+                }
+                else
+                {
+                    bonusdefence = basebonusdefence;
+                }
+            }
         }
         public Espece ChosenEspece
         {

@@ -14,7 +14,7 @@ namespace TalesofHivnir
         public Transform playcoord;
         public Transform mobcoord;
      
-        public int mobhealth = 100;
+        public float mobhealth = LogMonster.LifeLog;
         public int mobcurrenthealth;
         public int mobattack;
         public int playerattack;

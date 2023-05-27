@@ -6,10 +6,18 @@ using UnityEngine;
 public class LogMonster : MonoBehaviour
 {
     public static int LifeLog = 100;
+    public Healthbar healthbar;
 
-    public static void Attack()
+    private void Start()
     {
-        LifeLog =- 50;
+       LifeLog = 100;
+       healthbar.SetMaxHealth(LifeLog);
+    }
+
+    public  void Attack()
+    {
+        LifeLog =(int)(Player.strenght * Player.bonusattack);
+        healthbar.SetHealth(LifeLog);
     }
     public bool isAlive()
     {
@@ -30,10 +38,7 @@ public class LogMonster : MonoBehaviour
     
     
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()

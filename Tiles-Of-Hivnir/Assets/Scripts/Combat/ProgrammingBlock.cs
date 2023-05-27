@@ -92,11 +92,7 @@ namespace TalesofHivnir
 
        
 
-        private void Attack()
-        {
-            LogMonster.Attack();
-            isMoving = false;
-        }
+       
 
         private IEnumerator MoveObjectToPosition(Vector3 moveVector, float duration)
         {

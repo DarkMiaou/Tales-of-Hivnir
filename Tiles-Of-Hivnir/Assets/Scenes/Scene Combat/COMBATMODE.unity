@@ -160,7 +160,7 @@ MonoBehaviour:
   gameManager: {fileID: 121093349}
   playcoord: {fileID: 1973488057}
   mobcoord: {fileID: 2092836386}
-  mobhealth: 100
+  mobhealth: 0
   mobcurrenthealth: 0
   mobattack: 5
   playerattack: 0
@@ -878,6 +878,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 10e2439b22bebb1418bb2e084e2ec222, type: 2}
+    - target: {fileID: 7415171058084383469, guid: e28760ba7297a4c47a332e92b5d700eb,
+        type: 3}
+      propertyPath: Strength
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7415171058084383470, guid: e28760ba7297a4c47a332e92b5d700eb,
         type: 3}
       propertyPath: m_RootOrder
@@ -52912,6 +52917,19 @@ MonoBehaviour:
   isDead: 0
   healthbar: {fileID: 234696876}
   gameManager: {fileID: 121093349}
+--- !u!114 &1973488074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973488046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182ba3391fe593843b7a71b5977fcd79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthbar: {fileID: 1368987985}
 --- !u!1 &2065312363
 GameObject:
   m_ObjectHideFlags: 0
