@@ -10,6 +10,7 @@ namespace TalesofHivnir
 {
     public class ProgrammingBlockInterpreter : PlayerCombat
     {
+        public Healthbar PlayerHealthbar;
         public Transform playcoord;
         public Transform mobcoord;
         public GameObject player;
@@ -43,6 +44,7 @@ namespace TalesofHivnir
 
         private void Start()
         {
+            PlayerHealthbar.SetMaxHealth(playerhealth);
             Blocks = new List<RectTransform>();
             Blocks.Add(startBlock);
 
@@ -92,40 +94,43 @@ namespace TalesofHivnir
                 isInterpreting = false;
                 timer = 60f;
 
-                if (coordx >= 0 && Math.Abs(coordx) >= Math.Abs(coordy))
+                if (Math.Abs(coordy) <= 1 && Math.Abs(coordx) >= 0 && Math.Abs(coordx) <=1 && Math.Abs(coordx)>=0)
                 {
-                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.right, 0.5f));
-                    mobanim.SetTrigger("Right");
-                    ResetAnimationTrigger("Right");
-                    Debug.Log("Right");
-                }
-                else if (coordx < 0 && Math.Abs(coordx) >= Math.Abs(coordy))
-                {
-                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.left, 0.5f));
-                    mobanim.SetTrigger("Left");
-                    ResetAnimationTrigger("Left");
-                    Debug.Log("Left");
-                }
-                else if (coordy >= 0 && Math.Abs(coordy) >= Math.Abs(coordx))
-                {
-                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.up, 0.5f));
-                    mobanim.SetTrigger("Up");
-                    ResetAnimationTrigger("Up");
-                    Debug.Log("Up");
-                }
-                else if (coordy < 0 && Math.Abs(coordy) >= Math.Abs(coordx))
-                {
-                    StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.down, 0.5f));
-                    mobanim.SetTrigger("Down");
-                    ResetAnimationTrigger("Down");
-                    Debug.Log("Down");
+                    Attack();
+                    mobanim.SetFloat("Horizontal", 0);
+                    mobanim.SetFloat("Vertical", 0);
+                    Debug.Log("attack");
                 }
                 else
                 {
-                    // No movement, set the animation to the default state (e.g., idle)
-                    mobanim.SetTrigger("Idle");
-                    ResetAnimationTrigger("Idle");
-                    Debug.Log("Idle");
+                    if (coordx >= 0 && Math.Abs(coordx) >= Math.Abs(coordy))
+                    {
+                        StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.right, 0.5f));
+                        mobanim.SetFloat("Horizontal",1 );
+                        mobanim.SetFloat("Vertical", 0);
+                        Debug.Log("Right");
+                    }
+                    else if (coordx < 0 && Math.Abs(coordx) >= Math.Abs(coordy))
+                    {
+                        StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.left, 0.5f));
+                        mobanim.SetFloat("Horizontal", -1);
+                        mobanim.SetFloat("Vertical", 0);
+                        Debug.Log("Left");
+                    }
+                    else if (coordy >= 0 && Math.Abs(coordy) >= Math.Abs(coordx))
+                    {
+                        StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.up, 0.5f));
+                        mobanim.SetFloat("Horizontal", 0);
+                        mobanim.SetFloat("Vertical", 1);
+                        Debug.Log("Up");
+                    }
+                    else if (coordy < 0 && Math.Abs(coordy) >= Math.Abs(coordx))
+                    {
+                        StartCoroutine(MoveObjectToPosition(objectToMove, Vector3.down, 0.5f));
+                        mobanim.SetFloat("Horizontal", 0);
+                        mobanim.SetFloat("Vertical", -1);
+                        Debug.Log("Down");
+                    }
                 }
             }
         }
@@ -137,15 +142,16 @@ namespace TalesofHivnir
 
         private void Attack()
         {
-            playercurrenthealth -= mobattack;
+            PlayerHealthbar.SetHealth(playerhealth - mobattack);
+            playerhealth = -mobattack;
 
-            GotDamage();
-
-            if (playercurrenthealth <= 0 && !isDead)
+            if (playerhealth <= 0 )
             {
                 isDead = true;
                 gameOver();
             }
+            
+
         }
 
         private IEnumerator MoveObjectToPosition(GameObject objectToMove, Vector3 moveVector, float duration)
