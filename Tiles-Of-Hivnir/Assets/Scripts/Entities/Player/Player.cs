@@ -11,6 +11,8 @@ namespace TalesofHivnir.Entities
     {
         public PlayerController playercont;
         
+        public static int Health = 100;
+
         // Bonus de la Classe
         private Classe _ChosenClasse;
         public Classe ChosenClasse
@@ -31,7 +33,8 @@ namespace TalesofHivnir.Entities
         }
         public bool Wizard;     //Sorcier
         public bool BonusAttack;    //Barbare
-        public bool BonusArmor;    //Berserker
+        public bool BonusArmor;
+        //Berserker
         
         // Bonus de l'Espece
         // Chaque int va avoir 0 -1 ou 1,

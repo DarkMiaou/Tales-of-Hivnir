@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TalesofHivnir.Entities;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace TalesofHivnir
 {
-    public class ProgrammingBlockInterpreter : MonoBehaviour
+    public class ProgrammingBlockInterpreter : PlayerCombat
     {
         public Transform playcoord;
         public Transform mobcoord;
         public GameObject player;
-        public float mobhealth;
-        public float playerhealth;
-        public float mobattack;
-        public float playerattack;
+        public int mobhealth = 100;
+        public int mobcurrenthealth;
+        public int mobattack;
+        public int playerattack;
 
         private float timer = 60f;
         private int randomAction;
@@ -24,11 +25,13 @@ namespace TalesofHivnir
         public List<ProgrammingBlock> blockList;
         private float coordx;
         private float coordy;
-
+        
         public Animator mobanim;
 
         public static List<RectTransform> blocks;
         public RectTransform startBlock;
+
+        public GameObject gameoverUI;
 
         [SerializeField] private Button ClearButton;
 
@@ -42,6 +45,8 @@ namespace TalesofHivnir
         {
             Blocks = new List<RectTransform>();
             Blocks.Add(startBlock);
+
+
         }
 
         public float blockExecutionDelay = 0.5f;
@@ -132,10 +137,14 @@ namespace TalesofHivnir
 
         private void Attack()
         {
-            playerhealth -= mobattack;
-            if (playerhealth <= 0)
+            playercurrenthealth -= mobattack;
+
+            GotDamage();
+
+            if (playercurrenthealth <= 0 && !isDead)
             {
-                SceneManager.LoadScene("Test");
+                isDead = true;
+                gameOver();
             }
         }
 
@@ -162,6 +171,21 @@ namespace TalesofHivnir
             blockList = new List<ProgrammingBlock>();
             Blocks = new List<RectTransform>();
             Blocks.Add(startBlock);
+        }
+
+        public void gameOver()
+        {
+            gameoverUI.SetActive(true);
+        }
+
+        public void restart()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        public void Mainmenu()
+        {
+            SceneManager.LoadScene("Menu");
         }
     }
 }
