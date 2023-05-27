@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TalesofHivnir.Items;
+using TMPro;
 
 
 namespace TalesofHivnir.Menus
@@ -18,19 +19,19 @@ namespace TalesofHivnir.Menus
         
         public GameObject ItemCanvas;
         public Image Icone;
-        public Text Nom;
+        public TMP_Text Nom;
         
         public GameObject Invfull;
-        public Text ChoiceA;
-        public Text ChoiseB;
+        public TMP_Text ChoiceA;
+        public TMP_Text ChoiseB;
         public bool ItemNotTaken;
         public Inventory InvToAdd;
         public Item ItemToAdd;
         public GameObject ErrorChoiceBInvFull;
 
         public GameObject Invnotfull;
-        public Text ChoiceAbis;
-        public Text ChoiceBbis;
+        public TMP_Text ChoiceAbis;
+        public TMP_Text ChoiceBbis;
 
 
         private void Start()

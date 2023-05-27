@@ -31,6 +31,7 @@ namespace TalesofHivnir.Entities
                 }
             }
         }
+        
         public bool Wizard;     //Sorcier
         public bool BonusAttack;    //Barbare
         public bool BonusArmor;
