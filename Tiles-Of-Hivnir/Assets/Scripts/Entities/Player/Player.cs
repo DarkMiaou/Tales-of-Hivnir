@@ -9,12 +9,33 @@ namespace TalesofHivnir.Entities
 {
     public class Player : Entity
     {
-        public PlayerController playercont;
-        
-        public static int Health = 100;
-
         // Bonus de la Classe
         private Classe _ChosenClasse;
+
+        private bool _Wizard;  //Sorcier
+        private bool _BonusAttack;    //Barbare
+        private bool _BonusArmor; //Berserker
+        
+        // Bonus de l'Espece
+        // Chaque int va avoir 0 -1 ou 1,
+        // si on a 1 c'est qu'il y a un bonus à appliquer
+        // si on a -1 c'est qu'on a un malus à appliquer 
+        private Espece _ChosenEspece;
+        
+        private int _BonusSpeed;
+        private int _BonusStrenght;
+        private int _BonusLife;
+        
+        public PlayerController playercont;
+
+        public int basestrenght = 20;
+        public int strenght;
+        public int basemaxhealth = 100;
+        public int maxhealth;
+        
+        
+        
+        
         public Classe ChosenClasse
         {
             get { return _ChosenClasse; }
@@ -31,19 +52,23 @@ namespace TalesofHivnir.Entities
                 }
             }
         }
-        
-        public bool Wizard;     //Sorcier
-        public bool BonusAttack;    //Barbare
-        public bool BonusArmor;
-        //Berserker
-        
-        // Bonus de l'Espece
-        // Chaque int va avoir 0 -1 ou 1,
-        // si on a 1 c'est qu'il y a un bonus à appliquer
-        // si on a -1 c'est qu'on a un malus à appliquer 
-        private Espece _ChosenEspece;
-        private int _BonusSpeed;
-        public Espece ChosenEspece{
+        public bool Wizard
+        {
+            get { return _Wizard; }
+            set { _Wizard = value; }
+        }
+        public bool BonusAttack
+        {
+            get { return _BonusAttack;}
+            set { _BonusAttack = value;}
+        }   
+        public bool BonusArmor
+        {
+            get { return _BonusArmor; }
+            set { _BonusArmor = value; }
+        }
+        public Espece ChosenEspece
+        {
             get { return _ChosenEspece; }
             set {
                 _ChosenEspece = value;
@@ -76,8 +101,27 @@ namespace TalesofHivnir.Entities
                 }
             }
         }
-        public int BonusStrenght;
+        public int BonusStrenght
+        {
+            get { return _BonusStrenght; }
+            set
+            {
+                _BonusStrenght = value;
+                switch (_BonusStrenght)
+                {
+                    case -1:
+                        strenght = basestrenght * 3 / 4;
+                        break;
+                    case 1:
+                        strenght = basestrenght * 5 / 4;
+                        break;
+                    case 0:
+                        strenght = basestrenght;
+                        break;
+                }
+            }
 
+        }
         public int BonusSpeed
         {
             get { return _BonusSpeed;}
@@ -94,11 +138,35 @@ namespace TalesofHivnir.Entities
                 }
             }
         }
-        public int BonusLife;
+        public int BonusLife
+        {
+            get { return _BonusLife; }
+            set
+            {
+                _BonusLife = value;
+                switch (_BonusLife)
+                {
+                    case -1:
+                        maxhealth = basemaxhealth * 3 / 4;
+                        break;
+                    case 1:
+                        maxhealth = basemaxhealth * 5 / 4;
+                        break;
+                    case 0:
+                        maxhealth = basemaxhealth;
+                        break;
+                }
+                
+            }
+        }
         
         
-        public int Maxlife = 100;
-        //Pour l'iventaire voir le fichier inventaire de Killian
+        
+      
+        
+        public static int Health = 100;
+
+        //Pour l'iventaire voir le fichier inventaire de Kyllian
         public void TakeDamage()
         {
         }
