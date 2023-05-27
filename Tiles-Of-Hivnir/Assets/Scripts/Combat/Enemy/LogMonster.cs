@@ -5,15 +5,15 @@ using UnityEngine;
 
 public class LogMonster : MonoBehaviour
 {
-    public static int MaxLifeLog = 100;
+    public static int LifeLog = 100;
 
     public static void Attack()
     {
-        MaxLifeLog =- 50;
+        LifeLog =- 50;
     }
     public bool isAlive()
     {
-        if (MaxLifeLog <= 0)
+        if (LifeLog <= 0)
             return false;
         else 
             return true;
