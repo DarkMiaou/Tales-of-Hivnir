@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace TalesofHivnir
 {
-    public class ProgrammingBlock : MonoBehaviour
+    public class ProgrammingBlock : LogMonster
     {
         public string blockName;
         public int blockType;
