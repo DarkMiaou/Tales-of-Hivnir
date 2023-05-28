@@ -12,9 +12,13 @@ public class EnemyCombat : MonoBehaviour
 
     public int maxhealth;
     public int damage;
-    public int currenthealth;
+    public float currenthealth;
+    public Transform player_;
+    public Transform mob_;
+    private float x;
+    private float y;
 
-    
+
 
     /*ublic int damage
     {
@@ -37,18 +41,26 @@ public class EnemyCombat : MonoBehaviour
             switch (gameObject.name)
             {
                 case "LogMonster" :
-                    maxhealth = 50;
+                    maxhealth = ;
                     break;
             }
             
         }
     }*/
     
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
-        currenthealth -= damage;
-        healthbar.SetHealth(currenthealth);
-
+        x = mob_.position.x - player_.position.x;
+        y = mob_.position.y - player_.position.y;
+        if (Math.Abs(x)>= 0 && Math.Abs(x) <= 1 && Math.Abs(y)>= 0 && Math.Abs(y) <= 1 )
+        {
+            currenthealth -= damage;
+            healthbar.SetHealth(currenthealth);
+        }
+        else
+        {
+            healthbar.SetHealth(currenthealth);
+        }
     }
     
     private void Awake()

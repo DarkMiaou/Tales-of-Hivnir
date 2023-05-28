@@ -39,7 +39,7 @@ namespace TalesofHivnir.Entities
          */
         
         public int basestrenght = 20;
-        public int strenght;
+        public static int strenght;
         public int basemaxhealth = 100;
         public int maxhealth;
         public int currenthealth;

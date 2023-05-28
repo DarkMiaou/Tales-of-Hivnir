@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TalesofHivnir.Entities;
 using UnityEngine;
 
 namespace TalesofHivnir
@@ -12,12 +13,15 @@ namespace TalesofHivnir
         public float speed = 5f;
         public GameObject objectToMove;
         public Animator myanim;
+        private float damage;
 
         private Rigidbody2D rb;
         private bool isMoving = false;
 
         private void Start()
         {
+            damage = 20;
+            Debug.Log(damage);
             rb = objectToMove.GetComponent<Rigidbody2D>();
             if (rb == null)
             {
@@ -92,7 +96,10 @@ namespace TalesofHivnir
 
         private void Attack()
         {
-            EnemyCombat.instance.TakeDamage(20);
+            myanim.SetFloat("Horizontal", 0.2f);
+            myanim.SetFloat("Vertical", 0.2f);
+            Debug.Log(damage);
+            EnemyCombat.instance.TakeDamage(damage);
         }
 
 
