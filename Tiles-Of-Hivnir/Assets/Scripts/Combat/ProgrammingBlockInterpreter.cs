@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TalesofHivnir.Entities;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -29,6 +30,7 @@ namespace TalesofHivnir
         private float coordy;
         public GameObject attaque;
         public GameObject move;
+        public TMP_Text textPa;
         
         public Animator mobanim;
 
@@ -109,6 +111,7 @@ namespace TalesofHivnir
 
         private void Update()
         {
+            textPa.text = Convert.ToString(Max_PA-PA);
             Debug.Log(Blocks.Count);
             coordx = playcoord.position.x - mobcoord.position.x;
             coordy = playcoord.position.y - mobcoord.position.y;
