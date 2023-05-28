@@ -198,18 +198,7 @@ namespace TalesofHivnir.Entities
 
         private void Awake()
         {
-            if (instance == null)
-            {
-                instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
             currenthealth = maxhealth;
-
         }
         
         public int GetCurrentHealth()

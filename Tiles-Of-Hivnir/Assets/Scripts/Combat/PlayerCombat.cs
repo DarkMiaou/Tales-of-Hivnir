@@ -7,8 +7,9 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
-    public int playerhealth;
-    public int playercurrenthealth;
+    
+    //public int playerhealth;
+    //public int playercurrenthealth;
 
     public bool isDead;
 
@@ -19,27 +20,22 @@ public class PlayerCombat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //playerhealth = Player.Health;
-        playerhealth = Player.instance.maxhealth;
-        Debug.Log(Player.instance.maxhealth);
-        healthbar.SetMaxHealth(playerhealth);
+        healthbar.SetMaxHealth(SaveData.instance.maxhealth);
+        healthbar.SetHealth(SaveData.instance.currenthealth);
+        //healthbar.SetMaxHealth(SaveData.instance.maxhealth);
     }
 
     public void GotDamage()
     {
-        healthbar.SetHealth(Player.instance.currenthealth);
-        //healthbar.SetHealth(playercurrenthealth);
+        healthbar.SetHealth(SaveData.instance.currenthealth);
 
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        //Debug.Log("dans la zone");
-        Player.instance.currenthealth = 0;
-        //playercurrenthealth = 0;
-        healthbar.SetHealth(Player.instance.currenthealth);
-        //healthbar.SetHealth(playercurrenthealth);
-        Player.instance.currenthealth = Player.instance.maxhealth;
+        SaveData.instance.currenthealth = 0;
+        healthbar.SetHealth(SaveData.instance.currenthealth);
+        SaveData.instance.currenthealth = SaveData.instance.maxhealth;
         gameManager.gameOver();
     }
 

@@ -11,7 +11,7 @@ public class EnemyCombat : MonoBehaviour
     public Healthbar healthbar;
 
     public int maxhealth;
-    public int damage;
+    public int damage = 20;
     public float currenthealth;
     public Transform player_;
     public Transform mob_;
@@ -48,7 +48,7 @@ public class EnemyCombat : MonoBehaviour
         }
     }*/
     
-    public void TakeDamage(float damage)
+    /*public void TakeDamage(float damage)
     {
         x = mob_.position.x - player_.position.x;
         y = mob_.position.y - player_.position.y;
@@ -63,23 +63,13 @@ public class EnemyCombat : MonoBehaviour
         }
     }
     
-    private void Awake()
+    void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        Debug.Log("zzzz");
-        /*maxhealth = 50;
+        
+        maxhealth = 50;
         currenthealth = maxhealth;
         damage = 20;
-        healthbar.SetMaxHealth(maxhealth);*/
+        healthbar.SetMaxHealth(maxhealth);
 
     }
 
@@ -91,5 +81,5 @@ public class EnemyCombat : MonoBehaviour
     public void Destroy()
     {
         Destroy(gameObject);
-    }
+    }*/
 }

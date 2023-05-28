@@ -54,11 +54,7 @@ namespace TalesofHivnir
         private void Start()
         {
             Max_PA = 3;
-            //playercurrenthealth = Player.Health;
-            Debug.Log(Player.instance.GetCurrentHealth());
-            SetStatsEnemy();
-
-
+            
             Blocks = new List<RectTransform>();
             Blocks.Add(startBlock);
             move.SetActive(false);
@@ -112,7 +108,7 @@ namespace TalesofHivnir
         private void Update()
         {
             textPa.text = Convert.ToString(Max_PA-PA);
-            Debug.Log(Blocks.Count);
+            //Debug.Log(Blocks.Count);
             coordx = playcoord.position.x - mobcoord.position.x;
             coordy = playcoord.position.y - mobcoord.position.y;
             timer -= Time.deltaTime;
@@ -215,12 +211,11 @@ namespace TalesofHivnir
 
         private void Attack()
         {
-            //playercurrenthealth = playercurrenthealth - mobattack;
-            Player.instance.TakeDamage(mobattack);
+            SaveData.instance.currenthealth -= 20;
             GotDamage();
             
 
-            if (Player.instance.GetCurrentHealth() <= 0 && !isDead)
+            if (SaveData.instance.currenthealth <= 0 && !isDead)
             {
                 isDead = true;
                 gameOver();
@@ -264,9 +259,8 @@ namespace TalesofHivnir
 
         public void restart()
         {
-            Player.instance.currenthealth = Player.instance.maxhealth;
-            Player.instance.Destroy();
-            EnemyCombat.instance.Destroy();
+            //Player.instance.currenthealth = Player.instance.maxhealth;
+            SaveData.instance.currenthealth = SaveData.instance.maxhealth;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
@@ -275,7 +269,7 @@ namespace TalesofHivnir
             SceneManager.LoadScene("Menu");
         }
 
-        public void SetStatsEnemy()
+        /*public void SetStatsEnemy()
         {
             switch(EnemyCombat.instance.gameObject.name)
             {
@@ -286,6 +280,6 @@ namespace TalesofHivnir
                     EnemyCombat.instance.healthbar.SetMaxHealth(100);
                     break;
             }
-        }
+        }*/
     }
 }

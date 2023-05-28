@@ -98,7 +98,7 @@ namespace TalesofHivnir
         {
            
             Debug.Log(damage);
-            EnemyCombat.instance.TakeDamage(damage);
+            //EnemyCombat.instance.TakeDamage(damage);
             myanim.SetFloat("Horizontal", 0.2f);
             myanim.SetFloat("Vertical", 0.2f);
         }
