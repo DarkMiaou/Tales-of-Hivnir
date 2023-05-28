@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TalesofHivnir.Entities;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -35,8 +36,11 @@ namespace TalesofHivnir
         public RectTransform startBlock;
 
         public GameObject gameoverUI;
+        public int PA;
+        public int PA_;
+        
 
-        [SerializeField] private Button ClearButton;
+        private Button ClearButton;
         
 
         public static List<RectTransform> Blocks
@@ -47,6 +51,7 @@ namespace TalesofHivnir
 
         private void Start()
         {
+            PA_ = PA;
             //playercurrenthealth = Player.Health;
             Debug.Log(Player.instance.GetCurrentHealth());
             SetStatsEnemy();
@@ -80,6 +85,7 @@ namespace TalesofHivnir
             }
 
             ClearBlocks();
+            PA = PA_;
         }
 
         public void AddBlock(ProgrammingBlock block)
@@ -89,16 +95,27 @@ namespace TalesofHivnir
             if (!blockList.Contains(block))
             {
                 blockList.Add(block);
+                PA--;   
             }
         }
+
+     
 
         private void Update()
         {
             coordx = playcoord.position.x - mobcoord.position.x;
             coordy = playcoord.position.y - mobcoord.position.y;
-
             timer -= Time.deltaTime;
+            //int index = blockList.Count;
            
+            /*if (PA <0)
+            //{
+                Blocks.Add(startBlock);
+                Destroy(Blocks[index].gameObject);
+                blockList.RemoveAt(index);
+
+                PA++;
+            } Marche à moitié*/
                
           
             if (timer <= 0f || isInterpreting)
@@ -254,10 +271,10 @@ namespace TalesofHivnir
             switch(EnemyCombat.instance.gameObject.name)
             {
                 case "LogMonster" :
-                    EnemyCombat.instance.maxhealth = 50;
+                    EnemyCombat.instance.maxhealth = 100;
                     EnemyCombat.instance.currenthealth = EnemyCombat.instance.maxhealth;
                     EnemyCombat.instance.damage = 20;
-                    EnemyCombat.instance.healthbar.SetMaxHealth(50);
+                    EnemyCombat.instance.healthbar.SetMaxHealth(100);
                     break;
             }
         }
