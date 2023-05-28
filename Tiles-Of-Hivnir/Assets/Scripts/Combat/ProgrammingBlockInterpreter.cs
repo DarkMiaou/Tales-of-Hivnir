@@ -37,6 +37,7 @@ namespace TalesofHivnir
         public GameObject gameoverUI;
 
         [SerializeField] private Button ClearButton;
+        
 
         public static List<RectTransform> Blocks
         {
@@ -46,10 +47,11 @@ namespace TalesofHivnir
 
         private void Start()
         {
-            playercurrenthealth = Player.Health;
-            Debug.Log(playercurrenthealth);
-           
-      
+            //playercurrenthealth = Player.Health;
+            Debug.Log(Player.instance.GetCurrentHealth());
+            SetStatsEnemy();
+
+
             Blocks = new List<RectTransform>();
             Blocks.Add(startBlock);
             move.SetActive(false);
@@ -190,11 +192,12 @@ namespace TalesofHivnir
 
         private void Attack()
         {
-            playercurrenthealth = playercurrenthealth - mobattack;
-           GotDamage();
+            //playercurrenthealth = playercurrenthealth - mobattack;
+            Player.instance.TakeDamage(mobattack);
+            GotDamage();
             
 
-            if (playercurrenthealth <= 0 && !isDead)
+            if (Player.instance.GetCurrentHealth() <= 0 && !isDead)
             {
                 isDead = true;
                 gameOver();
@@ -235,12 +238,28 @@ namespace TalesofHivnir
 
         public void restart()
         {
+            Player.instance.currenthealth = Player.instance.maxhealth;
+            Player.instance.Destroy();
+            EnemyCombat.instance.Destroy();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         public void Mainmenu()
         {
             SceneManager.LoadScene("Menu");
+        }
+
+        public void SetStatsEnemy()
+        {
+            switch(EnemyCombat.instance.gameObject.name)
+            {
+                case "LogMonster" :
+                    EnemyCombat.instance.maxhealth = 50;
+                    EnemyCombat.instance.currenthealth = EnemyCombat.instance.maxhealth;
+                    EnemyCombat.instance.damage = 20;
+                    EnemyCombat.instance.healthbar.SetMaxHealth(50);
+                    break;
+            }
         }
     }
 }

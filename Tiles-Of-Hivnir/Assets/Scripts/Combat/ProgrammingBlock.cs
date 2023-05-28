@@ -90,9 +90,14 @@ namespace TalesofHivnir
             isMoving = true;
         }
 
-       
+        private void Attack()
+        {
+            EnemyCombat.instance.TakeDamage(20);
+        }
 
-       
+
+
+
 
         private IEnumerator MoveObjectToPosition(Vector3 moveVector, float duration)
         {

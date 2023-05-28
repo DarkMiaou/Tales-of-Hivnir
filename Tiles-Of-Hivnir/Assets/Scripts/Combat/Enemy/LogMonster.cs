@@ -14,11 +14,12 @@ public class LogMonster : MonoBehaviour
        healthbar.SetMaxHealth(LifeLog);
     }
 
-    public  void Attack()
+    /*public  void Attack()
     {
-        LifeLog =(int)(Player.strenght * Player.bonusattack);
+        //LifeLog =(int)(Player.strenght * Player.bonusattack);
+        LifeLog =(int)(Player.instance.strenght * Player.instance.BonusStrenght);
         healthbar.SetHealth(LifeLog);
-    }
+    }*/
     public bool isAlive()
     {
         if (LifeLog <= 0)

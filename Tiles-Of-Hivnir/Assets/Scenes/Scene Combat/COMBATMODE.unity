@@ -431,7 +431,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 51.3
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -880,8 +880,23 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 10e2439b22bebb1418bb2e084e2ec222, type: 2}
     - target: {fileID: 7415171058084383469, guid: e28760ba7297a4c47a332e92b5d700eb,
         type: 3}
+      propertyPath: Health
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415171058084383469, guid: e28760ba7297a4c47a332e92b5d700eb,
+        type: 3}
       propertyPath: Strength
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415171058084383469, guid: e28760ba7297a4c47a332e92b5d700eb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415171058084383469, guid: e28760ba7297a4c47a332e92b5d700eb,
+        type: 3}
+      propertyPath: maxhealth
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7415171058084383470, guid: e28760ba7297a4c47a332e92b5d700eb,
         type: 3}
@@ -7550,7 +7565,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 100
+  m_Value: 33.8
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -53017,6 +53032,8 @@ GameObject:
   - component: {fileID: 2092836386}
   - component: {fileID: 2092836385}
   - component: {fileID: 2092836384}
+  - component: {fileID: 2092836387}
+  - component: {fileID: 2092836388}
   m_Layer: 0
   m_Name: LogMonster
   m_TagString: Untagged
@@ -53111,6 +53128,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2092836387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092836383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d9b538bf700b947a80f4d25f77af5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthbar: {fileID: 1368987985}
+  maxhealth: 0
+  damage: 0
+  currenthealth: 0
+--- !u!114 &2092836388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092836383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d24afb80c3a58488a298c8fcf6ef7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthbar: {fileID: 1368987985}
 --- !u!1 &2146690882
 GameObject:
   m_ObjectHideFlags: 0

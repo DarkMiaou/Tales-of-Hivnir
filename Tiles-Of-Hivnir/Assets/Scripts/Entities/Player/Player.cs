@@ -9,6 +9,8 @@ namespace TalesofHivnir.Entities
 {
     public class Player : Entity
     {
+        public static Player instance; //permet d'acceder à player dans les autres fichiers
+        
         // Bonus de la Classe
         private Classe _ChosenClasse;
 
@@ -37,17 +39,17 @@ namespace TalesofHivnir.Entities
          */
         
         public int basestrenght = 20;
-        public static int strenght;
+        public int strenght;
         public int basemaxhealth = 100;
-        public static int maxhealth;
+        public int maxhealth;
+        public int currenthealth;
         public float basebonusattack = 1.2f;
         public static float bonusattack;
         public float basebonusdefence = 1.2f;
         public float bonusdefence;
 
-
-
-
+        //public static int Health = 100;
+        
         public Classe ChosenClasse
         {
             get { return _ChosenClasse; }
@@ -193,16 +195,33 @@ namespace TalesofHivnir.Entities
                 
             }
         }
+
+        private void Awake()
+        {
+            if (instance == null)
+            {
+                instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else
+            {
+                instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            currenthealth = maxhealth;
+
+        }
         
-        
-        
-      
-        
-        public static int Health = 100;
+        public int GetCurrentHealth()
+        {
+            return currenthealth;
+        }
+
 
         //Pour l'iventaire voir le fichier inventaire de Kyllian
-        public void TakeDamage()
+        public void TakeDamage(int damage)
         {
+            currenthealth -= damage;
         }
 
         public void AddExp(Item n)
@@ -222,6 +241,12 @@ namespace TalesofHivnir.Entities
                 return true;
             else
                 return false;
+        }
+
+
+        public void Destroy()
+        {
+            Destroy(gameObject);
         }
 
     }
