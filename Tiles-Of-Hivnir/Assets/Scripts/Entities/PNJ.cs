@@ -9,6 +9,8 @@ namespace TalesofHivnir.Entities
         public Sprite icone;
         public string name;
         public string text;
-        
+        public string textrec;
+        public string textdejafaitquete;
+
     }
 }

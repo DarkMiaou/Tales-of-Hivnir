@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TalesofHivnir.Items;
 
 namespace TalesofHivnir.Menus
 {
@@ -22,6 +23,15 @@ namespace TalesofHivnir.Menus
         public KeyCode interactionKey = KeyCode.F;
 
         private bool isInRange;
+        public Item quest_item;
+        public int number_of_item;
+        public Item reward;
+       
+        private bool quest = false;
+        
+      
+    
+        public Inventory inv;
 
         private void Start()
         {
@@ -31,6 +41,7 @@ namespace TalesofHivnir.Menus
 
         private void Update()
         {
+            int i = 0;
             float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
 
             if (distanceToPlayer <= interactionRange)
@@ -43,7 +54,50 @@ namespace TalesofHivnir.Menus
 
                 if (Input.GetKeyDown(interactionKey))
                 {
+                    if (inv.InvList.Count <= 0)
+                    {
+                        if(quest)
+                        {
+                            TEXTE.text = PNJ.textdejafaitquete;
+                        }
+                        else
+                        {
+                            TEXTE.text = PNJ.text;
+                        }
+                    }
+                    else
+                    {
+                        while (i < inv.InvList.Count)
+                        {
+                            if (inv.InvList[i].Name == quest_item.Name)
+                            {
+                                TEXTE.text = PNJ.textrec;
+
+                                inv.InvList.Add(reward);
+                                inv.InvList.Remove(quest_item);
+
+                                inv.ActualiseDisplay();
+                                Debug.Log("ca marche");
+                                quest = true;
+                            }
+                            else if (quest)
+                            {
+                                TEXTE.text = PNJ.textdejafaitquete;
+                            }
+                            else
+                            {
+                                TEXTE.text = PNJ.text;
+                            }
+
+                            i++;
+                        }
+
+
+
+
+                    }
                     OpenText(TEXTE.text);
+                    i = 0;
                 }
             }
             else
@@ -69,7 +123,6 @@ namespace TalesofHivnir.Menus
         public void OpenText(string text)
         {
             Open();
-            TEXTE.text = PNJ.text;
             PNJ_NAME.text = PNJ.name;
             PNJ_icon.sprite = PNJ.icone;
     

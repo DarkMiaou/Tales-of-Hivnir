@@ -13,7 +13,10 @@ namespace TalesofHivnir
         public List<Image> InvDisplayList;
         public InvMenu InvMenuObj;
 
-
+        private void Start()
+        {
+            ActualiseDisplay();
+        }
 
         public void AddItem(Item item, ChestController chest)
         {
