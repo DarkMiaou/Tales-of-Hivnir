@@ -56,10 +56,9 @@ namespace TalesofHivnir
             Debug.Log("Failed to Add : Inv is Full");
         }
 
-        public void ActualiseDisplay() //à faire
+        public void ActualiseDisplay() // à appeler à chaques modifs de l'inventaire
         {
             int cpt = 0;
-            int l = InvList.Count;   
             foreach (var elt in InvList)
             {
                 InvDisplayList[cpt].color= Color.white;
