@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace TalesofHivnir
 {
@@ -13,12 +14,15 @@ namespace TalesofHivnir
         public float pauseDuration = 2f;
         public float collisionCheckRadius = 0.2f;
         private float timer = 5f;
+        public Transform playerTransform;
 
         private Vector3 moveTarget;
         private bool isMoving = false;
 
         private Animator anim;
         private int random;
+        public int range;
+        public string scene;
 
         void Start()
         {
@@ -30,15 +34,21 @@ namespace TalesofHivnir
 
         void Update()
         {
+            float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
             timer -= Time.deltaTime;
+            if (distanceToPlayer <= range) 
+            {
+                SceneManager.LoadScene(scene);
+            }
             if (timer <= 0f)
             {
                 random = Random.Range(-3, 3);
                 moveTarget = new Vector3(transform.position.x + random, transform.position.y + random, 0);
                 timer = 5f;
             }
+            
 
-            if (!isMoving)
+                if (!isMoving)
             {
                 // Si le mob n'est pas en train de se déplacer, on démarre une pause
                 StartCoroutine(Pause());

@@ -15,7 +15,7 @@ C:/Users/Utilisateur/Documents/GitHub/Tales-of-Hivnir/Tiles-Of-Hivnir
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-53825
+55435
 Successfully changed project path to: C:/Users/Utilisateur/Documents/GitHub/Tales-of-Hivnir/Tiles-Of-Hivnir
 C:/Users/Utilisateur/Documents/GitHub/Tales-of-Hivnir/Tiles-Of-Hivnir
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/Utilisateur/Documents/GitHub/Tales-of-Hivnir/Tiles-Of-Hivnir
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7888] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2233757499 [EditorId] 2233757499 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-ET774ROT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [20904] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 724287235 [EditorId] 724287235 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-ET774ROT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [7888] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2233757499 [EditorId] 2233757499 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-ET774ROT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [20904] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 724287235 [EditorId] 724287235 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-ET774ROT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 128.33 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 91.79 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
@@ -67,79 +67,79 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003895 seconds.
+Registered in 0.005011 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 84.49 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 81.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.505 seconds
+- Completed reload, in  0.518 seconds
 Domain Reload Profiling:
-	ReloadAssembly (505ms)
-		BeginReloadAssembly (52ms)
+	ReloadAssembly (519ms)
+		BeginReloadAssembly (54ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (372ms)
-			LoadAssemblies (51ms)
+		EndReloadAssembly (382ms)
+			LoadAssemblies (53ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (81ms)
+			SetupTypeCache (88ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (19ms)
-			SetupLoadedEditorAssemblies (234ms)
+			SetupLoadedEditorAssemblies (230ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (40ms)
+				InitializePlatformSupportModulesInManaged (44ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (85ms)
+				RefreshPlugins (82ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (72ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
+				ProcessInitializeOnLoadAttributes (69ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004406 seconds.
+Registered in 0.005955 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 88.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 80.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.957 seconds
+- Completed reload, in  0.928 seconds
 Domain Reload Profiling:
-	ReloadAssembly (958ms)
-		BeginReloadAssembly (205ms)
+	ReloadAssembly (929ms)
+		BeginReloadAssembly (187ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (137ms)
-		EndReloadAssembly (661ms)
-			LoadAssemblies (63ms)
+			CreateAndSetChildDomain (121ms)
+		EndReloadAssembly (658ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (161ms)
+			SetupTypeCache (164ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (349ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (342ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (88ms)
-				BeforeProcessingInitializeOnLoad (53ms)
-				ProcessInitializeOnLoadAttributes (163ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
+				RefreshPlugins (80ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (161ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -147,13 +147,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.37 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2839 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (30.2 KB). Loaded Objects now: 3304.
-Memory consumption went from 131.3 MB to 131.3 MB.
-Total: 2.906500 ms (FindLiveObjects: 0.289700 ms CreateObjectMapping: 0.071800 ms MarkObjects: 2.518300 ms  DeleteObjects: 0.025900 ms)
+Unloading 2840 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (30.2 KB). Loaded Objects now: 3305.
+Memory consumption went from 131.4 MB to 131.3 MB.
+Total: 2.686900 ms (FindLiveObjects: 0.212200 ms CreateObjectMapping: 0.060200 ms MarkObjects: 2.374100 ms  DeleteObjects: 0.039800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -168,61 +168,472 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 251170.354267 seconds.
-  path: Assets/Resources/Chest (2).prefab
-  artifactKey: Guid(c8b44d2bd5448af47afa81ea9a206124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Chest (2).prefab using Guid(c8b44d2bd5448af47afa81ea9a206124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79c84e7775d2c2bd27f72a735f20a67') in 0.136636 seconds 
+  Time since last request: 254133.245489 seconds.
+  path: Assets/Art/Objets/Bone.asset
+  artifactKey: Guid(02763281216000f41b7ed8fd65020a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Objets/Bone.asset using Guid(02763281216000f41b7ed8fd65020a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '446085556982929a8c5b7e3ef783e6fa') in 0.026221 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004400 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.780 seconds
+Domain Reload Profiling:
+	ReloadAssembly (781ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (593ms)
+			LoadAssemblies (62ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (198ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (251ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (151ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2814 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (31.8 KB). Loaded Objects now: 3309.
+Memory consumption went from 129.1 MB to 129.1 MB.
+Total: 2.916300 ms (FindLiveObjects: 0.170000 ms CreateObjectMapping: 0.061000 ms MarkObjects: 2.663000 ms  DeleteObjects: 0.021500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005516 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.735 seconds
+Domain Reload Profiling:
+	ReloadAssembly (736ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (550ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (161ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (249ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (148ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2814 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (31.8 KB). Loaded Objects now: 3312.
+Memory consumption went from 129.1 MB to 129.1 MB.
+Total: 2.660500 ms (FindLiveObjects: 0.178200 ms CreateObjectMapping: 0.062600 ms MarkObjects: 2.391400 ms  DeleteObjects: 0.027100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005706 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.932 seconds
+Domain Reload Profiling:
+	ReloadAssembly (932ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (742ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (215ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (336ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2814 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (31.8 KB). Loaded Objects now: 3315.
+Memory consumption went from 129.1 MB to 129.1 MB.
+Total: 3.219300 ms (FindLiveObjects: 0.310500 ms CreateObjectMapping: 0.061700 ms MarkObjects: 2.815400 ms  DeleteObjects: 0.030300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 622.818349 seconds.
+  path: Assets/Tilesmap/Map tuto.prefab
+  artifactKey: Guid(1f881de87587a01408996d4f742e97b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Map tuto.prefab using Guid(1f881de87587a01408996d4f742e97b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa3407a765e3467e154b599decd76e1') in 0.230417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_0.asset
+  artifactKey: Guid(ebb7a4d52069534468a70ab4c15ea980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_0.asset using Guid(ebb7a4d52069534468a70ab4c15ea980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e155988294c1ba8e828a61a25a5d1b5a') in 0.011439 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000035 seconds.
-  path: Assets/Resources/Goblin King Sprite Sheet_0.prefab
-  artifactKey: Guid(922cde37d66fba84da4232220021ea28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Goblin King Sprite Sheet_0.prefab using Guid(922cde37d66fba84da4232220021ea28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (Goblin King Sprite Sheet_77) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\build\output\unity\unity\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (Goblin King Sprite Sheet_77) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\build\output\unity\unity\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '38e2e360a3b386947b84581f0984d011') in 0.020263 seconds 
+  path: Assets/Tilesmap/Top down Garden Castle_17.asset
+  artifactKey: Guid(84ef8c3712cfd5c4188abd5bd512c52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_17.asset using Guid(84ef8c3712cfd5c4188abd5bd512c52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2574186c231d80e4d0edd555db7f447') in 0.007251 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Resources/Player's Inv.prefab
-  artifactKey: Guid(0c09f2856b007d049be38e113adedd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Player's Inv.prefab using Guid(0c09f2856b007d049be38e113adedd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284f1fadda6f225be16c372cd6d277c4') in 0.007941 seconds 
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_38.asset
+  artifactKey: Guid(65e10e090dd297d4ca7bf512e17d0568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_38.asset using Guid(65e10e090dd297d4ca7bf512e17d0568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '056e42fb7a3c3a60fbd884eb98290a28') in 0.013071 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Resources/Chest 2.prefab
-  artifactKey: Guid(6a17da1ca0c29a0478fa0d321fb56921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Chest 2.prefab using Guid(6a17da1ca0c29a0478fa0d321fb56921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e676657525ab70129f66f9e7b48f5bd0') in 0.017376 seconds 
+  Time since last request: 0.000017 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_13.asset
+  artifactKey: Guid(e68ad7479cdf93f42987d0bc265e6a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_13.asset using Guid(e68ad7479cdf93f42987d0bc265e6a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b35bd5da95e481c697312dcadfbb1e') in 0.009247 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Resources/Dungeon door outside.prefab
-  artifactKey: Guid(c9a9734781bf7c646aaaa99784e0de12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Dungeon door outside.prefab using Guid(c9a9734781bf7c646aaaa99784e0de12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5eeb4d7309ec0d18a15b32bc47b536') in 0.034576 seconds 
+  Time since last request: 0.000024 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_51.asset
+  artifactKey: Guid(b2d73e01258ca584f909189621b20013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_51.asset using Guid(b2d73e01258ca584f909189621b20013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '798903f729720d7a2902e438d4c98afa') in 0.007046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_43.asset
+  artifactKey: Guid(ff3e6b6cdca236748bb28f1298d96415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_43.asset using Guid(ff3e6b6cdca236748bb28f1298d96415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e237d3baf1dd3344578812fb8e1b94c6') in 0.008794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_64.asset
+  artifactKey: Guid(7aa092cde68204d4d97cdb9f6f50e8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_64.asset using Guid(7aa092cde68204d4d97cdb9f6f50e8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a65349c4284c74361b11f9eecceb4d3') in 0.009978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_56.asset
+  artifactKey: Guid(0b8a55e7233c44c47a675e6c12ef5d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_56.asset using Guid(0b8a55e7233c44c47a675e6c12ef5d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da668d5bb88bc539e8e4cfa72cd14e66') in 0.008891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_63.asset
+  artifactKey: Guid(be8814205786d7f4daa47a2bc583ec25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_63.asset using Guid(be8814205786d7f4daa47a2bc583ec25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96973f275eb0b7892a4ab638226b9e3a') in 0.009797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_21.asset
+  artifactKey: Guid(d199d9f5fc7fed548b640cbd82546e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_21.asset using Guid(d199d9f5fc7fed548b640cbd82546e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c261d0ac0888670c8c0fc563338d091c') in 0.006241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_25.asset
+  artifactKey: Guid(9f3ea0801fe017b4f9e43de5c7ea80de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_25.asset using Guid(9f3ea0801fe017b4f9e43de5c7ea80de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef27a2bef53c311e6ba6185edeeeb00') in 0.008031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_16.asset
+  artifactKey: Guid(249a9dcbe5fdd1e46b580f2524beaf27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_16.asset using Guid(249a9dcbe5fdd1e46b580f2524beaf27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9423add96d783e7a0caf653ec91d034c') in 0.011523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_27.asset
+  artifactKey: Guid(84bf9203ac9e83841aeb0241e2ef5761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_27.asset using Guid(84bf9203ac9e83841aeb0241e2ef5761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af9307fc465d7f2630c4cf878578d347') in 0.009765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_31.asset
+  artifactKey: Guid(c6827277ec8be6e48b713acd8f733f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_31.asset using Guid(c6827277ec8be6e48b713acd8f733f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '113e0ba12b028c1f7e79d6c7dca2d11e') in 0.007036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_20.asset
+  artifactKey: Guid(12b7df2164f5cdb4e8d45440af38802c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_20.asset using Guid(12b7df2164f5cdb4e8d45440af38802c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef734443ae7151a1b510e2f9a38c0e0e') in 0.012739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_47.asset
+  artifactKey: Guid(c720339ae54060e4faca42e2329712f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_47.asset using Guid(c720339ae54060e4faca42e2329712f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6937aea0a1bc13c309c2f6f8607a8e16') in 0.012138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_33.asset
+  artifactKey: Guid(70843561d213c2f4a9890a6d165a677c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_33.asset using Guid(70843561d213c2f4a9890a6d165a677c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f8915673338b93181975014fde4ba0') in 0.007313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_49.asset
+  artifactKey: Guid(b2fb65494174f1740b5b56f197646f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_49.asset using Guid(b2fb65494174f1740b5b56f197646f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6193262ebd3bd459803e78a3047919e') in 0.007763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_29.asset
+  artifactKey: Guid(8f87ff5cffd4023409a42fb09e7fd8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_29.asset using Guid(8f87ff5cffd4023409a42fb09e7fd8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a3f87186ceab79d4e46ca492ef78616') in 0.008008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_35.asset
+  artifactKey: Guid(575b2e093a9dcf245b5a44767d525c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_35.asset using Guid(575b2e093a9dcf245b5a44767d525c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f502a66f94c39bfecf3af17b5c6c5bcc') in 0.009155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_62.asset
+  artifactKey: Guid(445a21b92d1eeab40807a45ffdb0d2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_62.asset using Guid(445a21b92d1eeab40807a45ffdb0d2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df0bb0d7633b0973ab2487c5df7f94a') in 0.008249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_1.asset
+  artifactKey: Guid(d513ec60157edab4485ae482b7a3cd83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_1.asset using Guid(d513ec60157edab4485ae482b7a3cd83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31be774f90111d8b2e8ffb1c2898835') in 0.007682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_69.asset
+  artifactKey: Guid(ad8fe83651f8ccb448aa103ee0a3c73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_69.asset using Guid(ad8fe83651f8ccb448aa103ee0a3c73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '568fba11ce419fb1d101fc479ec93484') in 0.006640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_42.asset
+  artifactKey: Guid(f68c3ec7227062d40ad0d37eddcd65d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_42.asset using Guid(f68c3ec7227062d40ad0d37eddcd65d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a73699c5633cd9f19913dab2d576e5') in 0.006513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_10.asset
+  artifactKey: Guid(e674d57071ef44741bd46bc5d52f77f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_10.asset using Guid(e674d57071ef44741bd46bc5d52f77f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3145a0ee4ef0e8b81bc78c5dbc0dc468') in 0.007844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_22.asset
+  artifactKey: Guid(a09d33a848fb8e34482205c6793679c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_22.asset using Guid(a09d33a848fb8e34482205c6793679c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927c4c16231f31180140ca5ad5956e14') in 0.007270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_2.asset
+  artifactKey: Guid(a2db74fd880122346a2235abef86af98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_2.asset using Guid(a2db74fd880122346a2235abef86af98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddc8c84d019776a031400e672f9535a2') in 0.006808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_46.asset
+  artifactKey: Guid(91161b856364a1948bab3e50a82af0cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_46.asset using Guid(91161b856364a1948bab3e50a82af0cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5879f03af31709e552f5d933651c04c2') in 0.006689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_68.asset
+  artifactKey: Guid(23f896811fb4f9d4a8058d0d89ba72a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_68.asset using Guid(23f896811fb4f9d4a8058d0d89ba72a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ced8a0537eaeb4515424fcf9f9002e') in 0.009976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_55.asset
+  artifactKey: Guid(486b3a553c84b984193d0ff2e0be8557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_55.asset using Guid(486b3a553c84b984193d0ff2e0be8557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5481c23132b092947acfc78e5cb76c9f') in 0.008925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_59.asset
+  artifactKey: Guid(ef314fe2944441043b2294ebf66a4753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_59.asset using Guid(ef314fe2944441043b2294ebf66a4753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '285215e74692724fc52fe9ecd77ab057') in 0.006930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_7.asset
+  artifactKey: Guid(8393e965a9d85c6429a01e9604e8ba98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_7.asset using Guid(8393e965a9d85c6429a01e9604e8ba98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '715313ee1841480cafe57d76881fac1d') in 0.007001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_23.asset
+  artifactKey: Guid(3a94f66baae251b4888d776e571f2bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_23.asset using Guid(3a94f66baae251b4888d776e571f2bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da603553fb18eff31b5365371f5e145') in 0.006449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_58.asset
+  artifactKey: Guid(ec48d69d441b26f46a1b8f5cb405c381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_58.asset using Guid(ec48d69d441b26f46a1b8f5cb405c381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '075fa1972810dcafcef8878a3692fdd2') in 0.006736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Tilesmap/Top down Garden Castle_18.asset
+  artifactKey: Guid(f554f155733010c469731d771ee5fe2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesmap/Top down Garden Castle_18.asset using Guid(f554f155733010c469731d771ee5fe2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00fc390eb1f7f681133ce93c881fa75f') in 0.007642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.283025 seconds.
+  path: Assets/Art/TopDownCharacter/Enemy/log.png
+  artifactKey: Guid(72eb4fe0cee3f1141a7558ed6c5a589d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/TopDownCharacter/Enemy/log.png using Guid(72eb4fe0cee3f1141a7558ed6c5a589d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98870d980af4b71f8f8343efe92a872c') in 0.096795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.572217 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Weight_Slider@3x.png
+  artifactKey: Guid(ec8214d7d416a8746bb342b71e8e4269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Weight_Slider@3x.png using Guid(ec8214d7d416a8746bb342b71e8e4269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f76a8fb87ffe22d5392ac78defaf1ddd') in 0.017553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 57.057875 seconds.
+  path: Assets/Art/TopDownCharacter/Enemy/skeleton_hurt.png
+  artifactKey: Guid(3e5a5995f7fa2b944b85e9206c5cca1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/TopDownCharacter/Enemy/skeleton_hurt.png using Guid(3e5a5995f7fa2b944b85e9206c5cca1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f68ee468f8a5383fa59a462327d889c') in 0.018303 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005395 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.095 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1095ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (859ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (82ms)
+			SetupLoadedEditorAssemblies (389ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2814 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (31.8 KB). Loaded Objects now: 3335.
+Memory consumption went from 133.8 MB to 133.8 MB.
+Total: 6.281500 ms (FindLiveObjects: 0.496300 ms CreateObjectMapping: 0.238300 ms MarkObjects: 5.429700 ms  DeleteObjects: 0.111300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
