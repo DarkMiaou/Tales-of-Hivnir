@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace TalesofHivnir
 {
-    public class ProgrammingBlock : EnemyCombat
+    public class ProgrammingBlock : MonoBehaviour
     {
         public string blockName;
         public int blockType;
@@ -16,6 +16,8 @@ namespace TalesofHivnir
 
         private Rigidbody2D rb;
         private bool isMoving = false;
+
+        public EnemyCombat enemycombat;
 
         private void Start()
         {
@@ -93,10 +95,7 @@ namespace TalesofHivnir
 
         private void Attack()
         {
-           
-            //Debug.Log(damage);
-            blockcalled = true;
-            TakeDamage();
+            enemycombat.TakeDamage();
             //myanim.SetFloat("Horizontal", 0.2f);
             //myanim.SetFloat("Vertical", 0.2f);
         }

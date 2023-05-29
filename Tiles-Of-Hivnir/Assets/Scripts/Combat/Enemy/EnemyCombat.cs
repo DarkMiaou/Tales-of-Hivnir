@@ -1,25 +1,25 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json.Serialization;
 using TalesofHivnir;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyCombat : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public Healthbar healthbar;
-
-    private int maxhealth;
-    public int damage;
-    public float currenthealth;
+    public Healthbar healthbarmonster;
+    
     private Transform player_;
     private Transform mob_;
     private float x;
     private float y;
 
     public bool isinside = false;
-    public bool blockcalled = false;
+
+    public GameObject gamefinishUI;
 
     public void TakeDamage()
     {
@@ -34,38 +34,29 @@ public class EnemyCombat : MonoBehaviour
         {
             healthbar.SetHealth(currenthealth);
         }*/
-
-        if (isinside == true && blockcalled == true)
+        if (isinside == true)
         {
-            currenthealth -= SaveData.instance.damage;
-            healthbar.SetHealth(currenthealth);
-            isinside = false;
-            blockcalled = false;
+            SaveData.instance.monstercurrenthealth -= SaveData.instance.damage;
             Debug.Log("Attaque réalisé");
         }
-        Debug.Log("isinside = " + isinside);
-        Debug.Log("blockcalled = " + blockcalled);
 
+        if (SaveData.instance.monstercurrenthealth <= 0)
+        {
+            GameFinish();
+        }
     }
     
     private void Start()
     {
-
-        switch (gameObject.name)
-        {
-            case "LogMonster":
-                maxhealth = 50;
-                currenthealth = 50;
-                damage = 20;
-                healthbar.SetMaxHealth(maxhealth);
-                healthbar.SetHealth(currenthealth);
-                Debug.Log("setvie");
-                break;
-        }
-
+        healthbarmonster.SetMaxHealth(SaveData.instance.monstermaxhealth);
+        healthbarmonster.SetHealth(SaveData.instance.monstercurrenthealth);
         isinside = false;
-        blockcalled = false;
 
+    }
+
+    private void Update()
+    {
+        healthbarmonster.SetHealth(SaveData.instance.monstercurrenthealth);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -76,6 +67,30 @@ public class EnemyCombat : MonoBehaviour
             Debug.Log("detect");
             
         }
-        Debug.Log("zzzz");
+    }
+    
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Player 1")
+        {
+            isinside = false;
+            Debug.Log("out");
+            
+        }
+    }
+
+    public void GameFinish()
+    {
+        gamefinishUI.SetActive(true);
+    }
+
+    public void Continue()
+    {
+        SceneManager.LoadScene("Map");
+    }
+    
+    public void Mainmenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

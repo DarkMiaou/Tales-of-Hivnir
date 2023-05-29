@@ -12,9 +12,9 @@ public class SaveData : MonoBehaviour
     public int damage = 20;
     
     //Monster
-    /*public int monstermaxhealth;
-    public int monstercurrenthealth;
-    public int monsterdamage;*/
+    public int monstermaxhealth = 0;
+    public int monstercurrenthealth = 0;
+    public int monsterdamage = 0;
 
 
     void Start()
@@ -35,18 +35,6 @@ public class SaveData : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-
-        /*if (gameObject.scene.name == "COMBATMODE")
-        {
-            switch (gameObject.name)
-            {
-                case "LogMonster":
-                    monstermaxhealth = 100;
-                    monstercurrenthealth = 100;
-                    monsterdamage = 20; ;
-                    break;
-            }
-        }*/
     }
 
     // Update is called once per frame

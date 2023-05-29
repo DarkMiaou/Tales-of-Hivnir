@@ -20,6 +20,7 @@ public class PlayerCombat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SetEnemy();
         healthbar.SetMaxHealth(SaveData.instance.maxhealth);
         healthbar.SetHealth(SaveData.instance.currenthealth);
         //healthbar.SetMaxHealth(SaveData.instance.maxhealth);
@@ -39,6 +40,19 @@ public class PlayerCombat : MonoBehaviour
             healthbar.SetHealth(SaveData.instance.currenthealth);
             SaveData.instance.currenthealth = SaveData.instance.maxhealth;
             gameManager.gameOver();
+        }
+    }
+
+    public void SetEnemy()
+    {
+        switch (gameObject.scene.name)
+        {
+            case "COMBATMODE":
+                SaveData.instance.monstermaxhealth = 100;
+                SaveData.instance.monstercurrenthealth = 100;
+                SaveData.instance.monsterdamage = 20;
+                ;
+                break;
         }
     }
 
