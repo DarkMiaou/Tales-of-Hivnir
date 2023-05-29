@@ -96,8 +96,8 @@ namespace TalesofHivnir
         private void Attack()
         {
             enemycombat.TakeDamage();
-            //myanim.SetFloat("Horizontal", 0.2f);
-            //myanim.SetFloat("Vertical", 0.2f);
+            myanim.SetFloat("Horizontal", 0.2f);
+            myanim.SetFloat("Vertical", 0.2f);
         }
 
 

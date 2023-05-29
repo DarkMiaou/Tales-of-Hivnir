@@ -35,7 +35,7 @@ public class EnemyCombat : MonoBehaviour
             healthbar.SetHealth(currenthealth);
         }*/
         if (isinside == true)
-        {
+        {  
             SaveData.instance.monstercurrenthealth -= SaveData.instance.damage;
             Debug.Log("Attaque réalisé");
         }
@@ -48,15 +48,15 @@ public class EnemyCombat : MonoBehaviour
     
     private void Start()
     {
-        healthbarmonster.SetMaxHealth(SaveData.instance.monstermaxhealth);
-        healthbarmonster.SetHealth(SaveData.instance.monstercurrenthealth);
+      healthbarmonster.SetMaxHealth(SaveData.instance.monstermaxhealth);
+     healthbarmonster.SetHealth(SaveData.instance.monstercurrenthealth);
         isinside = false;
 
     }
 
     private void Update()
     {
-        healthbarmonster.SetHealth(SaveData.instance.monstercurrenthealth);
+      healthbarmonster.SetHealth(SaveData.instance.monstercurrenthealth);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -81,6 +81,7 @@ public class EnemyCombat : MonoBehaviour
 
     public void GameFinish()
     {
+        
         gamefinishUI.SetActive(true);
     }
 

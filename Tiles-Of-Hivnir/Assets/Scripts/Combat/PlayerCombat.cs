@@ -9,7 +9,7 @@ public class PlayerCombat : MonoBehaviour
 {
     
     //public int playerhealth;
-    //public int playercurrenthealth;
+   //public int playercurrenthealth;
 
     public bool isDead;
 
@@ -22,8 +22,8 @@ public class PlayerCombat : MonoBehaviour
     {
         SetEnemy();
         healthbar.SetMaxHealth(SaveData.instance.maxhealth);
-        healthbar.SetHealth(SaveData.instance.currenthealth);
-        //healthbar.SetMaxHealth(SaveData.instance.maxhealth);
+     healthbar.SetHealth(SaveData.instance.currenthealth);
+       healthbar.SetMaxHealth(SaveData.instance.maxhealth);
     }
 
     public void GotDamage()
@@ -48,9 +48,9 @@ public class PlayerCombat : MonoBehaviour
         switch (gameObject.scene.name)
         {
             case "COMBATMODE":
-                SaveData.instance.monstermaxhealth = 100;
-                SaveData.instance.monstercurrenthealth = 100;
-                SaveData.instance.monsterdamage = 20;
+            SaveData.instance.monstermaxhealth = 100;
+          SaveData.instance.monstercurrenthealth = 100;
+               SaveData.instance.monsterdamage = 20;
                 ;
                 break;
         }
