@@ -268,18 +268,6 @@ namespace TalesofHivnir
         {
             SceneManager.LoadScene("Menu");
         }
-
-        /*public void SetStatsEnemy()
-        {
-            switch(EnemyCombat.instance.gameObject.name)
-            {
-                case "LogMonster" :
-                    EnemyCombat.instance.maxhealth = 100;
-                    EnemyCombat.instance.currenthealth = EnemyCombat.instance.maxhealth;
-                    EnemyCombat.instance.damage = 20;
-                    EnemyCombat.instance.healthbar.SetMaxHealth(100);
-                    break;
-            }
-        }*/
+        
     }
 }

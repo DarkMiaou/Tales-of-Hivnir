@@ -1,56 +1,29 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TalesofHivnir;
 using UnityEngine;
 
 public class EnemyCombat : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static EnemyCombat instance;
-    
+
     public Healthbar healthbar;
 
-    public int maxhealth;
-    public int damage = 20;
+    private int maxhealth;
+    public int damage;
     public float currenthealth;
-    public Transform player_;
-    public Transform mob_;
+    private Transform player_;
+    private Transform mob_;
     private float x;
     private float y;
 
+    public bool isinside = false;
+    public bool blockcalled = false;
 
-
-    /*ublic int damage
+    public void TakeDamage()
     {
-        get { return _damage;}
-        set
-        { switch (gameObject.name)
-            {
-                case "LogMonster" :
-                    _damage = 20;
-                    break;
-            }
-        }
-    }*/
-
-    /*public int maxhealth
-    {
-        get { return maxhealth;}
-        set
-        {
-            switch (gameObject.name)
-            {
-                case "LogMonster" :
-                    maxhealth = ;
-                    break;
-            }
-            
-        }
-    }*/
-    
-    /*public void TakeDamage(float damage)
-    {
-        x = mob_.position.x - player_.position.x;
+        /*x = mob_.position.x - player_.position.x;
         y = mob_.position.y - player_.position.y;
         if (Math.Abs(x)>= 0 && Math.Abs(x) <= 1 && Math.Abs(y)>= 0 && Math.Abs(y) <= 1 )
         {
@@ -60,26 +33,49 @@ public class EnemyCombat : MonoBehaviour
         else
         {
             healthbar.SetHealth(currenthealth);
+        }*/
+
+        if (isinside == true && blockcalled == true)
+        {
+            currenthealth -= SaveData.instance.damage;
+            healthbar.SetHealth(currenthealth);
+            isinside = false;
+            blockcalled = false;
+            Debug.Log("Attaque réalisé");
         }
+        Debug.Log("isinside = " + isinside);
+        Debug.Log("blockcalled = " + blockcalled);
+
     }
     
-    void Awake()
+    private void Start()
     {
-        
-        maxhealth = 50;
-        currenthealth = maxhealth;
-        damage = 20;
-        healthbar.SetMaxHealth(maxhealth);
+
+        switch (gameObject.name)
+        {
+            case "LogMonster":
+                maxhealth = 50;
+                currenthealth = 50;
+                damage = 20;
+                healthbar.SetMaxHealth(maxhealth);
+                healthbar.SetHealth(currenthealth);
+                Debug.Log("setvie");
+                break;
+        }
+
+        isinside = false;
+        blockcalled = false;
 
     }
 
-    public void SetMax()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        healthbar.SetMaxHealth(maxhealth);
+        if (other.gameObject.name == "Player 1")
+        {
+            isinside = true;
+            Debug.Log("detect");
+            
+        }
+        Debug.Log("zzzz");
     }
-
-    public void Destroy()
-    {
-        Destroy(gameObject);
-    }*/
 }

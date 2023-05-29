@@ -33,10 +33,13 @@ public class PlayerCombat : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        SaveData.instance.currenthealth = 0;
-        healthbar.SetHealth(SaveData.instance.currenthealth);
-        SaveData.instance.currenthealth = SaveData.instance.maxhealth;
-        gameManager.gameOver();
+        if (col.gameObject.name != "LogMonster")
+        {
+            SaveData.instance.currenthealth = 0;
+            healthbar.SetHealth(SaveData.instance.currenthealth);
+            SaveData.instance.currenthealth = SaveData.instance.maxhealth;
+            gameManager.gameOver();
+        }
     }
 
     // Update is called once per frame
