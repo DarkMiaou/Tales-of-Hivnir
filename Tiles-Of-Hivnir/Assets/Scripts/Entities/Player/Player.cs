@@ -33,9 +33,10 @@ namespace TalesofHivnir.Entities
         
         /*
         voici les variables à utilisé pour les combats:
+        inv
         maxhealth
         bonusdefence
-        strenght * bonusattack pour obtenir la valeur de dégats
+            strenght * bonusattack pour obtenir la valeur de dégats
          */
         
         public int basestrenght = 20;
@@ -192,6 +193,7 @@ namespace TalesofHivnir.Entities
                         maxhealth = basemaxhealth;
                         break;
                 }
+                
                 
             }
         }

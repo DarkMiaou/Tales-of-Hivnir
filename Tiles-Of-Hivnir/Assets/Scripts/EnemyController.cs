@@ -67,7 +67,7 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        if (IsInAttackRange)
+        if (IsInAttackRange) //Moment de baston
         {
             StartCoroutine(LoadYourAsyncScene());
         }
@@ -81,12 +81,14 @@ public class EnemyController : MonoBehaviour
     }
 
    
+    
     IEnumerator LoadYourAsyncScene()
     {
      
         // The Application loads the Scene in the background at the same time as the current Scene.
+        
         SceneManager.LoadScene(m_SceneName);
-
+        
         // Wait until the last operation fully loads to return anything
         yield return null;
         
