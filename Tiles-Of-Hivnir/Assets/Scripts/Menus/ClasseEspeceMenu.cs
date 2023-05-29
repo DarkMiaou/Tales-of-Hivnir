@@ -22,10 +22,17 @@ namespace TalesofHivnir.Menus
 
         private void Start()
         {
-            ClasseEspeceMenuCanva.SetActive(true);
-            ClasseMenu.SetActive(true);
-            EspeceMenu.SetActive(false);
-            Time.timeScale = 0f;
+            if (!SaveData.instance.ClasseEspeceChoisie)
+            {
+                ClasseEspeceMenuCanva.SetActive(true);
+                ClasseMenu.SetActive(true);
+                EspeceMenu.SetActive(false);
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                ClasseEspeceMenuCanva.SetActive(false);
+            }
         }
 
         public void CloseEspeceMenu()
@@ -34,6 +41,7 @@ namespace TalesofHivnir.Menus
             ClasseMenu.SetActive(false);
             EspeceMenu.SetActive(false);
             Time.timeScale = 1f;
+            SaveData.instance.ClasseEspeceChoisie = true;
         }
 
         public void CloseClasseMenu()
@@ -89,7 +97,6 @@ namespace TalesofHivnir.Menus
                 case "Fée":
                     es = Espece.Fée;
                     break;
-
             }
             player.ChosenEspece = es;
             CloseEspeceMenu();

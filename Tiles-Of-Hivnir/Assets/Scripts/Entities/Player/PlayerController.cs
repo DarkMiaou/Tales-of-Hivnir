@@ -10,7 +10,7 @@ namespace TalesofHivnir
     public class PlayerController : MonoBehaviour
     {
         public float basespeed = 5f;
-        public float speed = 5f;
+        public float speed;
         private Rigidbody2D rb;
         private Animator anim;
         private PhotonView photonView;
@@ -21,11 +21,12 @@ namespace TalesofHivnir
 
         void Start()
         {
+            speed = SaveData.instance.Newbonusspeed;
+            
             photonView = GetComponent<PhotonView>();
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
             audioSource = GetComponent<AudioSource>();
-            speed = basespeed;
         }
 
         void Update()

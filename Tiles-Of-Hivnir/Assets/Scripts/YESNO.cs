@@ -23,6 +23,7 @@ public class YESNO : MonoBehaviour
     public List<int> chance;
     public Image icone;
     public TMP_Text text;
+    public Inventory inv;
     
 
 
@@ -58,10 +59,23 @@ public class YESNO : MonoBehaviour
 
     public void Yes()
     {
+       
+        if (inv.InvList.Count > 9)
+        {
+            inv.InvList.Remove(inv.InvList[0]);
+            inv.InvList.Add(reward);
+            inv.ActualiseDisplay();
+        }
+        else
+        {
+            inv.InvList.Add(reward);
+            inv.ActualiseDisplay();
+        }
         SceneManager.LoadScene("Map");
-       Inventory inv = GetComponent<Inventory>();
-       inv.InvList.Add(reward);
-       inv.ActualiseDisplay();
+       
+      
+      
+        
 
     }
 

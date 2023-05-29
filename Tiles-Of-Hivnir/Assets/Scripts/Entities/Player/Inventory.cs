@@ -15,9 +15,12 @@ namespace TalesofHivnir
 
         private void Start()
         {
+            InvList = SaveData.instance.Newinv;
             ActualiseDisplay();
         }
 
+        
+        
         public void AddItem(Item item, ChestController chest)
         {
             if (item == null)
@@ -78,7 +81,7 @@ namespace TalesofHivnir
         // Update is called once per frame
         void Update()
         {
-        
+            SaveData.instance.Newinv = InvList;
         }
     }
 }

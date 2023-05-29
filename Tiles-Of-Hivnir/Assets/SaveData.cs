@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TalesofHivnir.Items;
+using UnityEditor;
 
 public class SaveData : MonoBehaviour
 {
@@ -16,12 +18,25 @@ public class SaveData : MonoBehaviour
     public int monstercurrenthealth = 0;
     public int monsterdamage = 0;
 
-
+    public List<Item> Newinv;
+    public int Newmaxhealth;
+    public float Newbonusdefence;
+    public int Newstrenght;
+    public float Newbonusattack;
+    public float Newbonusspeed;
+    public bool ClasseEspeceChoisie;
     void Start()
     {
+        Newinv = new List<Item>() {};
+        Newmaxhealth = 100;
+        Newbonusdefence= 1.2f;
+        Newstrenght = 20;
+        Newbonusattack=1.2f;
         currenthealth = 100; 
         maxhealth = 100;
         damage = 20;
+        Newbonusspeed = 5f;
+        ClasseEspeceChoisie = false;
     }
     
     void Awake()

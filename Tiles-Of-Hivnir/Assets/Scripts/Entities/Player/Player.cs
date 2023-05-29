@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Entities.Player;
 using TalesofHivnir;
@@ -7,7 +8,7 @@ using UnityEngine;
 
 namespace TalesofHivnir.Entities
 {
-    public class Player : Entity
+    public class Player : MonoBehaviour
     {
         public static Player instance; //permet d'acceder à player dans les autres fichiers
         
@@ -40,12 +41,12 @@ namespace TalesofHivnir.Entities
          */
         
         public int basestrenght = 20;
-        public static int strenght;
+        public int strenght;
         public int basemaxhealth = 100;
         public int maxhealth;
         public int currenthealth;
         public float basebonusattack = 1.2f;
-        public static float bonusattack;
+        public  float bonusattack;
         public float basebonusdefence = 1.2f;
         public float bonusdefence;
 
@@ -86,6 +87,8 @@ namespace TalesofHivnir.Entities
                 {
                     bonusattack = basebonusattack;
                 }
+
+                SaveData.instance.Newbonusattack = bonusattack;
             }
         }   
         public bool BonusArmor
@@ -102,6 +105,8 @@ namespace TalesofHivnir.Entities
                 {
                     bonusdefence = basebonusdefence;
                 }
+
+                SaveData.instance.Newbonusdefence = bonusdefence;
             }
         }
         public Espece ChosenEspece
@@ -156,6 +161,8 @@ namespace TalesofHivnir.Entities
                         strenght = basestrenght;
                         break;
                 }
+
+                SaveData.instance.Newstrenght = strenght;
             }
 
         }
@@ -173,6 +180,8 @@ namespace TalesofHivnir.Entities
                 {
                     playercont.speed = playercont.basespeed - 1f;
                 }
+
+                SaveData.instance.Newbonusspeed = playercont.speed;
             }
         }
         public int BonusLife
@@ -193,10 +202,20 @@ namespace TalesofHivnir.Entities
                         maxhealth = basemaxhealth;
                         break;
                 }
-                
+                SaveData.instance.Newmaxhealth = maxhealth;
                 
             }
         }
+
+
+        private void Start()
+        {
+            maxhealth = SaveData.instance.Newmaxhealth;
+            bonusdefence = SaveData.instance.Newbonusdefence;
+            strenght = SaveData.instance.Newstrenght;
+            bonusattack = SaveData.instance.Newbonusattack;
+        }
+
 
         private void Awake()
         {
@@ -225,7 +244,7 @@ namespace TalesofHivnir.Entities
             /*if (Health < Maxlife)
                 Health = Health + lr nombre de vie de l'objet utilisé*/
         }
-
+/*
         public bool AliveCheck()
         {
             if (Health > 0)
@@ -239,6 +258,6 @@ namespace TalesofHivnir.Entities
         {
             Destroy(gameObject);
         }
-
+*/
     }
 }
