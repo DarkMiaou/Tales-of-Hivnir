@@ -50,7 +50,7 @@ namespace TalesofHivnir
                         Attack();
                         break;
                     case 5:
-                        Heal();
+                        MoveLeftCheat();
                         break;
                 }
             }
@@ -98,16 +98,6 @@ namespace TalesofHivnir
             enemycombat.TakeDamage();
             myanim.SetFloat("Horizontal", 0.2f);
             myanim.SetFloat("Vertical", 0.2f);
-        }
-
-        private void Heal()
-        {
-            if (SaveData.instance.currenthealth <= SaveData.instance.maxhealth - 20)
-            {
-                SaveData.instance.currenthealth += 20;
-            }
-            
-           
         }
 
 

@@ -25,7 +25,7 @@ namespace TalesofHivnir
             {
                 transform.position = new Vector2((float)SaveData.instance.x, (float)SaveData.instance.y);
             }
-            speed = SaveData.instance.bonusspeed;
+            speed = SaveData.instance.Newbonusspeed;
           
 
             photonView = GetComponent<PhotonView>();

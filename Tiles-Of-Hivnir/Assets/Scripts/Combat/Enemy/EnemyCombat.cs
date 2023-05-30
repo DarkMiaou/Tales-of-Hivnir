@@ -36,7 +36,7 @@ public class EnemyCombat : MonoBehaviour
         }*/
         if (isinside == true)
         {  
-            SaveData.instance.monstercurrenthealth -= (int)SaveData.instance.damage;
+            SaveData.instance.monstercurrenthealth -= SaveData.instance.damage;
             Debug.Log("Attaque réalisé");
         }
 

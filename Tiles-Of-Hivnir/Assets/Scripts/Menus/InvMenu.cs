@@ -103,25 +103,6 @@ namespace TalesofHivnir.Menus
             }
             else
             {
-                if (InvToAdd.InvList[i] is Weapon)
-                {
-                    SaveData.instance.damage -=  InvToAdd.InvList[i].Level;
-                }
-                else
-                { 
-                    SaveData.instance.maxhealth -=  InvToAdd.InvList[i].Level;
-                    SaveData.instance.currenthealth -=  InvToAdd.InvList[i].Level;
-                }
-
-                if (ItemToAdd is Weapon)
-                {
-                    SaveData.instance.damage += ItemToAdd.Level;
-                }
-                else
-                {
-                    SaveData.instance.maxhealth += ItemToAdd.Level;
-                    SaveData.instance.currenthealth += ItemToAdd.Level;
-                }
                 InvToAdd.InvList[i] = ItemToAdd;
                 InvToAdd.ActualiseDisplay();
                 Resume();
@@ -143,16 +124,6 @@ namespace TalesofHivnir.Menus
         public void Add()
         {
             ItemNotTaken = false;
-            if (ItemToAdd is Weapon)
-            {
-                SaveData.instance.damage += ItemToAdd.Level;
-            }
-            else
-            {
-                SaveData.instance.maxhealth += ItemToAdd.Level;
-                SaveData.instance.currenthealth += ItemToAdd.Level;
-            }
-
             InvToAdd.InvList.Add(ItemToAdd);
             InvToAdd.ActualiseDisplay();
             Resume();
