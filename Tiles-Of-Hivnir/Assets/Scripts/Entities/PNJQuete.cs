@@ -36,6 +36,15 @@ public class PNJQuete : MonoBehaviour
             if (ele.Name == quest_item.Name)
             {
                 inv.InvList.Remove(quest_item);
+                if (quest_item is Weapon)
+                {
+                    SaveData.instance.damage -= quest_item.Level;
+                }
+                else
+                {
+                    SaveData.instance.maxhealth =- quest_item.Level;
+                    SaveData.instance.currenthealth =- quest_item.Level;
+                }
                 inv.InvList.Add(reward);
                 if (reward is Weapon)
                 {
