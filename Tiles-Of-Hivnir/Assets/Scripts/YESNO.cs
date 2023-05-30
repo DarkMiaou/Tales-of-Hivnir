@@ -48,9 +48,12 @@ public class YESNO : MonoBehaviour
             if (n < chance[i])
             {
                res= loot1[i];
+               break;
             }
-
-            i++;
+            else
+            {
+                i++;
+            }
 
         }
 
