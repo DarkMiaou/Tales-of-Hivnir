@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccdb945ca7b76948afb47641c65594c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  basespeed: 5
   speed: 5
   stepSound: {fileID: 8300000, guid: c66e1460b37b4e941a69060023bb67f8, type: 3}
 --- !u!95 &7415171058084383468
@@ -179,22 +180,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abe273f7c92f6324d86ad9ebf0fd6154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: 
-  Age: 0
-  Class: 
-  Occupation: 
-  Level: 0
-  Health: 100
-  Strength: 0
-  Magic: 0
-  Defense: 0
-  Speed: 0
-  Damage: 0
-  Armor: 0
-  NoOfAttack: 0
-  Weapon: 
-  Postion: {x: 0, y: 0}
-  Maxlife: 100
+  playercont: {fileID: 7415171058084383464}
+  basestrenght: 20
+  strenght: 0
+  basemaxhealth: 100
+  maxhealth: 0
+  currenthealth: 0
+  basebonusattack: 1.2
+  bonusattack: 0
+  basebonusdefence: 1.2
+  bonusdefence: 0
 --- !u!114 &7415171058084383458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,6 +492,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player's Inv
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231042441128548595, guid: 0c09f2856b007d049be38e113adedd92,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231042441473743960, guid: 0c09f2856b007d049be38e113adedd92,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240096260228071306, guid: 0c09f2856b007d049be38e113adedd92,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c09f2856b007d049be38e113adedd92, type: 3}

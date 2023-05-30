@@ -64,8 +64,17 @@ namespace TalesofHivnir
             int cpt = 0;
             foreach (var elt in InvList)
             {
-                InvDisplayList[cpt].color= Color.white;
-                InvDisplayList[cpt].sprite = elt.Icone;
+                if (elt != null)
+                {
+                    InvDisplayList[cpt].color= Color.white;
+                    InvDisplayList[cpt].sprite = elt.Icone;
+                }
+                else
+                {
+                    InvDisplayList[cpt].sprite=null;
+                    InvDisplayList[cpt].color = Color.clear;
+                }
+                
                 cpt++;
             }
 
