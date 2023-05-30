@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class bossanim : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class bossanim : MonoBehaviour
     private int randomy;
     private bool idlerandom = false;
     private bool ismoving = false;
+    public int range;
+    public string scene;
+    public Transform playerTransform;
 
     void Start()
     {
@@ -18,9 +22,14 @@ public class bossanim : MonoBehaviour
 
     void Update()
     {
+        float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
         time -= Time.deltaTime;
         randomAction = Random.Range(-1, 1);
         randomy = Random.Range(-1, 1);
+        if (distanceToPlayer <= range) 
+        {
+            SceneManager.LoadScene(scene);
+        }
         if (time <= 0f)
         {
             time = 10f;
