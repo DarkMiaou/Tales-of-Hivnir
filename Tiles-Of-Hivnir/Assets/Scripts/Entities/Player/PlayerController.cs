@@ -21,8 +21,13 @@ namespace TalesofHivnir
 
         void Start()
         {
+            if (gameObject.scene.name == "Map")
+            {
+                transform.position = new Vector2((float)SaveData.instance.x, (float)SaveData.instance.y);
+            }
             speed = SaveData.instance.Newbonusspeed;
-            
+          
+
             photonView = GetComponent<PhotonView>();
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
@@ -77,6 +82,13 @@ namespace TalesofHivnir
                 anim.SetFloat("Horizontal", lastMoveX);
                 anim.SetFloat("Vertical", lastMoveY);
             }
+
+            if (gameObject.scene.name == "Map")
+            {
+                SaveData.instance.x = transform.position.x+0;
+                SaveData.instance.y = transform.position.y+1;
+            }
+           
         }
     }
 }

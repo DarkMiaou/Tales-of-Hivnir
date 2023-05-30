@@ -9,6 +9,8 @@ public class SaveData : MonoBehaviour
     public static SaveData instance;
 
     //Player
+    public double x;
+    public double y;
     public int currenthealth = 100;
     public int maxhealth = 100;
     public int damage = 20;
@@ -27,6 +29,8 @@ public class SaveData : MonoBehaviour
     public bool ClasseEspeceChoisie;
     void Start()
     {
+        x = -19.1;
+        y = -4.36;
         Newinv = new List<Item>() {};
         Newmaxhealth = 100;
         Newbonusdefence= 1.2f;
