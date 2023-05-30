@@ -43,7 +43,7 @@ namespace TalesofHivnir.Entities
         public int basestrenght = 20;
         public int strenght;
         public int basemaxhealth = 100;
-        public int maxhealth;
+        public float maxhealth;
         public int currenthealth;
         public float basebonusattack = 1.2f;
         public  float bonusattack;
@@ -88,7 +88,7 @@ namespace TalesofHivnir.Entities
                     bonusattack = basebonusattack;
                 }
 
-                SaveData.instance.Newbonusattack = bonusattack;
+                SaveData.instance.bonusattack = bonusattack;
             }
         }   
         public bool BonusArmor
@@ -106,7 +106,7 @@ namespace TalesofHivnir.Entities
                     bonusdefence = basebonusdefence;
                 }
 
-                SaveData.instance.Newbonusdefence = bonusdefence;
+                SaveData.instance.bonusdefence = bonusdefence;
             }
         }
         public Espece ChosenEspece
@@ -162,7 +162,9 @@ namespace TalesofHivnir.Entities
                         break;
                 }
 
-                SaveData.instance.Newstrenght = strenght;
+                SaveData.instance.strenght = strenght;
+                SaveData.instance.damage = SaveData.instance.strenght;
+                SaveData.instance.damage *= SaveData.instance.bonusattack;
             }
 
         }
@@ -181,7 +183,7 @@ namespace TalesofHivnir.Entities
                     playercont.speed = playercont.basespeed - 1f;
                 }
 
-                SaveData.instance.Newbonusspeed = playercont.speed;
+                SaveData.instance.bonusspeed = playercont.speed;
             }
         }
         public int BonusLife
@@ -193,33 +195,34 @@ namespace TalesofHivnir.Entities
                 switch (_BonusLife)
                 {
                     case -1:
-                        maxhealth = basemaxhealth * 3 / 4;
+                        maxhealth = SaveData.instance.maxhealth * 3 / 4;
                         break;
                     case 1:
-                        maxhealth = basemaxhealth * 5 / 4;
+                        maxhealth = SaveData.instance.maxhealth * 5 / 4;
                         break;
                     case 0:
-                        maxhealth = basemaxhealth;
+                        maxhealth = SaveData.instance.maxhealth;
                         break;
                 }
-                SaveData.instance.Newmaxhealth = maxhealth;
-                
+                SaveData.instance.maxhealth = maxhealth;
+                SaveData.instance.currenthealth = SaveData.instance.maxhealth;
+
             }
         }
 
 
         private void Start()
         {
-            maxhealth = SaveData.instance.Newmaxhealth;
-            bonusdefence = SaveData.instance.Newbonusdefence;
-            strenght = SaveData.instance.Newstrenght;
-            bonusattack = SaveData.instance.Newbonusattack;
+            maxhealth = (int)SaveData.instance.maxhealth;
+            bonusdefence = SaveData.instance.bonusdefence;
+            strenght = SaveData.instance.strenght;
+            bonusattack = SaveData.instance.bonusattack;
         }
 
 
         private void Awake()
         {
-            currenthealth = maxhealth;
+            currenthealth = (int)maxhealth;
         }
         
         public int GetCurrentHealth()

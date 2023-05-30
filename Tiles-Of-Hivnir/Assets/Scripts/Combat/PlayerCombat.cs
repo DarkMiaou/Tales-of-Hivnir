@@ -36,6 +36,7 @@ public class PlayerCombat : MonoBehaviour
     {
         if (col.gameObject.name != "LogMonster")
         {
+            
             SaveData.instance.currenthealth = 0;
             healthbar.SetHealth(SaveData.instance.currenthealth);
             SaveData.instance.currenthealth = SaveData.instance.maxhealth;
@@ -72,6 +73,11 @@ public class PlayerCombat : MonoBehaviour
                 ;
                 break;
         }
+    }
+
+    private void Update()
+    {
+        healthbar.SetHealth(SaveData.instance.currenthealth);
     }
 
     // Update is called once per frame

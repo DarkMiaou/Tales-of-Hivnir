@@ -11,35 +11,34 @@ public class SaveData : MonoBehaviour
     //Player
     public double x;
     public double y;
-    public int currenthealth = 100;
-    public int maxhealth = 100;
-    public int damage = 20;
+    public float currenthealth = 100;
+    public float maxhealth = 100;
+    public float damage = 20;
+    public List<Item> Newinv;
+    public float bonusdefence;
+    public int strenght;
+    public float bonusattack;
+    public float bonusspeed;
+    public bool ClasseEspeceChoisie;
     
     //Monster
     public int monstermaxhealth = 0;
     public int monstercurrenthealth = 0;
     public int monsterdamage = 0;
 
-    public List<Item> Newinv;
-    public int Newmaxhealth;
-    public float Newbonusdefence;
-    public int Newstrenght;
-    public float Newbonusattack;
-    public float Newbonusspeed;
-    public bool ClasseEspeceChoisie;
+    
     void Start()
     {
         x = -19.1;
         y = -4.36;
         Newinv = new List<Item>() {};
-        Newmaxhealth = 100;
-        Newbonusdefence= 1.2f;
-        Newstrenght = 20;
-        Newbonusattack=1.2f;
+        bonusdefence= 1.2f;
+        strenght = 20;
+        bonusattack=1.2f;
         currenthealth = 100; 
         maxhealth = 100;
         damage = 20;
-        Newbonusspeed = 5f;
+        bonusspeed = 5f;
         ClasseEspeceChoisie = false;
     }
     

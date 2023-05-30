@@ -48,9 +48,12 @@ public class YESNO : MonoBehaviour
             if (n < chance[i])
             {
                res= loot1[i];
+               break;
             }
-
-            i++;
+            else
+            {
+                i++;
+            }
 
         }
 
@@ -62,12 +65,41 @@ public class YESNO : MonoBehaviour
        
         if (inv.InvList.Count > 9)
         {
+            if (inv.InvList[0] is Weapon)
+            {
+                SaveData.instance.damage -=  inv.InvList[0].Level;
+            }
+            else
+            { 
+                SaveData.instance.maxhealth -=  inv.InvList[0].Level;
+                SaveData.instance.currenthealth -=  inv.InvList[0].Level;
+            }
+            if (reward is Weapon)
+            {
+                SaveData.instance.damage += reward.Level;
+                    
+            }
+            else if (reward is Potion)
+            {
+                SaveData.instance.maxhealth =+ reward.Level;
+                SaveData.instance.currenthealth =+ reward.Level;
+            }
             inv.InvList.Remove(inv.InvList[0]);
             inv.InvList.Add(reward);
             inv.ActualiseDisplay();
         }
         else
         {
+            if (reward is Weapon)
+            {
+                SaveData.instance.damage += reward.Level;
+                    
+            }
+            else if (reward is Potion)
+            {
+                SaveData.instance.maxhealth =+ reward.Level;
+                SaveData.instance.currenthealth =+ reward.Level;
+            }
             inv.InvList.Add(reward);
             inv.ActualiseDisplay();
         }
