@@ -74,5 +74,10 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        healthbar.SetHealth(SaveData.instance.currenthealth);
+    }
+
     // Update is called once per frame
 }

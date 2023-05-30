@@ -83,7 +83,7 @@ namespace TalesofHivnir
             }
             PA = 0;
             ClearBlocks();
-          
+
         }
 
         public void AddBlock(ProgrammingBlock block)
