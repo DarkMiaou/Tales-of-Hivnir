@@ -53,8 +53,7 @@ namespace TalesofHivnir
 
         private void Start()
         {
-            Max_PA = 3;
-            
+
             Blocks = new List<RectTransform>();
             Blocks.Add(startBlock);
             move.SetActive(false);

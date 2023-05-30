@@ -240,14 +240,14 @@ MonoBehaviour:
   playerattack: 0
   objectToMove: {fileID: 2092836383}
   blockList: []
-  attaque: {fileID: 0}
-  move: {fileID: 0}
-  textPa: {fileID: 0}
+  attaque: {fileID: 684881659}
+  move: {fileID: 684881658}
+  textPa: {fileID: 684881657}
   mobanim: {fileID: 2092836384}
-  startBlock: {fileID: 0}
+  startBlock: {fileID: 684881656}
   gameoverUI: {fileID: 409287595}
   PA: 0
-  Max_PA: 2
+  Max_PA: 8
   blockExecutionDelay: 0.5
 --- !u!4 &121093350
 Transform:
@@ -947,6 +947,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb4a1ede57b50034e865f0fb86033695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &295447188 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7415171058084383468, guid: e28760ba7297a4c47a332e92b5d700eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 295447186}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &308562504
 GameObject:
   m_ObjectHideFlags: 0
@@ -4765,6 +4771,91 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 936367348}
     m_Modifications:
+    - target: {fileID: 4590551925540364817, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: myanim
+      value: 
+      objectReference: {fileID: 295447188}
+    - target: {fileID: 4590551925540364817, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: enemycombat
+      value: 
+      objectReference: {fileID: 2092836387}
+    - target: {fileID: 4590551925540364817, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: objectToMove
+      value: 
+      objectReference: {fileID: 1973488046}
+    - target: {fileID: 4590551925823721944, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: myanim
+      value: 
+      objectReference: {fileID: 295447188}
+    - target: {fileID: 4590551925823721944, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: enemycombat
+      value: 
+      objectReference: {fileID: 2092836387}
+    - target: {fileID: 4590551925823721944, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: objectToMove
+      value: 
+      objectReference: {fileID: 1973488046}
+    - target: {fileID: 4590551925947573569, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: myanim
+      value: 
+      objectReference: {fileID: 295447188}
+    - target: {fileID: 4590551925947573569, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: enemycombat
+      value: 
+      objectReference: {fileID: 2092836387}
+    - target: {fileID: 4590551925947573569, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: objectToMove
+      value: 
+      objectReference: {fileID: 1973488046}
+    - target: {fileID: 4590551926079957365, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: myanim
+      value: 
+      objectReference: {fileID: 295447188}
+    - target: {fileID: 4590551926079957365, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: enemycombat
+      value: 
+      objectReference: {fileID: 2092836387}
+    - target: {fileID: 4590551926079957365, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: objectToMove
+      value: 
+      objectReference: {fileID: 1973488046}
+    - target: {fileID: 4590551926402295683, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 121093349}
+    - target: {fileID: 4590551926402295683, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InterpretBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590551926415343672, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: myanim
+      value: 
+      objectReference: {fileID: 295447188}
+    - target: {fileID: 4590551926415343672, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: enemycombat
+      value: 
+      objectReference: {fileID: 2092836387}
+    - target: {fileID: 4590551926415343672, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: objectToMove
+      value: 
+      objectReference: {fileID: 1973488046}
     - target: {fileID: 4590551926505113904, guid: a3c7e54bd9b79244890fea97dcc82862,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4875,11 +4966,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4590551927190180869, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: myanim
+      value: 
+      objectReference: {fileID: 295447188}
+    - target: {fileID: 4590551927190180869, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: enemycombat
+      value: 
+      objectReference: {fileID: 2092836387}
+    - target: {fileID: 4590551927190180869, guid: a3c7e54bd9b79244890fea97dcc82862,
+        type: 3}
+      propertyPath: objectToMove
+      value: 
+      objectReference: {fileID: 1973488046}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3c7e54bd9b79244890fea97dcc82862, type: 3}
 --- !u!224 &684881655 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4590551926505113904, guid: a3c7e54bd9b79244890fea97dcc82862,
+    type: 3}
+  m_PrefabInstance: {fileID: 684881654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &684881656 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4590551926402295682, guid: a3c7e54bd9b79244890fea97dcc82862,
+    type: 3}
+  m_PrefabInstance: {fileID: 684881654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &684881657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1728761191, guid: a3c7e54bd9b79244890fea97dcc82862,
+    type: 3}
+  m_PrefabInstance: {fileID: 684881654}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &684881658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 947502057, guid: a3c7e54bd9b79244890fea97dcc82862,
+    type: 3}
+  m_PrefabInstance: {fileID: 684881654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &684881659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1829017245, guid: a3c7e54bd9b79244890fea97dcc82862,
     type: 3}
   m_PrefabInstance: {fileID: 684881654}
   m_PrefabAsset: {fileID: 0}
@@ -6024,7 +6160,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Log
+  m_text: Goblin King
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -53703,7 +53839,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1036356291
   m_SortingLayer: 7
-  m_SortingOrder: 0
+  m_SortingOrder: 50
   m_Sprite: {fileID: 751263902, guid: 5e3e03661ef5906488d1149b781b37c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

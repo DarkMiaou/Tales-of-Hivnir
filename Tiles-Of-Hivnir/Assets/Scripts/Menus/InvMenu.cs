@@ -124,6 +124,16 @@ namespace TalesofHivnir.Menus
         public void Add()
         {
             ItemNotTaken = false;
+            if (ItemToAdd is Weapon)
+            {
+                SaveData.instance.damage += ItemToAdd.Level;
+            }
+            else
+            {
+                SaveData.instance.maxhealth += ItemToAdd.Level;
+                SaveData.instance.currenthealth += ItemToAdd.Level;
+            }
+
             InvToAdd.InvList.Add(ItemToAdd);
             InvToAdd.ActualiseDisplay();
             Resume();

@@ -39,12 +39,13 @@ public class PNJQuete : MonoBehaviour
                 inv.InvList.Add(reward);
                 if (reward is Weapon)
                 {
-                    SaveData.instance.bonusattack =+ reward.Level * 0.1f;
+                    SaveData.instance.damage += reward.Level;
                     
                 }
                 else if (reward is Potion)
                 {
-                    SaveData.instance.bonusdefence =+ reward.Level * 0.1f;
+                    SaveData.instance.maxhealth =+ reward.Level;
+                    SaveData.instance.currenthealth =+ reward.Level;
                 }
                 inv.ActualiseDisplay();
                 Debug.Log("ca marche");
