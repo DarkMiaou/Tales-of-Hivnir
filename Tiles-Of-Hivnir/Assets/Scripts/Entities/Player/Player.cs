@@ -43,7 +43,7 @@ namespace TalesofHivnir.Entities
         public int basestrenght = 20;
         public int strenght;
         public int basemaxhealth = 100;
-        public int maxhealth;
+        public float maxhealth;
         public int currenthealth;
         public float basebonusattack = 1.2f;
         public  float bonusattack;
@@ -89,7 +89,6 @@ namespace TalesofHivnir.Entities
                 }
 
                 SaveData.instance.bonusattack = bonusattack;
-                SaveData.instance.damage *= SaveData.instance.bonusattack;
             }
         }   
         public bool BonusArmor
@@ -108,7 +107,6 @@ namespace TalesofHivnir.Entities
                 }
 
                 SaveData.instance.bonusdefence = bonusdefence;
-                SaveData.instance.maxhealth *= SaveData.instance.bonusdefence;
             }
         }
         public Espece ChosenEspece
@@ -165,7 +163,8 @@ namespace TalesofHivnir.Entities
                 }
 
                 SaveData.instance.strenght = strenght;
-                SaveData.instance.damage *= SaveData.instance.strenght;
+                SaveData.instance.damage = SaveData.instance.strenght;
+                SaveData.instance.damage *= SaveData.instance.bonusattack;
             }
 
         }
@@ -196,13 +195,13 @@ namespace TalesofHivnir.Entities
                 switch (_BonusLife)
                 {
                     case -1:
-                        maxhealth = basemaxhealth * 3 / 4;
+                        maxhealth = SaveData.instance.maxhealth * 3 / 4;
                         break;
                     case 1:
-                        maxhealth = basemaxhealth * 5 / 4;
+                        maxhealth = SaveData.instance.maxhealth * 5 / 4;
                         break;
                     case 0:
-                        maxhealth = basemaxhealth;
+                        maxhealth = SaveData.instance.maxhealth;
                         break;
                 }
                 SaveData.instance.maxhealth = maxhealth;
@@ -223,7 +222,7 @@ namespace TalesofHivnir.Entities
 
         private void Awake()
         {
-            currenthealth = maxhealth;
+            currenthealth = (int)maxhealth;
         }
         
         public int GetCurrentHealth()
