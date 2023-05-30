@@ -37,6 +37,15 @@ public class PNJQuete : MonoBehaviour
             {
                 inv.InvList.Remove(quest_item);
                 inv.InvList.Add(reward);
+                if (reward is Weapon)
+                {
+                    SaveData.instance.bonusattack =+ reward.Level * 0.1f;
+                    
+                }
+                else if (reward is Potion)
+                {
+                    SaveData.instance.bonusdefence =+ reward.Level * 0.1f;
+                }
                 inv.ActualiseDisplay();
                 Debug.Log("ca marche");
             }
