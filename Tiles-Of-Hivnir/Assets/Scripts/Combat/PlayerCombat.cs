@@ -36,6 +36,7 @@ public class PlayerCombat : MonoBehaviour
     {
         if (col.gameObject.name != "LogMonster")
         {
+            
             SaveData.instance.currenthealth = 0;
             healthbar.SetHealth(SaveData.instance.currenthealth);
             SaveData.instance.currenthealth = SaveData.instance.maxhealth;
