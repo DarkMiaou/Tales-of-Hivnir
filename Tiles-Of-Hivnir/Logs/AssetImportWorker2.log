@@ -15,7 +15,7 @@ C:/Users/kylli/Documents/Tales-of-Hivnir/Tiles-Of-Hivnir
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-57738
+57882
 Successfully changed project path to: C:/Users/kylli/Documents/Tales-of-Hivnir/Tiles-Of-Hivnir
 C:/Users/kylli/Documents/Tales-of-Hivnir/Tiles-Of-Hivnir
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/kylli/Documents/Tales-of-Hivnir/Tiles-Of-Hivnir
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19704] Host "[IP] 192.168.66.228 [Port] 0 [Flags] 2 [Guid] 4052769005 [EditorId] 4052769005 [Version] 1048832 [Id] WindowsEditor(7,TUF706QM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [22664] Host "[IP] 192.168.66.228 [Port] 0 [Flags] 2 [Guid] 2020629653 [EditorId] 2020629653 [Version] 1048832 [Id] WindowsEditor(7,TUF706QM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19704] Host "[IP] 192.168.66.228 [Port] 0 [Flags] 2 [Guid] 4052769005 [EditorId] 4052769005 [Version] 1048832 [Id] WindowsEditor(7,TUF706QM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22664] Host "[IP] 192.168.66.228 [Port] 0 [Flags] 2 [Guid] 2020629653 [EditorId] 2020629653 [Version] 1048832 [Id] WindowsEditor(7,TUF706QM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 152.31 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 137.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
@@ -67,74 +67,74 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56476
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56184
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004506 seconds.
+Registered in 0.005250 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 93.71 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 112.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.590 seconds
+- Completed reload, in  0.780 seconds
 Domain Reload Profiling:
-	ReloadAssembly (591ms)
-		BeginReloadAssembly (75ms)
+	ReloadAssembly (781ms)
+		BeginReloadAssembly (105ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (422ms)
-			LoadAssemblies (73ms)
+		EndReloadAssembly (539ms)
+			LoadAssemblies (102ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (90ms)
+			SetupTypeCache (134ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (264ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (318ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (94ms)
+				RefreshPlugins (113ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (122ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
+				ProcessInitializeOnLoadAttributes (151ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008171 seconds.
+Registered in 0.007359 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 102.02 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 104.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.998 seconds
+- Completed reload, in  1.101 seconds
 Domain Reload Profiling:
-	ReloadAssembly (999ms)
-		BeginReloadAssembly (100ms)
+	ReloadAssembly (1102ms)
+		BeginReloadAssembly (115ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (801ms)
-			LoadAssemblies (82ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (879ms)
+			LoadAssemblies (94ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (184ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (440ms)
+			SetupTypeCache (240ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (442ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (102ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (210ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				RefreshPlugins (105ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (209ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
@@ -142,12 +142,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2842 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 38 unused Assets / (30.2 KB). Loaded Objects now: 3305.
 Memory consumption went from 131.4 MB to 131.4 MB.
-Total: 3.447900 ms (FindLiveObjects: 0.223900 ms CreateObjectMapping: 0.078500 ms MarkObjects: 3.111500 ms  DeleteObjects: 0.033000 ms)
+Total: 3.438900 ms (FindLiveObjects: 0.257500 ms CreateObjectMapping: 0.082600 ms MarkObjects: 3.063100 ms  DeleteObjects: 0.034700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -162,396 +162,37 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 709572.782866 seconds.
-  path: Assets/Art/TopDownCharacter/Character/Female1.png
-  artifactKey: Guid(76dba71584f66b847a110742d9a22dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/TopDownCharacter/Character/Female1.png using Guid(76dba71584f66b847a110742d9a22dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd110b298fa7a71d7a8dd461eaabe1b73') in 0.092761 seconds 
+  Time since last request: 710608.248141 seconds.
+  path: Assets/Art/Objets/Eye Essence.asset
+  artifactKey: Guid(5d8cfb145d73c9d498bff59db3d92ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Objets/Eye Essence.asset using Guid(5d8cfb145d73c9d498bff59db3d92ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d8d6a30c68c5edc6bdcc33a48f70807') in 0.039163 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.862538 seconds.
-  path: Assets/Art/TopDownCharacter/Character/Female1.png
-  artifactKey: Guid(76dba71584f66b847a110742d9a22dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/TopDownCharacter/Character/Female1.png using Guid(76dba71584f66b847a110742d9a22dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9b7a437ebcb37c8d0826f4a434569a2') in 0.182127 seconds 
+  Time since last request: 45.322200 seconds.
+  path: Assets/Art/Objets/Potions
+  artifactKey: Guid(a693b9a534683934cbded5680e39dbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Objets/Potions using Guid(a693b9a534683934cbded5680e39dbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b71230a51b8efdb270e713bef14722') in 0.001729 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 42.751149 seconds.
-  path: Assets/Art/TopDownCharacter/Character/Female2.png
-  artifactKey: Guid(253244271e3bdda47843234b015b00a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/TopDownCharacter/Character/Female2.png using Guid(253244271e3bdda47843234b015b00a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52640d287a214ce87c2b9fb6e3d0f34b') in 0.006482 seconds 
+  Time since last request: 77.062646 seconds.
+  path: Assets/Art/Objets/ReliquesQuêtes
+  artifactKey: Guid(20cd0ba7fa040de4c977c3fdc910ca32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Objets/ReliquesQuêtes using Guid(20cd0ba7fa040de4c977c3fdc910ca32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90461dca2ec45d8d9ad3c2e3ec3b8664') in 0.001948 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.303910 seconds.
-  path: Assets/Art/TopDownCharacter/Character/Female2.png
-  artifactKey: Guid(253244271e3bdda47843234b015b00a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/TopDownCharacter/Character/Female2.png using Guid(253244271e3bdda47843234b015b00a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de59c4a11123bc428d6248b219d6fa52') in 0.153495 seconds 
+  Time since last request: 19.891607 seconds.
+  path: Assets/Art/Objets/Arme Test Great Sword.asset
+  artifactKey: Guid(456d21f9e2fab5a49addabc8ef9ce534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Objets/Arme Test Great Sword.asset using Guid(456d21f9e2fab5a49addabc8ef9ce534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a64d4e446cb0aa3a05d5487b43aee77') in 0.002666 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.156553 seconds.
-  path: Assets/Art/TopDownCharacter/Character/Male1.png
-  artifactKey: Guid(df2f334d9ff758f4096346eae5f8d37f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/TopDownCharacter/Character/Male1.png using Guid(df2f334d9ff758f4096346eae5f8d37f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e5cb0fd188eb3b69f90193c47d0ac4d') in 0.007728 seconds 
+  Time since last request: 115.532466 seconds.
+  path: Assets/Art/Objets/Loot/Goblin Kong
+  artifactKey: Guid(f429c9eb16a2fa0498e955735ef66aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Objets/Loot/Goblin Kong using Guid(f429c9eb16a2fa0498e955735ef66aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d7884c2de176200c2fea52e60373cae') in 0.001955 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.573019 seconds.
-  path: Assets/Art/TopDownCharacter/Character/Male1.png
-  artifactKey: Guid(df2f334d9ff758f4096346eae5f8d37f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/TopDownCharacter/Character/Male1.png using Guid(df2f334d9ff758f4096346eae5f8d37f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dae46b7185258dc63c64d93d3c59a017') in 0.156205 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.849891 seconds.
-  path: Assets/Art/TopDownCharacter/Character/Male2.png
-  artifactKey: Guid(53b395d769084684592f8733880ce794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/TopDownCharacter/Character/Male2.png using Guid(53b395d769084684592f8733880ce794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9db1311c9f0804813b250d94a37d8dda') in 0.006528 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.192516 seconds.
-  path: Assets/Art/TopDownCharacter/Character/Male2.png
-  artifactKey: Guid(53b395d769084684592f8733880ce794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/TopDownCharacter/Character/Male2.png using Guid(53b395d769084684592f8733880ce794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c033264d5bd18f8c7e248ce4df88cc8') in 0.136714 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007686 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.83 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.816 seconds
-Domain Reload Profiling:
-	ReloadAssembly (816ms)
-		BeginReloadAssembly (116ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (619ms)
-			LoadAssemblies (75ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (163ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (300ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (67ms)
-				ProcessInitializeOnLoadAttributes (178ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.53 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2816 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 25 unused Assets / (31.7 KB). Loaded Objects now: 3315.
-Memory consumption went from 133.6 MB to 133.5 MB.
-Total: 3.282400 ms (FindLiveObjects: 0.235600 ms CreateObjectMapping: 0.115200 ms MarkObjects: 2.898800 ms  DeleteObjects: 0.032000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 225.238985 seconds.
-  path: Assets/Art/PNJ/shadow
-  artifactKey: Guid(52c3756b3eba9534a8465f584bd6549f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow using Guid(52c3756b3eba9534a8465f584bd6549f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3686b2ef88903382b97987e91e48b38d') in 0.016725 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.019647 seconds.
-  path: Assets/Art/PNJ/shadow/1 1.png
-  artifactKey: Guid(f03f7a683cbc56e4985312ce58a6687d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/1 1.png using Guid(f03f7a683cbc56e4985312ce58a6687d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be944f8ed1d5195d2c9c33b51ddecc47') in 0.070307 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Art/PNJ/shadow/26 1.png
-  artifactKey: Guid(a29aaa1edbd47524e927e4320331d3b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/26 1.png using Guid(a29aaa1edbd47524e927e4320331d3b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22880b7af8a91d202b1612d003df250') in 0.021187 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Art/PNJ/shadow/8.png
-  artifactKey: Guid(9b6f9156243c16f4caa6988b0afa6c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/8.png using Guid(9b6f9156243c16f4caa6988b0afa6c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1297826dc33c584f13bffac134383cac') in 0.019561 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Art/PNJ/shadow/24 1.png
-  artifactKey: Guid(5a8189eebb4a383439dadd1427f696fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/24 1.png using Guid(5a8189eebb4a383439dadd1427f696fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee3fd6fa3dde91eafa6c4a1fd13adf60') in 0.020109 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Art/PNJ/shadow/18 1.png
-  artifactKey: Guid(561bc3ad6d7119f458c71e15722f2fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/18 1.png using Guid(561bc3ad6d7119f458c71e15722f2fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e13d9a007e6c0cbecc3adcb07ec28f') in 0.018264 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Art/PNJ/shadow/35 1.png
-  artifactKey: Guid(8a5256a3e2465814ab8f416fca42650a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/35 1.png using Guid(8a5256a3e2465814ab8f416fca42650a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628afd0923c9e6210539074fa8b9f49e') in 0.021441 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Art/PNJ/shadow/25.png
-  artifactKey: Guid(28523f36d1ea30e458b8b9ff2012f79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/25.png using Guid(28523f36d1ea30e458b8b9ff2012f79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '025d544c4e6d55eea0e6a381c9a8dab5') in 0.019372 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Art/PNJ/shadow/32 1.png
-  artifactKey: Guid(fe22b815a28de6045ab957701b0c6527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/32 1.png using Guid(fe22b815a28de6045ab957701b0c6527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11272d3f1dc218ecf91abeaa6cd87ccf') in 0.023314 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Art/PNJ/shadow/24.png
-  artifactKey: Guid(4106a056a0162d24b88e769cac2f6fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/24.png using Guid(4106a056a0162d24b88e769cac2f6fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eb2980637353d85398fa0e0d2e6dcc3') in 0.018615 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Art/PNJ/shadow/18.png
-  artifactKey: Guid(7aee1ca4f88cc5d4e8827ceb86c0c639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/18.png using Guid(7aee1ca4f88cc5d4e8827ceb86c0c639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9317d53effcd7e1dde70cb6c5c0849c4') in 0.017839 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Art/PNJ/shadow/23.png
-  artifactKey: Guid(8c0c2073cf503fc48b8dc479aaa94712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/23.png using Guid(8c0c2073cf503fc48b8dc479aaa94712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18795f70cb69723ee0a8883882de5f0d') in 0.018049 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Art/PNJ/shadow/13 1.png
-  artifactKey: Guid(87e70bb206af90049b67dab60b117824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/13 1.png using Guid(87e70bb206af90049b67dab60b117824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd11ebfef33347027567e8f429317238e') in 0.020829 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Art/PNJ/shadow/36.png
-  artifactKey: Guid(f5960f8502b5679489244f69ba63fbdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/36.png using Guid(f5960f8502b5679489244f69ba63fbdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf8f64cde3ed9b410bea3e2c5852ac24') in 0.020418 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Art/PNJ/shadow/30 1.png
-  artifactKey: Guid(2cacad702b6191c4b8006b725b2a9063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/30 1.png using Guid(2cacad702b6191c4b8006b725b2a9063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5809e82ddb8810e9d3f1e888be6c234d') in 0.020387 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Art/PNJ/shadow/11 1.png
-  artifactKey: Guid(c4e80459040553a4bb468830d4d4f8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/11 1.png using Guid(c4e80459040553a4bb468830d4d4f8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a92802b3fa9d6934f5fca6cef9904fbf') in 0.020581 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Art/PNJ/shadow/2.png
-  artifactKey: Guid(45c7a9c9a4cc8bd4d8c4821cc4c678cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/2.png using Guid(45c7a9c9a4cc8bd4d8c4821cc4c678cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '361e106972d86f330e628791013ba7f0') in 0.017075 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Art/PNJ/shadow/21 1.png
-  artifactKey: Guid(7e70da6c800013243822256e062f6bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/21 1.png using Guid(7e70da6c800013243822256e062f6bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75680c36b8e5be20897311fe76b59e2') in 0.022406 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Art/PNJ/shadow/14 1.png
-  artifactKey: Guid(2e927f39a2237f9459e5fc16b382c273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/14 1.png using Guid(2e927f39a2237f9459e5fc16b382c273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '738402759d63a301c6e14b648a4f18ab') in 0.032478 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Art/PNJ/shadow/20.png
-  artifactKey: Guid(4e48c6ac4d7e2df418156a2258a2d721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/20.png using Guid(4e48c6ac4d7e2df418156a2258a2d721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b09802c1b47d7a88a49f65016f85b896') in 0.015322 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Art/PNJ/shadow/12 1.png
-  artifactKey: Guid(b6700237afe435c4cb509a8054e59e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/12 1.png using Guid(b6700237afe435c4cb509a8054e59e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c16d3dbae7e4fde3aab635d69d2111e') in 0.016953 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Art/PNJ/shadow/21.png
-  artifactKey: Guid(9bfdcd1faa7414543ac1bf8c1d156baf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/21.png using Guid(9bfdcd1faa7414543ac1bf8c1d156baf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea9431c364a1335c826277929b8d894') in 0.022880 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Art/PNJ/shadow/26.png
-  artifactKey: Guid(2b411a6528c2a374eac454cffbdf06d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/26.png using Guid(2b411a6528c2a374eac454cffbdf06d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d92959393c2da4c053bc846b462f324') in 0.019612 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Art/PNJ/shadow/9.png
-  artifactKey: Guid(692dde7e79a33644fb8e76309898e15a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/9.png using Guid(692dde7e79a33644fb8e76309898e15a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4c7c12d1e314aaf72c97cf8df74f253') in 0.017142 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Art/PNJ/shadow/25 1.png
-  artifactKey: Guid(0923e3490829b1643a8bd76c259fca86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/25 1.png using Guid(0923e3490829b1643a8bd76c259fca86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d99cf362930f947cc411f24c355cc8') in 0.019589 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Art/PNJ/shadow/28.png
-  artifactKey: Guid(8841c567e61563d4aa6300a142c8476f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/28.png using Guid(8841c567e61563d4aa6300a142c8476f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44dfcd3f35d19149ff637b315c1c8e46') in 0.020492 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Art/PNJ/shadow/10.png
-  artifactKey: Guid(167a349ce4f85fc438e56b01af76054d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/10.png using Guid(167a349ce4f85fc438e56b01af76054d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e34774dac683b00c6be9a60167817856') in 0.019667 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Art/PNJ/shadow/5 1.png
-  artifactKey: Guid(1ffcb99d5badb74498974b70ef37367d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/5 1.png using Guid(1ffcb99d5badb74498974b70ef37367d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e09915ce4e658b6054a128cc7cfc54f') in 0.019965 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Art/PNJ/shadow/8 1.png
-  artifactKey: Guid(c17050458854be045b3617b569e64eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/8 1.png using Guid(c17050458854be045b3617b569e64eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '389ff90f8c322583225b354c7b41389e') in 0.017161 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Art/PNJ/shadow/32.png
-  artifactKey: Guid(f850fe19354b248429621ca243de7d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/32.png using Guid(f850fe19354b248429621ca243de7d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9e0338da8331fd725aec313cf75651') in 0.017321 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Art/PNJ/shadow/3 1.png
-  artifactKey: Guid(9054f671a2f457144a5f025bb3e17f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/3 1.png using Guid(9054f671a2f457144a5f025bb3e17f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '749c27fab192f6958e3bc6973d1cc08a') in 0.024325 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Art/PNJ/shadow/23 1.png
-  artifactKey: Guid(523ad2a7ab49fec4fb7848ae41455773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/23 1.png using Guid(523ad2a7ab49fec4fb7848ae41455773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99f163547c4548c1f41235212814de74') in 0.018292 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Art/PNJ/shadow/29 1.png
-  artifactKey: Guid(202a7f273860001469e241dba8254823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/29 1.png using Guid(202a7f273860001469e241dba8254823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b4f64e59c529ecf25780b22f98e7350') in 0.016729 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Art/PNJ/shadow/22 1.png
-  artifactKey: Guid(31db2e2a73440474e801404711b85df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/22 1.png using Guid(31db2e2a73440474e801404711b85df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c63fa8f49aa3600bb0814e353a327a1') in 0.016638 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Art/PNJ/shadow/3.png
-  artifactKey: Guid(6f02d93681eaa564794d845504e2ed5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/3.png using Guid(6f02d93681eaa564794d845504e2ed5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcb8ee43e07eb6cb80aa36b34c04e3c9') in 0.017619 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Art/PNJ/shadow/22.png
-  artifactKey: Guid(53605891f3a97354da06c0a06cc2ddc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/22.png using Guid(53605891f3a97354da06c0a06cc2ddc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad3d122d1558f5db2928d4c66a81762') in 0.018242 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Art/PNJ/shadow/16 1.png
-  artifactKey: Guid(6e3a547ecf2d12241a407183dabb6801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/16 1.png using Guid(6e3a547ecf2d12241a407183dabb6801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '970d3e38442bdf692a2ba07758c3d45d') in 0.017973 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Art/PNJ/shadow/19.png
-  artifactKey: Guid(7c6dc18bdd4f71244a4a9d87c48a0736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/19.png using Guid(7c6dc18bdd4f71244a4a9d87c48a0736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df04594f8c2616f30092a2eb2399f5f') in 0.015230 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Art/PNJ/shadow/15.png
-  artifactKey: Guid(5a56d4b62dfe3a64dbd81662be15cc65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/15.png using Guid(5a56d4b62dfe3a64dbd81662be15cc65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dc26aa66f8c95907517b4d54b0540c0') in 0.014679 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Art/PNJ/shadow/12.png
-  artifactKey: Guid(fef5c9c0e4e457b42850045c1ed40c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/12.png using Guid(fef5c9c0e4e457b42850045c1ed40c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7caf5338ac1e8362e2996d22ccb31633') in 0.015471 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.278035 seconds.
-  path: Assets/Art/PNJ/shadow/38 1.png
-  artifactKey: Guid(e0a227c313abbac42b4b9be3ca8ecfe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/38 1.png using Guid(e0a227c313abbac42b4b9be3ca8ecfe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f322cc5b854a11149f6b23205ff824bd') in 0.026471 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Art/PNJ/shadow/41 1.png
-  artifactKey: Guid(7ff64167eefaa764cbb89ef2e75bd6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/41 1.png using Guid(7ff64167eefaa764cbb89ef2e75bd6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942f2bdc79cb203b53c036c6df89278e') in 0.020207 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Art/PNJ/shadow/44.png
-  artifactKey: Guid(a90c3a8e292e01946a2883bcf1621fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/44.png using Guid(a90c3a8e292e01946a2883bcf1621fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5140c306d83bbafee41d24e5df6cf2a3') in 0.017009 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Art/PNJ/shadow/43 1.png
-  artifactKey: Guid(fdbd6d852786f0345a3aa9ce3bf2b122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/43 1.png using Guid(fdbd6d852786f0345a3aa9ce3bf2b122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b9f419cc7174d41c673c7b3e7a171b') in 0.021789 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Art/PNJ/shadow/41.png
-  artifactKey: Guid(22808de1858b5f041829f43a375e0ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/41.png using Guid(22808de1858b5f041829f43a375e0ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47bae56119aabd1307aad2f3857ab4a8') in 0.020883 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Art/PNJ/shadow/42 1.png
-  artifactKey: Guid(4fd18d690f8c88142a57f83e2a99428f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/42 1.png using Guid(4fd18d690f8c88142a57f83e2a99428f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50dee78729f4cd324489d744f765ea31') in 0.020326 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Art/PNJ/shadow/39.png
-  artifactKey: Guid(0ccd304f9f5a67e45b209f5f20a8a54b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/39.png using Guid(0ccd304f9f5a67e45b209f5f20a8a54b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b23fc393734a426309a31449b38bb465') in 0.020938 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Art/PNJ/shadow/45.png
-  artifactKey: Guid(bab8cbac66d546f4d83e950100c88c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/PNJ/shadow/45.png using Guid(bab8cbac66d546f4d83e950100c88c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '863a26372c4484c0744fc8bed533abc8') in 0.020421 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 17.784662 seconds.
+  path: Assets/Art/Objets/Loot/Oeil
+  artifactKey: Guid(8f97780f7ff669e42ac80c0ba2056f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Objets/Loot/Oeil using Guid(8f97780f7ff669e42ac80c0ba2056f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f59c04950c84d0744324bcbeff1b05af') in 0.002507 seconds 
