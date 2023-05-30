@@ -84,6 +84,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TintBrush
     - UnityEditor.Tilemaps.TintBrushSmooth
     Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
@@ -176,11 +177,68 @@ ScriptsOnlyBuild:
     fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
     methodName: ChooseEspece
   - assembly: Assembly-CSharp
-    fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
-    methodName: ChooseEspece
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: OpenChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: CloseChest
   - assembly: Assembly-CSharp
     fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
     methodName: ChooseEspece
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: OpenChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: CloseChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
+    methodName: ChooseEspece
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: OpenChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: CloseChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: OpenChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: CloseChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
+    methodName: ChooseEspece
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: OpenChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: CloseChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: OpenChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: CloseChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: OpenChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: CloseChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
+    methodName: ChooseClasse
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
+    methodName: ChooseEspece
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: OpenChest
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.ChestController
+    methodName: CloseChest
   - assembly: Assembly-CSharp
     fullTypeName: TalesofHivnir.ChestController
     methodName: OpenChest
@@ -201,25 +259,16 @@ ScriptsOnlyBuild:
     methodName: ChooseClasse
   - assembly: Assembly-CSharp
     fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
-    methodName: ChooseEspece
+    methodName: ChooseClasse
+  - assembly: Assembly-CSharp
+    fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
+    methodName: ChooseClasse
   - assembly: Assembly-CSharp
     fullTypeName: TalesofHivnir.ChestController
     methodName: OpenChest
   - assembly: Assembly-CSharp
     fullTypeName: TalesofHivnir.ChestController
     methodName: CloseChest
-  - assembly: Assembly-CSharp
-    fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
-    methodName: ChooseEspece
-  - assembly: Assembly-CSharp
-    fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
-    methodName: ChooseClasse
-  - assembly: Assembly-CSharp
-    fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
-    methodName: ChooseClasse
-  - assembly: Assembly-CSharp
-    fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
-    methodName: ChooseClasse
   - assembly: Assembly-CSharp
     fullTypeName: TalesofHivnir.Menus.ClasseEspeceMenu
     methodName: ChooseClasse
@@ -920,7 +969,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7048}
     - Class: 114
-      Script: {instanceID: 78938}
+      Script: {instanceID: 77544}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1481,7 +1530,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7048}
     - Class: 114
-      Script: {instanceID: 78938}
+      Script: {instanceID: 77544}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1734,7 +1783,7 @@ ScriptsOnlyBuild:
     className: DoorController
   - hash:
       serializedVersion: 2
-      Hash: 520cf099e938372979faff7638b7b672
+      Hash: d537ba856475065e2811c4f2b33eeb9e
     assemblyName: Assembly-CSharp.dll
     namespaceName: TalesofHivnir.Entities
     className: Player
@@ -3456,7 +3505,7 @@ ScriptsOnlyBuild:
     className: PhotonTransformView
   - hash:
       serializedVersion: 2
-      Hash: 185f1ca4596b62740d00e0740d83f913
+      Hash: e3fdebf6f17b3c04ea93c57e45911461
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SaveData
@@ -3630,4 +3679,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Scene Combat slime/COMBATSlime.unity
   - Assets/Scenes/Multi.unity
   - Assets/Scenes/Scene Combat Squelette/COMBATsquelette.unity
-  playerPath: C:/Users/kylli/Documents/Tales/V1/Tiles-Of-Hivnir.exe
+  playerPath: C:/Users/Utilisateur/Desktop/Tiles-Of-Hivnir.exe
