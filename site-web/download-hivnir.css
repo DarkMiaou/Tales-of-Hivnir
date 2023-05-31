@@ -99,3 +99,45 @@ li a .active {
   ::-webkit-scrollbar-thumb{
     background:rgb(205, 109, 8);
   }
+
+
+
+
+  .container_download{
+    width:100%;
+    height: auto;
+  
+  }
+  .container_download img{
+    width: 100%;
+  }
+  .container_download .btn {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(205, 109, 8);
+    color: white;
+    font-size: 32px;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .container_download .btn:hover{
+    color: #000;
+    transition:0.2s;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .container_download .btn .a {
+    color:aliceblue;
+  }
+  
+  .container_download .btn:hover .a {
+    color:black;
+  }
