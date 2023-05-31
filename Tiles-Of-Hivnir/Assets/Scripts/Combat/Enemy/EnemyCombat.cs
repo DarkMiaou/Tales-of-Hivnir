@@ -81,7 +81,7 @@ public class EnemyCombat : MonoBehaviour
 
     public void GameFinish()
     {
-        
+        SaveData.instance.currenthealth = SaveData.instance.maxhealth;
         gamefinishUI.SetActive(true);
     }
 
