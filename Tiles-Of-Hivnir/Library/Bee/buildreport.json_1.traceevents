@@ -1,0 +1,825 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1685520043826189, "dur": 372898, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685520043826224, "dur": 3552, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685520043829777, "dur": 28300, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685520043858194, "dur": 199716, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685520044057911, "dur": 137295, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685520044195209, "dur": 3877, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685520044200006, "dur": 27, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1685520043950855, "dur": 92636, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1685520043951649, "dur": 37741, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1685520044030099, "dur": 3816, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1685520044033918, "dur": 9567, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1685520044034487, "dur": 8291, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1685520044047233, "dur": 1010, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1685520044046593, "dur": 1667, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685520044200208, "dur": 392, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1685520044084950, "dur":1069, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044086043, "dur":91, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1685520044086163, "dur":26, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1685520044086189, "dur":679, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1685520044086902, "dur":735, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044087637, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044165807, "dur":508, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166315, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166329, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166331, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166336, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166338, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166344, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166346, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166352, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166354, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166358, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166360, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166365, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166367, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166370, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166372, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166377, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166379, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166383, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166385, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166389, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166391, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166396, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166398, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166402, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166404, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166409, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166410, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166414, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166416, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166420, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166422, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166425, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166447, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044166472, "dur":1819, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1685520044086910, "dur":773, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044087687, "dur":3698, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044091395, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1685520044091397, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044091445, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1685520044091449, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044092041, "dur":2961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1685520044095004, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1685520044095031, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044095077, "dur":1980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1685520044097083, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1685520044097115, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044097119, "dur":2831, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1685520044100017, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044100071, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044100078, "dur":3723, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044103851, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044103911, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044103918, "dur":4034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044107975, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044108033, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044108043, "dur":3818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044111901, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044111946, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044111950, "dur":3529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044115504, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044115530, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044115534, "dur":3544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044119102, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Threading.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1685520044119282, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044119291, "dur":2594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Threading.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1685520044121933, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044122071, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044122078, "dur":2936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044125045, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044125086, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044125092, "dur":2851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044127966, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.Animation.Runtime.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1685520044128104, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044128108, "dur":2844, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.Animation.Runtime.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1685520044130984, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044131028, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044131035, "dur":4731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044135789, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044135813, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044135817, "dur":3501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685520044139357, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets6.assets" }}
+,{ "pid":12345, "tid":1, "ts":1685520044139425, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044139430, "dur":2374, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets6.assets" }}
+,{ "pid":12345, "tid":1, "ts":1685520044141839, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets10.assets" }}
+,{ "pid":12345, "tid":1, "ts":1685520044141909, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044141915, "dur":4574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets10.assets" }}
+,{ "pid":12345, "tid":1, "ts":1685520044146591, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level9" }}
+,{ "pid":12345, "tid":1, "ts":1685520044146667, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044146675, "dur":9083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level9" }}
+,{ "pid":12345, "tid":1, "ts":1685520044155850, "dur":211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1685520044156069, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685520044156157, "dur":3278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1685520044159469, "dur":6415, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044088103, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044088103, "dur":3286, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044091395, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1685520044091454, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044101279, "dur":2167, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1685520044103497, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044103556, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044103566, "dur":3901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044107499, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044107548, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044107553, "dur":3752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044111342, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044111383, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044111390, "dur":3505, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044114929, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044114974, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044114981, "dur":2945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044117969, "dur":349, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044118322, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044118332, "dur":3533, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044121918, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Environments.Internal.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1685520044122071, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044122079, "dur":2793, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Environments.Internal.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1685520044124906, "dur":237, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044125145, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044125149, "dur":2978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044128155, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044128183, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044128188, "dur":2961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044131188, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044131232, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044131239, "dur":3612, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044134895, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Photon3Unity3D.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044134961, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044134965, "dur":3503, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Photon3Unity3D.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685520044138503, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets7.assets" }}
+,{ "pid":12345, "tid":2, "ts":1685520044138548, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044138553, "dur":2794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets7.assets" }}
+,{ "pid":12345, "tid":2, "ts":1685520044141373, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets12.assets" }}
+,{ "pid":12345, "tid":2, "ts":1685520044141432, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044141438, "dur":4855, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets12.assets" }}
+,{ "pid":12345, "tid":2, "ts":1685520044146581, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685520044146633, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685520044146642, "dur":18809, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685520044165480, "dur":326, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044087071, "dur":666, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044087737, "dur":3864, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044091602, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1685520044091680, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044093653, "dur":2023, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1685520044095715, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044095740, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044095822, "dur":7614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044103487, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044103588, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044103598, "dur":4123, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044107755, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044107825, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044107831, "dur":3948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044111819, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044111858, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044111865, "dur":4004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044115903, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044115942, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044115947, "dur":3740, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044119724, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044119869, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044119875, "dur":3226, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044123137, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Configuration.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1685520044123255, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044123259, "dur":2558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Configuration.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1685520044125838, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044125947, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044125951, "dur":3289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044129261, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044129285, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044129289, "dur":3566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685520044132880, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonUnityNetworking.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1685520044133057, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044133063, "dur":3033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonUnityNetworking.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1685520044136123, "dur":165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1685520044136290, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044136294, "dur":4584, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1685520044140918, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":3, "ts":1685520044140953, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044140956, "dur":4478, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":3, "ts":1685520044145514, "dur":316, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1685520044145836, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044145858, "dur":5482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1685520044151396, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level2" }}
+,{ "pid":12345, "tid":3, "ts":1685520044151444, "dur":16, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044151483, "dur":4552, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level2" }}
+,{ "pid":12345, "tid":3, "ts":1685520044156074, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1685520044156224, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685520044156234, "dur":3306, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1685520044159572, "dur":6279, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044087026, "dur":700, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044087726, "dur":3878, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044091604, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1685520044091700, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044096875, "dur":2353, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1685520044099290, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044099443, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044099449, "dur":3411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044102898, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044102966, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044102978, "dur":4384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044107440, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044107489, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044107493, "dur":3597, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044111112, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044111138, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044111143, "dur":3527, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044114699, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044114781, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044114806, "dur":3088, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044117925, "dur":276, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.TextMeshPro.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1685520044118205, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044118211, "dur":3346, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.TextMeshPro.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1685520044121582, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Environments.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1685520044121753, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044121758, "dur":2711, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Environments.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1685520044124492, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044124521, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044124529, "dur":2634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044127183, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044127274, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044127277, "dur":3071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044130371, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044130409, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044130414, "dur":3077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044133520, "dur":264, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonRealtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044133788, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044133795, "dur":3665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonRealtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685520044137483, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1685520044137509, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044137561, "dur":2202, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1685520044139809, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":4, "ts":1685520044139850, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044139856, "dur":3278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":4, "ts":1685520044143246, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1685520044143444, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044143461, "dur":4985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1685520044148505, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level5" }}
+,{ "pid":12345, "tid":4, "ts":1685520044148582, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685520044148590, "dur":9541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level5" }}
+,{ "pid":12345, "tid":4, "ts":1685520044158169, "dur":7759, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685520044087129, "dur":637, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685520044087766, "dur":3843, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685520044091610, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1685520044091695, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685520044094644, "dur":1618, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1685520044096284, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685520044096309, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685520044096312, "dur":26797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685520044123153, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685520044123273, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685520044123277, "dur":2879, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685520044126190, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.SpriteShape.Runtime.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1685520044126360, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685520044126365, "dur":3066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.SpriteShape.Runtime.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1685520044129451, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685520044129485, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685520044129489, "dur":3016, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685520044132526, "dur":274, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonUnityNetworking.Utilities.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685520044132804, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685520044132809, "dur":3233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonUnityNetworking.Utilities.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685520044136064, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685520044136094, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685520044136098, "dur":4499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685520044140638, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1685520044140679, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685520044140684, "dur":20060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1685520044160782, "dur":5058, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044087242, "dur":560, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044087803, "dur":3808, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044091612, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1685520044091740, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044093636, "dur":1804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1685520044095468, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044095496, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044095799, "dur":2427, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044098273, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044098320, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044098387, "dur":3474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044101906, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044102028, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044102036, "dur":3495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044105601, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044105692, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044105714, "dur":3653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044109390, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044109423, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044109431, "dur":3614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044113075, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044113136, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044113174, "dur":3285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044116497, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044116532, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044116537, "dur":3741, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044120317, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044120502, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044120509, "dur":2980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044123528, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044123639, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044123643, "dur":2746, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044126413, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.PixelPerfect.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1685520044126551, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044126557, "dur":3051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.PixelPerfect.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1685520044129630, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044129655, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044129658, "dur":3285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685520044132982, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonUnityNetworking.Demos.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1685520044133141, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044133149, "dur":3386, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonUnityNetworking.Demos.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1685520044136569, "dur":293, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Plugins/x86_64/lib_burst_generated.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1685520044136864, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044137586, "dur":2249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Plugins/x86_64/lib_burst_generated.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1685520044139872, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets4.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1685520044139916, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685520044139923, "dur":18007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets4.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1685520044157975, "dur":7825, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044087345, "dur":492, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044087837, "dur":3564, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044091401, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1685520044091472, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044093535, "dur":1856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1685520044095416, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":7, "ts":1685520044095442, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044095451, "dur":2027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":7, "ts":1685520044097513, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/websocket-sharp.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044097602, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044098350, "dur":3348, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/websocket-sharp.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044101743, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044101862, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044101890, "dur":3797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044105742, "dur":333, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1685520044106078, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044106088, "dur":3259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1685520044109370, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044109397, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044109402, "dur":3601, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044113028, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044113055, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044113060, "dur":3347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044116431, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044116466, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044116472, "dur":3414, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044119924, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Registration.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1685520044120069, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044120074, "dur":3225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Registration.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1685520044123323, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Analytics.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1685520044123444, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044123448, "dur":2896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Analytics.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1685520044126364, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044126491, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044126495, "dur":3153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044129672, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044129715, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044129720, "dur":3158, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044132920, "dur":270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonUnityNetworking.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044133194, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044133199, "dur":3099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonUnityNetworking.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044136320, "dur":221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044136544, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044136549, "dur":4319, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685520044140894, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1685520044140937, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044140946, "dur":6692, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1685520044147691, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level6" }}
+,{ "pid":12345, "tid":7, "ts":1685520044147739, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044147747, "dur":7300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level6" }}
+,{ "pid":12345, "tid":7, "ts":1685520044155086, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1685520044155125, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685520044155132, "dur":2802, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1685520044157973, "dur":7831, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044087414, "dur":456, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044087870, "dur":3738, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044091608, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1685520044091709, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044098830, "dur":1721, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1685520044100603, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044100662, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044100668, "dur":3537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044104244, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044104333, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044104341, "dur":3841, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044108226, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044108268, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044108274, "dur":3836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044112135, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044112163, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044112167, "dur":3071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044115269, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044115322, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044115329, "dur":3860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044119233, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044119387, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044119395, "dur":3029, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044122465, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044122607, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044122611, "dur":2753, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044125383, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044125405, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044125409, "dur":2909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044128342, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044128382, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044128387, "dur":4759, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044133187, "dur":261, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonUnityNetworking.Demos.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044133451, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044133455, "dur":3428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonUnityNetworking.Demos.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044136904, "dur":4441, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044141348, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044141723, "dur":2040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685520044143850, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":8, "ts":1685520044143926, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044143933, "dur":4893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":8, "ts":1685520044148880, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level4" }}
+,{ "pid":12345, "tid":8, "ts":1685520044148976, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685520044148994, "dur":9742, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level4" }}
+,{ "pid":12345, "tid":8, "ts":1685520044158786, "dur":7114, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044087481, "dur":407, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044087889, "dur":3717, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044091607, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1685520044091700, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044097196, "dur":2063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1685520044099322, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044099450, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044099457, "dur":3031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044102513, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044102563, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044102568, "dur":4312, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044106921, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044106991, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044106995, "dur":3666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044110693, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044110744, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044110753, "dur":3184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044113961, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044113990, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044113997, "dur":3222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044117243, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044117285, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044117321, "dur":3432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044120845, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044120993, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044121000, "dur":2998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044124020, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.InternalAPIEngineBridge.001.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1685520044124135, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044124139, "dur":2465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.InternalAPIEngineBridge.001.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1685520044126643, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044126753, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044126757, "dur":3040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044129818, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044129844, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044129849, "dur":3462, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":9, "ts":1685520044133398, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonRealtime.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1685520044133569, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044133576, "dur":3488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonRealtime.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1685520044137084, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":9, "ts":1685520044137185, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044137430, "dur":862, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":9, "ts":1685520044138317, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets9.assets" }}
+,{ "pid":12345, "tid":9, "ts":1685520044138341, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044138345, "dur":2405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets9.assets" }}
+,{ "pid":12345, "tid":9, "ts":1685520044140791, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":9, "ts":1685520044140834, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044140840, "dur":5433, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":9, "ts":1685520044146323, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/resources.resource" }}
+,{ "pid":12345, "tid":9, "ts":1685520044146372, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1685520044146379, "dur":19343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/resources.resource" }}
+,{ "pid":12345, "tid":9, "ts":1685520044165746, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":9, "ts":1685520044165748, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044087585, "dur":319, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044087904, "dur":3696, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044091601, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1685520044091656, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044093550, "dur":2195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1685520044095768, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/WinPixEventRuntime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044095795, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044095800, "dur":2556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/WinPixEventRuntime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044098390, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044098433, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044098477, "dur":3825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044102355, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044102405, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044102411, "dur":3735, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044106271, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044106317, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044106326, "dur":2631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044108992, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044109034, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044109046, "dur":3588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044112674, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044112719, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044112730, "dur":3105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044115871, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044115907, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044115913, "dur":3232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044119187, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Telemetry.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1685520044119350, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044119356, "dur":3261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Telemetry.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1685520044122648, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Device.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1685520044122777, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044122782, "dur":2820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Device.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1685520044125623, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044125651, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044125655, "dur":3239, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044128917, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044128940, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044128944, "dur":3163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044132128, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044132153, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044132157, "dur":3368, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044135548, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044135573, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044135579, "dur":3752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":10, "ts":1685520044139358, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets5.resource" }}
+,{ "pid":12345, "tid":10, "ts":1685520044139418, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044139430, "dur":9505, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets5.resource" }}
+,{ "pid":12345, "tid":10, "ts":1685520044148982, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level3" }}
+,{ "pid":12345, "tid":10, "ts":1685520044149037, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1685520044149044, "dur":10071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level3" }}
+,{ "pid":12345, "tid":10, "ts":1685520044159147, "dur":6745, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044087691, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044087691, "dur":3704, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044091396, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":11, "ts":1685520044091469, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044093529, "dur":1603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":11, "ts":1685520044095186, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":11, "ts":1685520044095215, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044095219, "dur":2011, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":11, "ts":1685520044097256, "dur":16323, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir.exe" }}
+,{ "pid":12345, "tid":11, "ts":1685520044113584, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044113590, "dur":1442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir.exe" }}
+,{ "pid":12345, "tid":11, "ts":1685520044115055, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1685520044115135, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044115141, "dur":3970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1685520044119143, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":11, "ts":1685520044119296, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044119302, "dur":2910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":11, "ts":1685520044122234, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":11, "ts":1685520044122370, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044122375, "dur":2812, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":11, "ts":1685520044125223, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":11, "ts":1685520044125266, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044125269, "dur":3419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":11, "ts":1685520044128708, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1685520044128733, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044128736, "dur":3025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1685520044131807, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1685520044131845, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044131849, "dur":3174, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1685520044135048, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Newtonsoft.Json.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1685520044135094, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044135099, "dur":3333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Newtonsoft.Json.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1685520044138455, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets7.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1685520044138481, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044138484, "dur":3472, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets7.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1685520044141998, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1685520044142041, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044142049, "dur":11195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1685520044153291, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level11" }}
+,{ "pid":12345, "tid":11, "ts":1685520044153333, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1685520044153342, "dur":4613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level11" }}
+,{ "pid":12345, "tid":11, "ts":1685520044157992, "dur":7816, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044087755, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044087755, "dur":3858, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044091614, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1685520044091694, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044095097, "dur":2223, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1685520044097358, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":12, "ts":1685520044097388, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044098311, "dur":8678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":12, "ts":1685520044107044, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044107076, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044107081, "dur":3624, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044110757, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044110797, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044110805, "dur":3463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044114311, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044114354, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044114360, "dur":3321, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044117717, "dur":269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044117989, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044117994, "dur":3142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044121243, "dur":215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044121468, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044121474, "dur":3025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044124521, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1685520044124707, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044124713, "dur":3020, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Burst.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1685520044127754, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044127873, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044127879, "dur":2683, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044130583, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044130620, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044130625, "dur":3789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044134478, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonChat.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044134704, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044134715, "dur":3714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonChat.dll" }}
+,{ "pid":12345, "tid":12, "ts":1685520044138452, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets8.assets" }}
+,{ "pid":12345, "tid":12, "ts":1685520044138475, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044138480, "dur":2913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets8.assets" }}
+,{ "pid":12345, "tid":12, "ts":1685520044141430, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets11.assets" }}
+,{ "pid":12345, "tid":12, "ts":1685520044141473, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044141478, "dur":4826, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets11.assets" }}
+,{ "pid":12345, "tid":12, "ts":1685520044146682, "dur":256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level8" }}
+,{ "pid":12345, "tid":12, "ts":1685520044146942, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044146952, "dur":6382, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level8" }}
+,{ "pid":12345, "tid":12, "ts":1685520044153426, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level10" }}
+,{ "pid":12345, "tid":12, "ts":1685520044153503, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1685520044153515, "dur":6188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level10" }}
+,{ "pid":12345, "tid":12, "ts":1685520044159728, "dur":6086, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044087837, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044087837, "dur":3773, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044091611, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":13, "ts":1685520044091727, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044100104, "dur":2547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":13, "ts":1685520044102711, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044102747, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044102752, "dur":3682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044106482, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044106521, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044106527, "dur":3093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044109643, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044109686, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044109693, "dur":4075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044113813, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044113857, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044113861, "dur":3154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044117048, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044117092, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044117098, "dur":3417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044120558, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Networking.pdb" }}
+,{ "pid":12345, "tid":13, "ts":1685520044120756, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044120771, "dur":3202, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Networking.pdb" }}
+,{ "pid":12345, "tid":13, "ts":1685520044123995, "dur":577, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044124575, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044124581, "dur":3396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044128011, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044128177, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044128183, "dur":3159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044131383, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044131436, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044131441, "dur":4393, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044135882, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/NavMeshPlus.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044136063, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044136069, "dur":4062, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/NavMeshPlus.dll" }}
+,{ "pid":12345, "tid":13, "ts":1685520044140173, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":13, "ts":1685520044140247, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044140253, "dur":3449, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":13, "ts":1685520044143748, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":13, "ts":1685520044143878, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044143886, "dur":8796, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":13, "ts":1685520044152761, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level12" }}
+,{ "pid":12345, "tid":13, "ts":1685520044152841, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1685520044152860, "dur":6742, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level12" }}
+,{ "pid":12345, "tid":13, "ts":1685520044159633, "dur":6197, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044087879, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044087881, "dur":3731, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044091613, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1685520044091703, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044098111, "dur":1609, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1685520044099769, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044099839, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044099847, "dur":3942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044103854, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044103970, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044103979, "dur":4023, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044108085, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044108139, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044108179, "dur":4465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044112687, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044112731, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044112737, "dur":3011, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044115770, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044115794, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044115797, "dur":3506, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044119345, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Scheduler.pdb" }}
+,{ "pid":12345, "tid":14, "ts":1685520044119475, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044119480, "dur":3357, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Scheduler.pdb" }}
+,{ "pid":12345, "tid":14, "ts":1685520044122863, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044122965, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044122969, "dur":2665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044125654, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.Tilemap.Extras.pdb" }}
+,{ "pid":12345, "tid":14, "ts":1685520044125775, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044125779, "dur":3287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.Tilemap.Extras.pdb" }}
+,{ "pid":12345, "tid":14, "ts":1685520044129097, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044129136, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044129140, "dur":3173, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":14, "ts":1685520044132350, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonUnityNetworking.Utilities.pdb" }}
+,{ "pid":12345, "tid":14, "ts":1685520044132468, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044132472, "dur":3350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonUnityNetworking.Utilities.pdb" }}
+,{ "pid":12345, "tid":14, "ts":1685520044135857, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/NavMeshPlus.pdb" }}
+,{ "pid":12345, "tid":14, "ts":1685520044136023, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044136029, "dur":4227, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/NavMeshPlus.pdb" }}
+,{ "pid":12345, "tid":14, "ts":1685520044140298, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets3.resource" }}
+,{ "pid":12345, "tid":14, "ts":1685520044140341, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044140348, "dur":5940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets3.resource" }}
+,{ "pid":12345, "tid":14, "ts":1685520044146448, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/resources.assets" }}
+,{ "pid":12345, "tid":14, "ts":1685520044146506, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044146513, "dur":8221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/resources.assets" }}
+,{ "pid":12345, "tid":14, "ts":1685520044154838, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level1" }}
+,{ "pid":12345, "tid":14, "ts":1685520044155030, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044155045, "dur":1134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level1" }}
+,{ "pid":12345, "tid":14, "ts":1685520044156212, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/boot.config" }}
+,{ "pid":12345, "tid":14, "ts":1685520044156387, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1685520044156393, "dur":3077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/boot.config" }}
+,{ "pid":12345, "tid":14, "ts":1685520044159505, "dur":6355, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044087998, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044087999, "dur":3604, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044091603, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":15, "ts":1685520044091700, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044095761, "dur":2106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":15, "ts":1685520044097904, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044097942, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044098370, "dur":4543, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044103015, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044103079, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044103426, "dur":3389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044106871, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044106905, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044106910, "dur":3993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044110929, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044110976, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044110983, "dur":3434, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044114504, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044114552, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044114558, "dur":2898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044117479, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":15, "ts":1685520044117697, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044117702, "dur":3288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":15, "ts":1685520044121044, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Internal.pdb" }}
+,{ "pid":12345, "tid":15, "ts":1685520044121265, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044121272, "dur":2965, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.Internal.pdb" }}
+,{ "pid":12345, "tid":15, "ts":1685520044124275, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044124385, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044124392, "dur":2546, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044126959, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.IK.Runtime.pdb" }}
+,{ "pid":12345, "tid":15, "ts":1685520044127067, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044127071, "dur":2937, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.IK.Runtime.pdb" }}
+,{ "pid":12345, "tid":15, "ts":1685520044130045, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044130094, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044130098, "dur":3425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":15, "ts":1685520044133558, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonChat.pdb" }}
+,{ "pid":12345, "tid":15, "ts":1685520044133734, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044133741, "dur":3839, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/PhotonChat.pdb" }}
+,{ "pid":12345, "tid":15, "ts":1685520044137632, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets9.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1685520044137672, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044137678, "dur":1684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets9.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1685520044139400, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets5.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1685520044139438, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044139442, "dur":3837, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets5.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1685520044143470, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1685520044143525, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1685520044143539, "dur":16114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1685520044159683, "dur":6138, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044086947, "dur":746, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044087693, "dur":3922, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044091615, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":16, "ts":1685520044091708, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044099536, "dur":2463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":16, "ts":1685520044102070, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044102125, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044102133, "dur":3753, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044105960, "dur":504, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044106467, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044106471, "dur":3194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044109687, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044109720, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044109753, "dur":3988, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044113806, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044113836, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044113840, "dur":3003, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044116864, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044116890, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044116894, "dur":3395, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044120319, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.pdb" }}
+,{ "pid":12345, "tid":16, "ts":1685520044120516, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044120522, "dur":3154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Services.Core.pdb" }}
+,{ "pid":12345, "tid":16, "ts":1685520044123698, "dur":339, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Mathematics.pdb" }}
+,{ "pid":12345, "tid":16, "ts":1685520044124040, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044124045, "dur":3133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.Mathematics.pdb" }}
+,{ "pid":12345, "tid":16, "ts":1685520044127198, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.Common.Runtime.pdb" }}
+,{ "pid":12345, "tid":16, "ts":1685520044127298, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044127302, "dur":3281, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/Unity.2D.Common.Runtime.pdb" }}
+,{ "pid":12345, "tid":16, "ts":1685520044130605, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044130632, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044130636, "dur":5391, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044136063, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044136093, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044136097, "dur":5648, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":16, "ts":1685520044141783, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets10.assets.resS" }}
+,{ "pid":12345, "tid":16, "ts":1685520044141838, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044141844, "dur":4800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/sharedassets10.assets.resS" }}
+,{ "pid":12345, "tid":16, "ts":1685520044146706, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level7" }}
+,{ "pid":12345, "tid":16, "ts":1685520044146790, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1685520044146799, "dur":9794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kylli/Documents/Tales/V1.0 bis/Tales of Hivnir_Data/level7" }}
+,{ "pid":12345, "tid":16, "ts":1685520044156638, "dur":9164, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685520044169459, "dur":1875, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1685520044200729, "dur": 1072, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685520044199979, "dur": 1838, "ph": "X", "name": "Write chrome-trace events", "args": {} },
