@@ -62,6 +62,7 @@ public class YESNO : MonoBehaviour
 
     public void Yes()
     {
+        SaveData.instance.currenthealth = SaveData.instance.maxhealth;
        
         if (inv.InvList.Count > 9)
         {
@@ -113,6 +114,7 @@ public class YESNO : MonoBehaviour
 
     public void No()
     {
+        SaveData.instance.currenthealth = SaveData.instance.maxhealth; 
         SceneManager.LoadScene("Map");
     }
 }
