@@ -86,7 +86,7 @@ namespace TalesofHivnir
             if (gameObject.scene.name == "Map")
             {
                 SaveData.instance.x = transform.position.x+0;
-                SaveData.instance.y = transform.position.y+1;
+                SaveData.instance.y = transform.position.y-1.5f;
             }
            
         }

@@ -55,21 +55,21 @@ public class PlayerCombat : MonoBehaviour
                 ;
                 break;
             case "COMBATsquelette":
-                SaveData.instance.monstermaxhealth = 200;
-                SaveData.instance.monstercurrenthealth = 200;
+                SaveData.instance.monstermaxhealth = 300;
+                SaveData.instance.monstercurrenthealth = 300;
                 SaveData.instance.monsterdamage = 30;
                 ;
                 break;
             case "COMBATSlime":
-                SaveData.instance.monstermaxhealth = 150;
-                SaveData.instance.monstercurrenthealth = 150;
+                SaveData.instance.monstermaxhealth = 200;
+                SaveData.instance.monstercurrenthealth = 200;
                 SaveData.instance.monsterdamage = 25;
                 ;
                 break;
             case "COMBATBOSS":
-                SaveData.instance.monstermaxhealth = 400;
-                SaveData.instance.monstercurrenthealth = 400;
-                SaveData.instance.monsterdamage = 50;
+                SaveData.instance.monstermaxhealth = 1000;
+                SaveData.instance.monstercurrenthealth = 1000;
+                SaveData.instance.monsterdamage = 100;
                 ;
                 break;
         }
